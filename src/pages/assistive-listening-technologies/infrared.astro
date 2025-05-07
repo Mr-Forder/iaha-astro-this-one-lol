@@ -47,6 +47,7 @@ const allPosts = Object.values(
         <div
           id="w-node-b3e792f4-cab4-dd11-8ea4-9fc938cf4fa3-e2064dc4"
           class="home-b-hero-right"
+          style="background: #f3f6f3;"
         >
           <div class="headline-home-b">
             <div class="hero-home-b-top-tile">
@@ -202,7 +203,7 @@ const allPosts = Object.values(
       </div>
     </section>
 
-    <section class="section features-section">
+    <!-- <section class="section features-section">
       <div class="w-layout-blockcontainer main-container w-container">
         <div class="w-layout-grid feature-halves-home-b">
           <div class="feature-left-home-b">
@@ -283,7 +284,7 @@ const allPosts = Object.values(
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="section about-b-numbers-section">
       <div class="w-layout-blockcontainer main-container w-container">
@@ -325,7 +326,7 @@ const allPosts = Object.values(
 
             <div class="w-layout-grid number-features-grid">
               <div class="home-number-feature limitation">
-                <div class="text-h4">Numbers</div>
+                <div class="text-h4">Receivers</div>
                 <div class="text-small">
                   Receivers required for all users (approximately 1 for every 25
                   seats).
@@ -352,11 +353,9 @@ const allPosts = Object.values(
                 </div>
               </div>
               <div class="home-number-feature limitation">
-                <div class="text-h4">Sunlight</div>
+                <div class="text-h4">Location</div>
                 <div class="text-small">
-                  Infrared technology is susceptible to strong sunlight, thus
-                  not suitable for venues with a high level of glass or glossy
-                  surfaces in sunlight.
+                  Not suited for outdoor or walk up / walk through locations.
                 </div>
               </div>
             </div>
@@ -675,7 +674,7 @@ const allPosts = Object.values(
       </div>
     </section>
 
-    <section class="section hero-product">
+    <section class="section hero-product" style="margin-top: -7rem;">
       <div class="w-layout-blockcontainer main-container w-container">
         <div class="headline-product">
           <h1 class="text-h1">Standards</h1>
@@ -980,7 +979,7 @@ const allPosts = Object.values(
         style="margin-top:2rem;"
       >
         <div class="related-block w-dyn-list">
-          <div role="list" class="blog-thirds w-dyn-items">
+          <div role="list" class="blog-sample w-dyn-items">
             {
               allPosts.map((post: any) => (
                 <div role="listitem" class="w-dyn-item">
@@ -995,11 +994,6 @@ const allPosts = Object.values(
                       />
                     </div>
                     <div class="article-info-wrap">
-                      <div class="article-category-wrap">
-                        <div class="text-small">{post.frontmatter.alt}</div>
-                        <div class="text-small opacity-50">·</div>
-                        <div class="text-small">{post.frontmatter.pubDate}</div>
-                      </div>
                       <div class="text-h5">{post.frontmatter.description}</div>
                     </div>
                   </a>
