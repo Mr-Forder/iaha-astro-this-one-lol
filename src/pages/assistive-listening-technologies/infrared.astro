@@ -1,0 +1,1029 @@
+---
+import AskIcon from "../../components/icons/AskIcon.astro";
+import ListenIcon from "../../components/icons/ListenIcon.astro";
+import LookIcon from "../../components/icons/LookIcon.astro";
+import SwitchIcon from "../../components/icons/SwitchIcon.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const allPosts = Object.values(
+  import.meta.glob("../posts/*.md", { eager: true })
+);
+---
+
+<Layout>
+  <body>
+    <section class="section home-b-hero">
+      <div class="w-layout-grid home-b-hero-halves">
+        <div class="home-b-hero-video">
+          <div
+            data-poster-url="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-poster-00001.jpg"
+            data-video-urls="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.mp4,https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.webm"
+            data-autoplay="true"
+            data-loop="true"
+            data-wf-ignore="true"
+            class="video-cover w-background-video w-background-video-atom"
+          >
+            <video
+              id="dd4a4a55-d02d-e713-cd77-aca276f208b2-video"
+              autoplay=""
+              loop=""
+              style='background-image:url(https://terra-tory-template.webflow.io/homepage/"https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-poster-00001.jpg")'
+              muted=""
+              playsinline=""
+              data-wf-ignore="true"
+              data-object-fit="cover"
+            >
+              <source
+                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.mp4"
+                data-wf-ignore="true"
+              />
+              <source
+                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.webm"
+                data-wf-ignore="true"
+              />
+            </video>
+          </div>
+        </div>
+        <div
+          id="w-node-b3e792f4-cab4-dd11-8ea4-9fc938cf4fa3-e2064dc4"
+          class="home-b-hero-right"
+        >
+          <div class="headline-home-b">
+            <div class="hero-home-b-top-tile">
+              <div class="label">Assistive Listening Technology</div>
+              <div class="home-b-heading">
+                <h1 class="text-h0">Infrared</h1>
+              </div>
+              <div class="section-divider home-c-numbers"></div>
+              <div class="text-h4">How it works</div>
+              <p class="text-big">
+                Sound, like someone talking into a microphone or music coming
+                from a sound system, is sent to an infrared transmitter. This
+                transmitter turns the sound into a signal and beams it out as
+                invisible infrared light, filling the room. Anyone wearing a
+                compatible receiver, like a headset or neckloop, can pick up the
+                signal and hear the sound clearly.
+              </p>
+
+              <p class="text-big">
+                Sound is delivered from the receiver to the ear via a headset or
+                to the hearing aid / cochlear T-coil coupler via a personal
+                inductive neck loop.
+              </p>
+
+              <div class="home-b-button-wrap">
+                <a
+                  href="../contact/contact-a.html"
+                  class="cta-main accent w-inline-block"
+                >
+                  <div class="button-animation-hide">
+                    <div class="button-animation-wrap">
+                      <div class="button-content-tile">
+                        <div>Find out more</div>
+                        <div class="button-arrow w-embed">
+                          <svg
+                            width="7"
+                            height="10"
+                            viewBox="0 0 7 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 9L5 5L1 1"
+                              stroke="currentColor"
+                              stroke-width="2"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="button-content-tile">
+                        <div>Find out more</div>
+                        <div class="button-arrow w-embed">
+                          <svg
+                            width="7"
+                            height="10"
+                            viewBox="0 0 7 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 9L5 5L1 1"
+                              stroke="currentColor"
+                              stroke-width="2"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              data-w-id="1ffd7efb-f14d-f551-08f8-9dc596336054"
+              style="opacity:0"
+              class="rating"
+            >
+              <div class="rating-icon-wrap">
+                <div class="icon-rating accent w-embed">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.9987 1.33203L10.0587 5.50536L14.6654 6.1787L11.332 9.42537L12.1187 14.012L7.9987 11.8454L3.8787 14.012L4.66536 9.42537L1.33203 6.1787L5.9387 5.50536L7.9987 1.33203Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-layout-blockcontainer main-container right-padding-8 w-container"
+      >
+      </div>
+    </section>
+
+    <div class="spacer-sm"></div>
+    <div class="spacer-sm"></div>
+
+    <section class="section home-a-about-section">
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="text-h1">How to Access an Infrared System</div>
+        <div class="spacer-sm"></div>
+        <div class="spacer-sm"></div>
+        <div class="w-layout-grid home-a-grid">
+          <div class="home-a-feature-card first-card">
+            <div class="card-header">
+              <div class="home-a-feature-icon">
+                <LookIcon />
+              </div>
+              <div class="text-h4">Look</div>
+            </div>
+
+            <div class="text-h6">Look for assistive listening signs.</div>
+          </div>
+          <div class="home-a-feature-card second-card">
+            <div class="card-header">
+              <div class="home-a-feature-icon">
+                <AskIcon />
+              </div>
+              <div class="text-h4">Ask</div>
+            </div>
+            <div class="text-h6">Ask the venue staff for a receiver.</div>
+          </div>
+          <div class="home-a-feature-card third-card">
+            <div class="card-header">
+              <div class="home-a-feature-icon">
+                <SwitchIcon />
+              </div>
+              <div class="text-h4">Switch</div>
+            </div>
+
+            <div class="text-h6">
+              If using a neck loop be sure to switch to the ‘T’ or ‘MT’ setting
+              on the hearing aid(s), cochlear implant or bone conduction device.
+            </div>
+          </div>
+          <div class="home-a-feature-card fourth-card">
+            <div class="card-header">
+              <div class="home-a-feature-icon">
+                <ListenIcon />
+              </div>
+              <div class="text-h4">Listen</div>
+            </div>
+            <div class="text-h6">Listen to clear audio.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section">
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="w-layout-grid feature-halves-home-b">
+          <div class="feature-left-home-b">
+            <div class="headline-features-home-b">
+              <div class="heading-features-home-b">
+                <div class="text-h1">User</div>
+                <div class="text-h1">Experience</div>
+              </div>
+            </div>
+            <div class="features-list-home-b">
+              <div class="feature-item-home-b">
+                <div class="feature-top-tile">
+                  <div class="tick-features w-embed"></div>
+                  <div class="text-h6">User Requirements</div>
+                </div>
+                <div class="feature-bottom-text">
+                  <p class="text-big text-semi-light">
+                    Requires hearing aid users to seek, use and return receivers
+                    with neck loops, stethoscopes or headsets.
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item-home-b">
+                <div class="feature-top-tile">
+                  <div class="tick-features w-embed"></div>
+                  <div class="text-h6">Percieved Stigma</div>
+                </div>
+                <div class="feature-bottom-text">
+                  <p class="text-big text-semi-light">
+                    Can identify the wearer as someone with hearing loss, which
+                    may be an issue for some users.
+                  </p>
+                </div>
+              </div>
+              <div class="feature-item-home-b">
+                <div class="feature-top-tile">
+                  <div class="tick-features w-embed"></div>
+                  <div class="text-h6">Performance</div>
+                </div>
+                <div class="feature-bottom-text">
+                  <p class="text-big text-semi-light">
+                    Neck loop users may experience weak signals and possible
+                    electromagnetic interference.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="features-image-home-b">
+            <div
+              data-poster-url="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67358bbaaa6a76230ffee9fc_-00b6-45b0-b4a3-bf49ee158a55-poster-00001.jpg"
+              data-video-urls="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67358bbaaa6a76230ffee9fc_-00b6-45b0-b4a3-bf49ee158a55-transcode.mp4,https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67358bbaaa6a76230ffee9fc_-00b6-45b0-b4a3-bf49ee158a55-transcode.webm"
+              data-autoplay="true"
+              data-loop="true"
+              data-wf-ignore="true"
+              class="video-cover w-background-video w-background-video-atom"
+            >
+              <video
+                id="9d6804fe-193f-9e11-89e0-21c371f110fe-video"
+                autoplay=""
+                loop=""
+                style='background-image:url(https://terra-tory-template.webflow.io/homepage/"https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67358bbaaa6a76230ffee9fc_-00b6-45b0-b4a3-bf49ee158a55-poster-00001.jpg")'
+                muted=""
+                playsinline=""
+                data-wf-ignore="true"
+                data-object-fit="cover"
+              >
+                <source
+                  src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67358bbaaa6a76230ffee9fc_-00b6-45b0-b4a3-bf49ee158a55-transcode.mp4"
+                  data-wf-ignore="true"
+                />
+                <source
+                  src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67358bbaaa6a76230ffee9fc_-00b6-45b0-b4a3-bf49ee158a55-transcode.webm"
+                  data-wf-ignore="true"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-b-numbers-section">
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="w-layout-grid numbers-halves">
+          <div class="numbers-right">
+            <div class="text-h1">Advantages</div>
+
+            <div class="w-layout-grid number-features-grid">
+              <div class="home-number-feature advantage">
+                <div class="text-h4">Simple</div>
+                <div class="text-small">Relatively simple installation.</div>
+              </div>
+              <div class="home-number-feature advantage">
+                <div class="text-h4">Private</div>
+                <div class="text-small">
+                  Sound signal does not transmit through walls (provides
+                  privacy).
+                </div>
+              </div>
+              <div class="home-number-feature advantage">
+                <div class="text-h4">Performant</div>
+                <div class="text-small">
+                  Good alternative in terms of audio performance where hearing
+                  loops are not available.
+                </div>
+              </div>
+              <div class="home-number-feature advantage">
+                <div class="text-h4">Multi-channel</div>
+                <div class="text-small">Multi-channel audio available.</div>
+              </div>
+              <div class="home-number-feature advantage">
+                <div class="text-h4">Latency</div>
+                <div class="text-small">Low latency.</div>
+              </div>
+            </div>
+          </div>
+          <div class="numbers-right">
+            <div class="text-h1">Limitations</div>
+
+            <div class="w-layout-grid number-features-grid">
+              <div class="home-number-feature limitation">
+                <div class="text-h4">Numbers</div>
+                <div class="text-small">
+                  Receivers required for all users (approximately 1 for every 25
+                  seats).
+                </div>
+              </div>
+              <div class="home-number-feature limitation">
+                <div class="text-h4">Batteries</div>
+                <div class="text-small">
+                  Receivers require battery replacement or recharging after use.
+                </div>
+              </div>
+              <div class="home-number-feature limitation">
+                <div class="text-h4">Line of Sight</div>
+                <div class="text-small">
+                  May require “line of sight” between transmitter and receiver.
+                </div>
+              </div>
+              <div class="home-number-feature limitation">
+                <div class="text-h4">Sunlight</div>
+                <div class="text-small">
+                  Infrared technology is susceptible to strong sunlight, thus
+                  not suitable for venues with a high level of glass or glossy
+                  surfaces in sunlight.
+                </div>
+              </div>
+              <div class="home-number-feature limitation">
+                <div class="text-h4">Sunlight</div>
+                <div class="text-small">
+                  Infrared technology is susceptible to strong sunlight, thus
+                  not suitable for venues with a high level of glass or glossy
+                  surfaces in sunlight.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="headline-home-c-tabs">
+          <h3 class="text-h1">Applications</h3>
+        </div>
+        <div
+          data-current="Tab 1"
+          data-easing="ease"
+          data-duration-in="300"
+          data-duration-out="100"
+          class="home-b-tabs w-tabs"
+        >
+          <div class="home-b-tab-menu w-tab-menu">
+            <a
+              data-w-tab="Tab 1"
+              data-w-id="9717cd62-6764-10cd-fdbe-99fd64033c04"
+              class="home-c-tab w-inline-block w-tab-link w--current"
+            >
+              <div class="tab-relative">
+                <div class="tab-text-wrap">
+                  <div class="icon-32 text-accent w-embed">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 32 32"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_10002_3022)">
+                        <path
+                          d="M16.6667 32C16.596 32.0253 16.8467 32 16.6667 32V32ZM16.6667 32C6.66667 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 25.3333 24.6667 32 16.6667 32ZM21.9067 5.33333H20.6667C19.564 5.33333 18.6667 6.23067 18.6667 7.33333V8.66667C18.6667 9.76933 17.7693 10.6667 16.6667 10.6667C15.564 10.6667 14.6667 11.564 14.6667 12.6667V14C14.6667 15.1027 15.564 16 16.6667 16H20.6667C22.5053 16 24 17.4947 24 19.3333V20C24 20.1413 24.0733 23.4347 27.3653 25.2547C29.4267 22.728 30.6667 19.508 30.6667 16C30.6667 11.0787 28.2227 6.72667 24.4933 4.06533C23.864 4.85333 22.9267 5.33333 21.9067 5.33333ZM16 23.3333C16 22.2307 15.1027 21.3333 14 21.3333H9.656C8.428 21.3333 7.22533 20.8347 6.356 19.9667L1.384 14.9947C1.36133 15.328 1.33333 15.6613 1.33333 16.0013C1.33333 24.088 7.91333 30.668 16 30.668V23.3333ZM26.4533 26.2693C22.72 24.0347 22.6667 20.1707 22.6667 20V19.3333C22.6667 18.2307 21.7693 17.3333 20.6667 17.3333H16.6667C14.828 17.3333 13.3333 15.8373 13.3333 14V12.6667C13.3333 10.8293 14.828 9.33333 16.6667 9.33333C17.0333 9.33333 17.3333 9.03467 17.3333 8.66667V7.33333C17.3333 5.496 18.828 4 20.6667 4H21.9067C22.4733 4 22.996 3.752 23.372 3.34C21.2027 2.072 18.6893 1.33333 16.0013 1.33333C8.83067 1.33333 2.85733 6.50667 1.59067 13.3147L7.29867 19.0227C7.92 19.644 8.77733 19.9987 9.656 19.9987H14C15.8387 19.9987 17.3333 21.4933 17.3333 23.332V30.5973C20.8907 30.2747 24.084 28.6813 26.4533 26.2693Z"
+                          fill="currentColor"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10002_3022">
+                          <rect width="100%" height="100%" fill="currentColor"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="text-h5">Impact-Focused Approach</div>
+                </div>
+              </div>
+              <div class="tab-top-tile">
+                <div class="icon-tab w-embed">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 32 32"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_10002_3022)">
+                      <path
+                        d="M16.6667 32C16.596 32.0253 16.8467 32 16.6667 32V32ZM16.6667 32C6.66667 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 25.3333 24.6667 32 16.6667 32ZM21.9067 5.33333H20.6667C19.564 5.33333 18.6667 6.23067 18.6667 7.33333V8.66667C18.6667 9.76933 17.7693 10.6667 16.6667 10.6667C15.564 10.6667 14.6667 11.564 14.6667 12.6667V14C14.6667 15.1027 15.564 16 16.6667 16H20.6667C22.5053 16 24 17.4947 24 19.3333V20C24 20.1413 24.0733 23.4347 27.3653 25.2547C29.4267 22.728 30.6667 19.508 30.6667 16C30.6667 11.0787 28.2227 6.72667 24.4933 4.06533C23.864 4.85333 22.9267 5.33333 21.9067 5.33333ZM16 23.3333C16 22.2307 15.1027 21.3333 14 21.3333H9.656C8.428 21.3333 7.22533 20.8347 6.356 19.9667L1.384 14.9947C1.36133 15.328 1.33333 15.6613 1.33333 16.0013C1.33333 24.088 7.91333 30.668 16 30.668V23.3333ZM26.4533 26.2693C22.72 24.0347 22.6667 20.1707 22.6667 20V19.3333C22.6667 18.2307 21.7693 17.3333 20.6667 17.3333H16.6667C14.828 17.3333 13.3333 15.8373 13.3333 14V12.6667C13.3333 10.8293 14.828 9.33333 16.6667 9.33333C17.0333 9.33333 17.3333 9.03467 17.3333 8.66667V7.33333C17.3333 5.496 18.828 4 20.6667 4H21.9067C22.4733 4 22.996 3.752 23.372 3.34C21.2027 2.072 18.6893 1.33333 16.0013 1.33333C8.83067 1.33333 2.85733 6.50667 1.59067 13.3147L7.29867 19.0227C7.92 19.644 8.77733 19.9987 9.656 19.9987H14C15.8387 19.9987 17.3333 21.4933 17.3333 23.332V30.5973C20.8907 30.2747 24.084 28.6813 26.4533 26.2693Z"
+                        fill="currentColor"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_10002_3022">
+                        <rect width="100%" height="100%" fill="currentColor"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="text-h4">Impact-Focused Approach</div>
+              </div>
+              <div class="tab-b-text-wrap">
+                <div class="limit-520">
+                  <p class="text-body">
+                    Focused on measurable outcomes, our approach combines
+                    biology and technology to deliver tangible results, from
+                    efficiency gains to sustainability improvements.
+                  </p>
+                </div>
+              </div><img
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 91vw, (max-width: 991px) 45vw, 29vw"
+                srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg 4891w"
+                alt=""
+                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg"
+                loading="lazy"
+                class="tab-b-image"
+              />
+              <div class="tab-b-overlay"></div>
+            </a><a
+              data-w-tab="Tab 2"
+              class="home-c-tab w-inline-block w-tab-link"
+            >
+              <div class="tab-relative">
+                <div class="tab-text-wrap">
+                  <div class="icon-32 text-accent w-embed">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 32 32"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_10002_3022)">
+                        <path
+                          d="M16.6667 32C16.596 32.0253 16.8467 32 16.6667 32V32ZM16.6667 32C6.66667 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 25.3333 24.6667 32 16.6667 32ZM21.9067 5.33333H20.6667C19.564 5.33333 18.6667 6.23067 18.6667 7.33333V8.66667C18.6667 9.76933 17.7693 10.6667 16.6667 10.6667C15.564 10.6667 14.6667 11.564 14.6667 12.6667V14C14.6667 15.1027 15.564 16 16.6667 16H20.6667C22.5053 16 24 17.4947 24 19.3333V20C24 20.1413 24.0733 23.4347 27.3653 25.2547C29.4267 22.728 30.6667 19.508 30.6667 16C30.6667 11.0787 28.2227 6.72667 24.4933 4.06533C23.864 4.85333 22.9267 5.33333 21.9067 5.33333ZM16 23.3333C16 22.2307 15.1027 21.3333 14 21.3333H9.656C8.428 21.3333 7.22533 20.8347 6.356 19.9667L1.384 14.9947C1.36133 15.328 1.33333 15.6613 1.33333 16.0013C1.33333 24.088 7.91333 30.668 16 30.668V23.3333ZM26.4533 26.2693C22.72 24.0347 22.6667 20.1707 22.6667 20V19.3333C22.6667 18.2307 21.7693 17.3333 20.6667 17.3333H16.6667C14.828 17.3333 13.3333 15.8373 13.3333 14V12.6667C13.3333 10.8293 14.828 9.33333 16.6667 9.33333C17.0333 9.33333 17.3333 9.03467 17.3333 8.66667V7.33333C17.3333 5.496 18.828 4 20.6667 4H21.9067C22.4733 4 22.996 3.752 23.372 3.34C21.2027 2.072 18.6893 1.33333 16.0013 1.33333C8.83067 1.33333 2.85733 6.50667 1.59067 13.3147L7.29867 19.0227C7.92 19.644 8.77733 19.9987 9.656 19.9987H14C15.8387 19.9987 17.3333 21.4933 17.3333 23.332V30.5973C20.8907 30.2747 24.084 28.6813 26.4533 26.2693Z"
+                          fill="currentColor"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10002_3022">
+                          <rect width="100%" height="100%" fill="currentColor"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="text-h5">Impact-Focused Approach</div>
+                </div>
+              </div>
+              <div class="tab-top-tile">
+                <div class="icon-tab w-embed">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 32 32"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_10002_3022)">
+                      <path
+                        d="M16.6667 32C16.596 32.0253 16.8467 32 16.6667 32V32ZM16.6667 32C6.66667 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 25.3333 24.6667 32 16.6667 32ZM21.9067 5.33333H20.6667C19.564 5.33333 18.6667 6.23067 18.6667 7.33333V8.66667C18.6667 9.76933 17.7693 10.6667 16.6667 10.6667C15.564 10.6667 14.6667 11.564 14.6667 12.6667V14C14.6667 15.1027 15.564 16 16.6667 16H20.6667C22.5053 16 24 17.4947 24 19.3333V20C24 20.1413 24.0733 23.4347 27.3653 25.2547C29.4267 22.728 30.6667 19.508 30.6667 16C30.6667 11.0787 28.2227 6.72667 24.4933 4.06533C23.864 4.85333 22.9267 5.33333 21.9067 5.33333ZM16 23.3333C16 22.2307 15.1027 21.3333 14 21.3333H9.656C8.428 21.3333 7.22533 20.8347 6.356 19.9667L1.384 14.9947C1.36133 15.328 1.33333 15.6613 1.33333 16.0013C1.33333 24.088 7.91333 30.668 16 30.668V23.3333ZM26.4533 26.2693C22.72 24.0347 22.6667 20.1707 22.6667 20V19.3333C22.6667 18.2307 21.7693 17.3333 20.6667 17.3333H16.6667C14.828 17.3333 13.3333 15.8373 13.3333 14V12.6667C13.3333 10.8293 14.828 9.33333 16.6667 9.33333C17.0333 9.33333 17.3333 9.03467 17.3333 8.66667V7.33333C17.3333 5.496 18.828 4 20.6667 4H21.9067C22.4733 4 22.996 3.752 23.372 3.34C21.2027 2.072 18.6893 1.33333 16.0013 1.33333C8.83067 1.33333 2.85733 6.50667 1.59067 13.3147L7.29867 19.0227C7.92 19.644 8.77733 19.9987 9.656 19.9987H14C15.8387 19.9987 17.3333 21.4933 17.3333 23.332V30.5973C20.8907 30.2747 24.084 28.6813 26.4533 26.2693Z"
+                        fill="currentColor"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_10002_3022">
+                        <rect width="100%" height="100%" fill="currentColor"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="text-h4">Impact-Focused Approach</div>
+              </div>
+              <div class="tab-b-text-wrap">
+                <div class="limit-520">
+                  <p class="text-body">
+                    Focused on measurable outcomes, our approach combines
+                    biology and technology to deliver tangible results, from
+                    efficiency gains to sustainability improvements.
+                  </p>
+                </div>
+              </div><img
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 91vw, (max-width: 991px) 45vw, 21vw"
+                srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth.jpg 5464w"
+                alt=""
+                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth.jpg"
+                loading="lazy"
+                class="tab-b-image"
+              />
+              <div class="tab-b-overlay"></div>
+            </a><a
+              data-w-tab="Tab 3"
+              class="home-c-tab w-inline-block w-tab-link"
+            >
+              <div class="tab-relative">
+                <div class="tab-text-wrap">
+                  <div class="icon-32 text-accent w-embed">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 32 32"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_10002_3022)">
+                        <path
+                          d="M16.6667 32C16.596 32.0253 16.8467 32 16.6667 32V32ZM16.6667 32C6.66667 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 25.3333 24.6667 32 16.6667 32ZM21.9067 5.33333H20.6667C19.564 5.33333 18.6667 6.23067 18.6667 7.33333V8.66667C18.6667 9.76933 17.7693 10.6667 16.6667 10.6667C15.564 10.6667 14.6667 11.564 14.6667 12.6667V14C14.6667 15.1027 15.564 16 16.6667 16H20.6667C22.5053 16 24 17.4947 24 19.3333V20C24 20.1413 24.0733 23.4347 27.3653 25.2547C29.4267 22.728 30.6667 19.508 30.6667 16C30.6667 11.0787 28.2227 6.72667 24.4933 4.06533C23.864 4.85333 22.9267 5.33333 21.9067 5.33333ZM16 23.3333C16 22.2307 15.1027 21.3333 14 21.3333H9.656C8.428 21.3333 7.22533 20.8347 6.356 19.9667L1.384 14.9947C1.36133 15.328 1.33333 15.6613 1.33333 16.0013C1.33333 24.088 7.91333 30.668 16 30.668V23.3333ZM26.4533 26.2693C22.72 24.0347 22.6667 20.1707 22.6667 20V19.3333C22.6667 18.2307 21.7693 17.3333 20.6667 17.3333H16.6667C14.828 17.3333 13.3333 15.8373 13.3333 14V12.6667C13.3333 10.8293 14.828 9.33333 16.6667 9.33333C17.0333 9.33333 17.3333 9.03467 17.3333 8.66667V7.33333C17.3333 5.496 18.828 4 20.6667 4H21.9067C22.4733 4 22.996 3.752 23.372 3.34C21.2027 2.072 18.6893 1.33333 16.0013 1.33333C8.83067 1.33333 2.85733 6.50667 1.59067 13.3147L7.29867 19.0227C7.92 19.644 8.77733 19.9987 9.656 19.9987H14C15.8387 19.9987 17.3333 21.4933 17.3333 23.332V30.5973C20.8907 30.2747 24.084 28.6813 26.4533 26.2693Z"
+                          fill="currentColor"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10002_3022">
+                          <rect width="100%" height="100%" fill="currentColor"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="text-h5">Impact-Focused Approach</div>
+                </div>
+              </div>
+              <div class="tab-top-tile">
+                <div class="icon-tab w-embed">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 32 32"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_10002_3022)">
+                      <path
+                        d="M16.6667 32C16.596 32.0253 16.8467 32 16.6667 32V32ZM16.6667 32C6.66667 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 25.3333 24.6667 32 16.6667 32ZM21.9067 5.33333H20.6667C19.564 5.33333 18.6667 6.23067 18.6667 7.33333V8.66667C18.6667 9.76933 17.7693 10.6667 16.6667 10.6667C15.564 10.6667 14.6667 11.564 14.6667 12.6667V14C14.6667 15.1027 15.564 16 16.6667 16H20.6667C22.5053 16 24 17.4947 24 19.3333V20C24 20.1413 24.0733 23.4347 27.3653 25.2547C29.4267 22.728 30.6667 19.508 30.6667 16C30.6667 11.0787 28.2227 6.72667 24.4933 4.06533C23.864 4.85333 22.9267 5.33333 21.9067 5.33333ZM16 23.3333C16 22.2307 15.1027 21.3333 14 21.3333H9.656C8.428 21.3333 7.22533 20.8347 6.356 19.9667L1.384 14.9947C1.36133 15.328 1.33333 15.6613 1.33333 16.0013C1.33333 24.088 7.91333 30.668 16 30.668V23.3333ZM26.4533 26.2693C22.72 24.0347 22.6667 20.1707 22.6667 20V19.3333C22.6667 18.2307 21.7693 17.3333 20.6667 17.3333H16.6667C14.828 17.3333 13.3333 15.8373 13.3333 14V12.6667C13.3333 10.8293 14.828 9.33333 16.6667 9.33333C17.0333 9.33333 17.3333 9.03467 17.3333 8.66667V7.33333C17.3333 5.496 18.828 4 20.6667 4H21.9067C22.4733 4 22.996 3.752 23.372 3.34C21.2027 2.072 18.6893 1.33333 16.0013 1.33333C8.83067 1.33333 2.85733 6.50667 1.59067 13.3147L7.29867 19.0227C7.92 19.644 8.77733 19.9987 9.656 19.9987H14C15.8387 19.9987 17.3333 21.4933 17.3333 23.332V30.5973C20.8907 30.2747 24.084 28.6813 26.4533 26.2693Z"
+                        fill="currentColor"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_10002_3022">
+                        <rect width="100%" height="100%" fill="currentColor"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="text-h4">Impact-Focused Approach</div>
+              </div>
+              <div class="tab-b-text-wrap">
+                <div class="limit-520">
+                  <p class="text-body">
+                    Focused on measurable outcomes, our approach combines
+                    biology and technology to deliver tangible results, from
+                    efficiency gains to sustainability improvements.
+                  </p>
+                </div>
+              </div><img
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 91vw, (max-width: 991px) 45vw, 21vw"
+                srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water.jpg 3543w"
+                alt=""
+                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water.jpg"
+                loading="lazy"
+                class="tab-b-image"
+              />
+              <div class="tab-b-overlay"></div>
+            </a><a
+              data-w-tab="Tab 4"
+              class="home-c-tab w-inline-block w-tab-link"
+            >
+              <div class="tab-relative">
+                <div class="tab-text-wrap">
+                  <div class="icon-32 text-accent w-embed">
+                    <svg
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 32 32"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_10002_3022)">
+                        <path
+                          d="M16.6667 32C16.596 32.0253 16.8467 32 16.6667 32V32ZM16.6667 32C6.66667 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 25.3333 24.6667 32 16.6667 32ZM21.9067 5.33333H20.6667C19.564 5.33333 18.6667 6.23067 18.6667 7.33333V8.66667C18.6667 9.76933 17.7693 10.6667 16.6667 10.6667C15.564 10.6667 14.6667 11.564 14.6667 12.6667V14C14.6667 15.1027 15.564 16 16.6667 16H20.6667C22.5053 16 24 17.4947 24 19.3333V20C24 20.1413 24.0733 23.4347 27.3653 25.2547C29.4267 22.728 30.6667 19.508 30.6667 16C30.6667 11.0787 28.2227 6.72667 24.4933 4.06533C23.864 4.85333 22.9267 5.33333 21.9067 5.33333ZM16 23.3333C16 22.2307 15.1027 21.3333 14 21.3333H9.656C8.428 21.3333 7.22533 20.8347 6.356 19.9667L1.384 14.9947C1.36133 15.328 1.33333 15.6613 1.33333 16.0013C1.33333 24.088 7.91333 30.668 16 30.668V23.3333ZM26.4533 26.2693C22.72 24.0347 22.6667 20.1707 22.6667 20V19.3333C22.6667 18.2307 21.7693 17.3333 20.6667 17.3333H16.6667C14.828 17.3333 13.3333 15.8373 13.3333 14V12.6667C13.3333 10.8293 14.828 9.33333 16.6667 9.33333C17.0333 9.33333 17.3333 9.03467 17.3333 8.66667V7.33333C17.3333 5.496 18.828 4 20.6667 4H21.9067C22.4733 4 22.996 3.752 23.372 3.34C21.2027 2.072 18.6893 1.33333 16.0013 1.33333C8.83067 1.33333 2.85733 6.50667 1.59067 13.3147L7.29867 19.0227C7.92 19.644 8.77733 19.9987 9.656 19.9987H14C15.8387 19.9987 17.3333 21.4933 17.3333 23.332V30.5973C20.8907 30.2747 24.084 28.6813 26.4533 26.2693Z"
+                          fill="currentColor"></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10002_3022">
+                          <rect width="100%" height="100%" fill="currentColor"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="text-h5">Impact-Focused Approach</div>
+                </div>
+              </div>
+              <div class="tab-top-tile">
+                <div class="icon-tab w-embed">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 32 32"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_10002_3022)">
+                      <path
+                        d="M16.6667 32C16.596 32.0253 16.8467 32 16.6667 32V32ZM16.6667 32C6.66667 32 0 24.8227 0 16C0 7.17733 7.17733 0 16 0C24.8227 0 32 7.17733 32 16C32 25.3333 24.6667 32 16.6667 32ZM21.9067 5.33333H20.6667C19.564 5.33333 18.6667 6.23067 18.6667 7.33333V8.66667C18.6667 9.76933 17.7693 10.6667 16.6667 10.6667C15.564 10.6667 14.6667 11.564 14.6667 12.6667V14C14.6667 15.1027 15.564 16 16.6667 16H20.6667C22.5053 16 24 17.4947 24 19.3333V20C24 20.1413 24.0733 23.4347 27.3653 25.2547C29.4267 22.728 30.6667 19.508 30.6667 16C30.6667 11.0787 28.2227 6.72667 24.4933 4.06533C23.864 4.85333 22.9267 5.33333 21.9067 5.33333ZM16 23.3333C16 22.2307 15.1027 21.3333 14 21.3333H9.656C8.428 21.3333 7.22533 20.8347 6.356 19.9667L1.384 14.9947C1.36133 15.328 1.33333 15.6613 1.33333 16.0013C1.33333 24.088 7.91333 30.668 16 30.668V23.3333ZM26.4533 26.2693C22.72 24.0347 22.6667 20.1707 22.6667 20V19.3333C22.6667 18.2307 21.7693 17.3333 20.6667 17.3333H16.6667C14.828 17.3333 13.3333 15.8373 13.3333 14V12.6667C13.3333 10.8293 14.828 9.33333 16.6667 9.33333C17.0333 9.33333 17.3333 9.03467 17.3333 8.66667V7.33333C17.3333 5.496 18.828 4 20.6667 4H21.9067C22.4733 4 22.996 3.752 23.372 3.34C21.2027 2.072 18.6893 1.33333 16.0013 1.33333C8.83067 1.33333 2.85733 6.50667 1.59067 13.3147L7.29867 19.0227C7.92 19.644 8.77733 19.9987 9.656 19.9987H14C15.8387 19.9987 17.3333 21.4933 17.3333 23.332V30.5973C20.8907 30.2747 24.084 28.6813 26.4533 26.2693Z"
+                        fill="currentColor"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_10002_3022">
+                        <rect width="100%" height="100%" fill="currentColor"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="text-h4">Impact-Focused Approach</div>
+              </div>
+              <div class="tab-b-text-wrap">
+                <div class="limit-520">
+                  <p class="text-body">
+                    Focused on measurable outcomes, our approach combines
+                    biology and technology to deliver tangible results, from
+                    efficiency gains to sustainability improvements.
+                  </p>
+                </div>
+              </div><img
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 91vw, (max-width: 991px) 45vw, 21vw"
+                srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf.jpg 3024w"
+                alt=""
+                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf.jpg"
+                loading="lazy"
+                class="tab-b-image"
+              />
+              <div class="tab-b-overlay"></div>
+            </a>
+          </div>
+          <div class="w-tab-content">
+            <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active"></div>
+            <div data-w-tab="Tab 2" class="w-tab-pane"></div>
+            <div data-w-tab="Tab 3" class="w-tab-pane"></div>
+            <div data-w-tab="Tab 4" class="w-tab-pane"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero-product">
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="headline-product">
+          <h1 class="text-h1">Standards</h1>
+          <div>
+            <div class="home-b-button-wrap">
+              <a
+                href="../contact/contact-a.html"
+                class="cta-main accent w-inline-block"
+              >
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>Find out more about standards</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>Find out more about standards</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-content-wrap">
+          <div class="section-divider"></div>
+          <div class="w-layout-grid product-halves">
+            <div class="label">EQUIPMENT PERFORMANCE STANDARDS</div>
+            <div class="w-richtext">
+              <p>
+                Neck loop must provide a signal compliant with IEC 60118-4 when
+                measured as specified in IEC 62489-1
+              </p>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+          <div class="w-layout-grid product-halves">
+            <div class="label">ACCESSIBILITY STANDARDS</div>
+            <div class="w-richtext">
+              <p>
+                Compliant if receivers provided as defined by ADA Table 2193
+              </p>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-b-cases-section">
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="headline-cases-home-b">
+          <div class="limit-640">
+            <h3 class="text-h1">Infrared News</h3>
+          </div>
+        </div>
+        <div class="w-layout-grid case-halves-home-b">
+          <a
+            id="w-node-d3fc33a7-4793-5f6e-7bc4-31a4856e0ae8-e2064dc4"
+            data-w-id="d3fc33a7-4793-5f6e-7bc4-31a4856e0ae8"
+            href="../about/about-c.html"
+            class="case-card-home-b long w-inline-block"
+          >
+            <div class="case-card-image">
+              <img
+                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204.avif"
+                loading="lazy"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 81vw, (max-width: 991px) 85vw, 89vw"
+                srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204-p-500.avif 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204.avif 1263w"
+                alt=""
+                class="image-cover"
+              />
+            </div>
+            <div class="case-home-b-bottom-tile">
+              <h3 class="no-margins">
+                Revolutionizing medical research with Signet
+              </h3>
+              <div href="#" class="cta-main light">
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>Read case study</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>Read case study</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a><a
+            href="home-c.html"
+            class="case-card-home-b accent w-inline-block"
+          >
+            <div class="case-home-b-bottom-tile">
+              <h4 class="no-margins">
+                Transforming urban farming through advanced robotics
+              </h4>
+            </div>
+            <div href="#" class="cta-main light">
+              <div class="button-animation-hide">
+                <div class="button-animation-wrap">
+                  <div class="button-content-tile">
+                    <div>Read case study</div>
+                    <div class="button-arrow w-embed">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="button-content-tile">
+                    <div>Read case study</div>
+                    <div class="button-arrow w-embed">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a><a
+            href="../about/about-b.html"
+            class="case-card-home-b w-inline-block"
+          >
+            <div class="case-home-b-bottom-tile">
+              <h4 class="no-margins">
+                Transforming urban farming through advanced robotics
+              </h4>
+            </div>
+            <div href="#" class="cta-main light">
+              <div class="button-animation-hide">
+                <div class="button-animation-wrap">
+                  <div class="button-content-tile">
+                    <div>Read case study</div>
+                    <div class="button-arrow w-embed">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="button-content-tile">
+                    <div>Read case study</div>
+                    <div class="button-arrow w-embed">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a><a
+            id="w-node-_5c284b14-56eb-3474-fd51-3c6faf670198-e2064dc4"
+            href="../about/about-a.html"
+            class="case-card-home-b w-inline-block"
+          >
+            <div class="case-home-b-bottom-tile">
+              <h4 class="no-margins">
+                Transforming urban farming through advanced robotics
+              </h4>
+            </div>
+            <div href="#" class="cta-main light">
+              <div class="button-animation-hide">
+                <div class="button-animation-wrap">
+                  <div class="button-content-tile">
+                    <div>Read case study</div>
+                    <div class="button-arrow w-embed">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="button-content-tile">
+                    <div>Read case study</div>
+                    <div class="button-arrow w-embed">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="w-layout-blockcontainer main-container w-container"
+        style="margin-top:2rem;"
+      >
+        <div class="related-block w-dyn-list">
+          <div role="list" class="blog-thirds w-dyn-items">
+            {
+              allPosts.map((post: any) => (
+                <div role="listitem" class="w-dyn-item">
+                  <a href={post.url} class="article-tile w-inline-block">
+                    <div class="image-wrap-blog">
+                      <img
+                        alt=""
+                        loading="lazy"
+                        src={post.frontmatter.image.url}
+                        sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 991px) 46vw, 30vw"
+                        class={post.frontmatter.image.alt}
+                      />
+                    </div>
+                    <div class="article-info-wrap">
+                      <div class="article-category-wrap">
+                        <div class="text-small">{post.frontmatter.alt}</div>
+                        <div class="text-small opacity-50">·</div>
+                        <div class="text-small">{post.frontmatter.pubDate}</div>
+                      </div>
+                      <div class="text-h5">{post.frontmatter.description}</div>
+                    </div>
+                  </a>
+                </div>
+              ))
+            }
+          </div>
+          <div
+            role="navigation"
+            aria-label="List"
+            class="w-pagination-wrapper pagination blog-pagination"
+          >
+            <a
+              href="blog@33f22ee7_page=2.html"
+              aria-label="Next Page"
+              class="w-pagination-next pagination-button-article"
+            >
+              <div class="text-h3 w-inline-block">Next</div>
+            </a>
+            <link rel="prerender" href="blog@33f22ee7_page=2.html" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+  </body>
+</Layout>

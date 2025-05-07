@@ -1,0 +1,268 @@
+---
+import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout>
+  <meta charset="utf-8" />
+
+  <section class="section hero-article">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid article-hero-halves">
+        <div class="article-heading-wrap">
+          <div class="article-top-tile">
+            <div class="article-category-wrap">
+              <div class="text-small semibold">{frontmatter.alt}</div>
+              <div class="text-small opacity-50">·</div>
+              <div class="text-small">{frontmatter.pubDate}</div>
+            </div>
+            <h1 class="text-h1">
+              {frontmatter.title}
+            </h1>
+            <!-- <p>
+              Every business aspires to grow, but not all growth is sustainable.
+              Rapid expansion without a solid foundation can lead to operational
+              challenges, financial strain, and inefficiencies that ultimately
+              stifle success. To ensure long-term growth, businesses must focus
+              on strategies that prioritize stability, adaptability, and
+              scalability. Here are five essential strategies to drive
+              sustainable business growth.
+            </p> -->
+          </div><a href="#Article" class="article-down-button w-inline-block">
+            <div class="icon-down-arrow w-embed">
+              <svg
+                width="22"
+                height="21"
+                viewBox="0 0 22 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 0.666992L11 19.3337"
+                  stroke="currentColor"
+                  stroke-width="2"></path>
+                <path
+                  d="M20.334 10L11.0007 19.3333L1.66732 10"
+                  stroke="currentColor"
+                  stroke-width="2"></path>
+              </svg>
+            </div>
+          </a>
+        </div><img
+          src={frontmatter.image.url}
+          loading="lazy"
+          id="w-node-_16eb1e1e-3eb9-d81a-e596-2ff6728d587f-e2064d69"
+          alt=""
+          sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 94vw"
+          class="article-big-thumbnail"
+        />
+      </div>
+    </div>
+  </section>
+  <section class="section body-article">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div
+        data-w-id="aa46aa4f-a776-788c-4b98-c2b87dd9e11b"
+        class="section-divider article-divider"
+      >
+      </div>
+      <div
+        class="w-layout-blockcontainer main-container article-container w-container"
+      >
+        <div class="article-body-wrap">
+          <div id="Article" class="post-body w-richtext">
+            <slot />
+          </div>
+        </div>
+      </div>
+      <div
+        data-w-id="59e472d5-f5b4-e5fe-f334-ebb24e355dd1"
+        style="width:0%"
+        class="section-divider article-divider-2"
+      >
+      </div>
+    </div>
+  </section>
+  <section class="section related-blog-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="headline-related">
+        <h3 class="no-margins">Latest articles</h3>
+      </div>
+      <div class="related-block w-dyn-list">
+        <div role="list" class="blog-thirds w-dyn-items">
+          <div role="listitem" class="w-dyn-item">
+            <a
+              href="5-essential-strategies-for-sustainable-business-growth.html"
+              class="article-tile w-inline-block"
+            >
+              <div class="image-wrap-blog">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth.jpg"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 991px) 46vw, 30vw"
+                  srcset="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth.jpg 5464w"
+                  class="image-cover"
+                />
+              </div>
+              <div class="article-info-wrap">
+                <div class="article-category-wrap">
+                  <div class="text-small">Welness</div>
+                  <div class="text-small opacity-50">·</div>
+                  <div class="text-small">November 13, 2024</div>
+                </div>
+                <div class="text-h5">
+                  5 Essential Strategies for Sustainable Business Growth
+                </div>
+              </div>
+            </a>
+          </div>
+          <div role="listitem" class="w-dyn-item">
+            <a
+              href="how-to-optimize-your-business-operations-for-maximum-efficiency-2.html"
+              class="article-tile w-inline-block"
+            >
+              <div class="image-wrap-blog">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow.jpg"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 991px) 46vw, 30vw"
+                  srcset="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow.jpg 3888w"
+                  class="image-cover"
+                />
+              </div>
+              <div class="article-info-wrap">
+                <div class="article-category-wrap">
+                  <div class="text-small">Welness</div>
+                  <div class="text-small opacity-50">·</div>
+                  <div class="text-small">November 13, 2024</div>
+                </div>
+                <div class="text-h5">
+                  How to Optimize Your Business Operations for Maximum
+                  Efficiency
+                </div>
+              </div>
+            </a>
+          </div>
+          <div role="listitem" class="w-dyn-item">
+            <a
+              href="unlocking-new-markets-a-step-by-step-guide-to-expansion-2.html"
+              class="article-tile w-inline-block"
+            >
+              <div class="image-wrap-blog">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da0ec2f2d5cfa12bda5d_Article%20Thumbnail%204.png"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 991px) 46vw, 30vw"
+                  srcset="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da0ec2f2d5cfa12bda5d_Article%20Thumbnail%204-p-500.png 500w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da0ec2f2d5cfa12bda5d_Article%20Thumbnail%204-p-800.png 800w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da0ec2f2d5cfa12bda5d_Article%20Thumbnail%204-p-1080.png 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da0ec2f2d5cfa12bda5d_Article%20Thumbnail%204.png 1263w"
+                  class="image-cover"
+                />
+              </div>
+              <div class="article-info-wrap">
+                <div class="article-category-wrap">
+                  <div class="text-small">Welness</div>
+                  <div class="text-small opacity-50">·</div>
+                  <div class="text-small">November 13, 2024</div>
+                </div>
+                <div class="text-h5">
+                  Unlocking New Markets: A Step-by-Step Guide to Expansion
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section cta-section">
+    <div class="cta-video">
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="cta-master">
+          <div class="cta-top-tile">
+            <div class="label">terra–tory™</div>
+            <div class="heading-cta">
+              <div class="text-h1">Uncover your website’s potential</div>
+            </div>
+          </div>
+          <div class="cta-button-wrap">
+            <a
+              href="https://webflow.com/templates/designers/byq-studio"
+              target="_blank"
+              class="cta-main accent w-inline-block"
+            >
+              <div class="button-animation-hide">
+                <div class="button-animation-wrap">
+                  <div class="button-content-tile">
+                    <div>Buy Template</div>
+                    <div class="button-arrow w-embed">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="button-content-tile bottom-tile">
+                    <div>Buy Template</div>
+                    <div class="button-arrow w-embed">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a><a
+              href="../contact/contact-a.html"
+              class="cta-booking w-inline-block"
+            >
+              <div class="cta-image-wrap">
+                <img
+                  src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2064f0f_Button%20Image.webp"
+                  loading="lazy"
+                  alt=""
+                  class="image-cover"
+                />
+              </div>
+              <div class="text-body semibold">Book an intro call</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        data-w-id="6d31e448-0cad-78cf-9898-37953bfbda47"
+        class="cta-circle-regular"
+      >
+      </div>
+      <div
+        data-w-id="5705fcc2-f633-58e3-1c4e-f911fd308ab2"
+        class="cta-circle-big"
+      >
+      </div>
+      <div
+        data-w-id="6fae3469-06b3-95c8-5c38-abda8ce051ed"
+        class="cta-circle-small"
+      >
+      </div>
+    </div>
+  </section>
+</Layout>
