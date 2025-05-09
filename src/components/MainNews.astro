@@ -1,5 +1,5 @@
 ---
-const { limit, technology, showHeader } = Astro.props;
+const { limit = 6, technology, showHeader, showPagination } = Astro.props;
 const allPosts = Object.values(
   import.meta.glob("../pages/posts/*.md", { eager: true })
 )
@@ -17,6 +17,8 @@ const allPosts = Object.values(
       new Date(a.frontmatter.pubDate).getTime()
     );
   });
+
+const totalPages = Math.ceil(allPosts.length / limit);
 ---
 
 {
@@ -67,7 +69,7 @@ const allPosts = Object.values(
       <div class="text-h3">Latest articles</div>
     </div>
     <div class="related-block w-dyn-list">
-      <div role="list" class="blog-thirds w-dyn-items">
+      <div role="list" class="blog-thirds w-dyn-items" id="posts-container">
         {
           allPosts.slice(0, limit).map((post: any) => (
             <div role="listitem" class="w-dyn-item">
@@ -99,19 +101,97 @@ const allPosts = Object.values(
     </div>
   </div>
 </section>
-<section>
-  <div class="w-layout-blockcontainer main-container w-container">
-    <div class="related-block w-dyn-list">
-      <div role="navigation" aria-label="List" class="w-pagination-wrapper">
-        <a
-          href="blog@33f22ee7_page=2.html"
-          aria-label="Next Page"
-          class="w-pagination-next pagination-button-article"
-        >
-          <div class="text-h3 w-inline-block">Next</div>
-        </a>
-        <link rel="prerender" href="blog@33f22ee7_page=2.html" />
+
+{
+  showPagination && (
+    <section>
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="related-block w-dyn-list">
+          <div role="navigation" aria-label="List" class="w-pagination-wrapper">
+            <button
+              id="prev-btn"
+              aria-label="Previous Page"
+              class="w-pagination-previous pagination-button-article"
+              style="display: none;"
+            >
+              <div class="text-h3 w-inline-block">Previous</div>
+            </button>
+            <button
+              id="next-btn"
+              aria-label="Next Page"
+              class="w-pagination-next pagination-button-article"
+            >
+              <div class="text-h3 w-inline-block">Next</div>
+            </button>
+          </div>
+        </div>
       </div>
+    </section>
+  )
+}
+
+<script define:vars={{ allPosts, limit, totalPages }}>
+  // Store all posts data in a global variable
+  window.allPosts = allPosts;
+  window.currentPage = 1;
+  window.postsPerPage = limit;
+  window.totalPages = totalPages;
+
+  function updatePosts() {
+    const startIndex = (window.currentPage - 1) * window.postsPerPage;
+    const endIndex = startIndex + window.postsPerPage;
+    const postsToShow = window.allPosts.slice(startIndex, endIndex);
+
+    const container = document.getElementById("posts-container");
+    container.innerHTML = postsToShow
+      .map(
+        (post) => `
+    <div role="listitem" class="w-dyn-item">
+      <a href="${post.url}" class="article-tile w-inline-block">
+        <div class="image-wrap-blog">
+          <img
+            alt=""
+            loading="lazy"
+            src="${post.frontmatter.image.url}"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 991px) 46vw, 30vw"
+            class="${post.frontmatter.image.alt}"
+          />
+        </div>
+        <div class="article-info-wrap">
+          <div class="article-category-wrap">
+            <div class="text-small">${post.frontmatter.alt}</div>
+            <div class="text-small opacity-50">·</div>
+            <div class="text-small">
+              ${post.frontmatter.pubDate.split("T")[0]}
+            </div>
+          </div>
+          <div class="text-h5">${post.frontmatter.description}</div>
+        </div>
+      </a>
     </div>
-  </div>
-</section>
+  `
+      )
+      .join("");
+
+    // Update button visibility
+    document.getElementById("prev-btn").style.display =
+      window.currentPage > 1 ? "block" : "none";
+    document.getElementById("next-btn").style.display =
+      window.currentPage < window.totalPages ? "block" : "none";
+  }
+
+  // Add event listeners to pagination buttons
+  document.getElementById("next-btn").addEventListener("click", () => {
+    if (window.currentPage < window.totalPages) {
+      window.currentPage++;
+      updatePosts();
+    }
+  });
+
+  document.getElementById("prev-btn").addEventListener("click", () => {
+    if (window.currentPage > 1) {
+      window.currentPage--;
+      updatePosts();
+    }
+  });
+</script>

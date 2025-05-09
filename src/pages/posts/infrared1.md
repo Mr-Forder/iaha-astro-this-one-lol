@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: Infrared post 1
 author: Astro Learner
 description: "INFRARED post 1"
-alt: "infrared"
+alt: "Infrared"
 image:
   url: "https://images.pexels.com/photos/236321/pexels-photo-236321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   alt: "The word astro against an illustration of planets and stars."
