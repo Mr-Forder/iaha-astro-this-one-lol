@@ -1,14 +1,28 @@
 ---
 const { limit = 6, currentPage = 1 } = Astro.props;
+
+interface BlogPost {
+  url: string;
+  frontmatter: {
+    pubDate: string;
+    image: {
+      url: string;
+      alt: string;
+    };
+    alt: string;
+    description: string;
+  };
+}
+
 const allPosts = Object.values(
-  import.meta.glob("../pages/posts/*.md", { eager: true })
+  import.meta.glob<BlogPost>("../pages/posts/*.md", { eager: true })
 )
-  .filter((post: any) => {
+  .filter((post) => {
     const isScheduled =
       new Date(post.frontmatter.pubDate).getTime() > Date.now();
     return !isScheduled;
   })
-  .sort((a: any, b: any) => {
+  .sort((a, b) => {
     return (
       new Date(b.frontmatter.pubDate).getTime() -
       new Date(a.frontmatter.pubDate).getTime()
@@ -31,7 +45,7 @@ const paginatedPosts = allPosts.slice(startIndex, endIndex);
     <div class="related-block w-dyn-list">
       <div role="list" class="blog-thirds w-dyn-items">
         {
-          paginatedPosts.map((post: any) => (
+          paginatedPosts.map((post) => (
             <div role="listitem" class="w-dyn-item">
               <a href={post.url} class="article-tile w-inline-block">
                 <div class="image-wrap-blog">
