@@ -6,10 +6,6 @@ import LookIcon from "../../components/icons/LookIcon.astro";
 import SwitchIcon from "../../components/icons/SwitchIcon.astro";
 import MainNews from "../../components/MainNews.astro";
 import Layout from "../../layouts/Layout.astro";
-
-const allPosts = Object.values(
-  import.meta.glob("../posts/*.md", { eager: true })
-);
 ---
 
 <Layout>
@@ -749,8 +745,7 @@ const allPosts = Object.values(
     <div class="spacer-sm"></div>
     <div class="spacer-sm"></div>
     <div class="spacer-sm"></div>
-    <AltNews allPosts={allPosts} />
-    <MainNews allPosts={allPosts} />
-    <div class="section-divider"></div>
+    <AltNews technology="infrared" />
+    <MainNews limit={6} />
   </section>
 </Layout>

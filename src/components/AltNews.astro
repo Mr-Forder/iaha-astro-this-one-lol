@@ -1,5 +1,12 @@
 ---
-const { allPosts } = Astro.props;
+const { technology } = Astro.props;
+const allPosts = Object.values(
+  import.meta.glob("../pages/posts/*.md", { eager: true })
+).filter((post) => {
+  const isScheduled = new Date(post.frontmatter.pubDate).getTime() > Date.now();
+  const isInfrared = post.frontmatter.alt === technology;
+  return !isScheduled && isInfrared;
+});
 ---
 
 <section class="section home-b-cases-section">
@@ -13,28 +20,27 @@ const { allPosts } = Astro.props;
       <a
         id="w-node-d3fc33a7-4793-5f6e-7bc4-31a4856e0ae8-e2064dc4"
         data-w-id="d3fc33a7-4793-5f6e-7bc4-31a4856e0ae8"
-        href="../about/about-c.html"
+        href={allPosts[0]?.url}
         class="case-card-home-b long w-inline-block"
       >
         <div class="case-card-image">
           <img
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204.avif"
+            src={allPosts[0]?.frontmatter.image.url}
             loading="lazy"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 81vw, (max-width: 991px) 85vw, 89vw"
-            srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204-p-500.avif 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204.avif 1263w"
-            alt=""
+            alt={allPosts[0]?.frontmatter.alt}
             class="image-cover"
           />
         </div>
         <div class="case-home-b-bottom-tile">
           <h3 class="no-margins">
-            Revolutionizing medical research with Signet
+            {allPosts[0]?.frontmatter.title}
           </h3>
           <div href="#" class="cta-main light">
             <div class="button-animation-hide">
               <div class="button-animation-wrap">
                 <div class="button-content-tile">
-                  <div>Read case study</div>
+                  <div>Find Out More</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
@@ -71,10 +77,13 @@ const { allPosts } = Astro.props;
             </div>
           </div>
         </div>
-      </a><a href="home-c.html" class="case-card-home-b accent w-inline-block">
+      </a><a
+        href={allPosts[1]?.url}
+        class="case-card-home-b accent w-inline-block"
+      >
         <div class="case-home-b-bottom-tile">
           <h4 class="no-margins">
-            Transforming urban farming through advanced robotics
+            {allPosts[1]?.frontmatter.title}
           </h4>
         </div>
         <div href="#" class="cta-main light">
@@ -117,13 +126,10 @@ const { allPosts } = Astro.props;
             </div>
           </div>
         </div>
-      </a><a
-        href="../about/about-b.html"
-        class="case-card-home-b w-inline-block"
-      >
+      </a><a href={allPosts[2]?.url} class="case-card-home-b w-inline-block">
         <div class="case-home-b-bottom-tile">
           <h4 class="no-margins">
-            Transforming urban farming through advanced robotics
+            {allPosts[2]?.frontmatter.title}
           </h4>
         </div>
         <div href="#" class="cta-main light">
@@ -168,12 +174,12 @@ const { allPosts } = Astro.props;
         </div>
       </a><a
         id="w-node-_5c284b14-56eb-3474-fd51-3c6faf670198-e2064dc4"
-        href="../about/about-a.html"
+        href={allPosts[3]?.url}
         class="case-card-home-b w-inline-block"
       >
         <div class="case-home-b-bottom-tile">
           <h4 class="no-margins">
-            Transforming urban farming through advanced robotics
+            {allPosts[3]?.frontmatter.title}
           </h4>
         </div>
         <div href="#" class="cta-main light">

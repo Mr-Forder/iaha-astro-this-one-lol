@@ -1,5 +1,11 @@
 ---
-const { allPosts } = Astro.props;
+const { limit } = Astro.props;
+const allPosts = Object.values(
+  import.meta.glob("../pages/posts/*.md", { eager: true })
+).filter((post) => {
+  const isScheduled = new Date(post.frontmatter.pubDate).getTime() > Date.now();
+  return !isScheduled;
+});
 ---
 
 <section class="section">
@@ -11,7 +17,7 @@ const { allPosts } = Astro.props;
     <div class="related-block w-dyn-list">
       <div role="list" class="blog-thirds w-dyn-items">
         {
-          allPosts.map((post: any) => (
+          allPosts.slice(0, limit).map((post: any) => (
             <div role="listitem" class="w-dyn-item">
               <a href={post.url} class="article-tile w-inline-block">
                 <div class="image-wrap-blog">
