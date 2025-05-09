@@ -747,5 +747,21 @@ import Layout from "../../layouts/Layout.astro";
     <div class="spacer-sm"></div>
     <AltNews technology="infrared" />
     <MainNews limit={6} />
+    <section>
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="related-block w-dyn-list">
+          <div role="navigation" aria-label="List" class="w-pagination-wrapper">
+            <a
+              href="/news"
+              aria-label="Next Page"
+              class="w-pagination-next pagination-button-article"
+            >
+              <div class="text-h3 w-inline-block">More News</div>
+            </a>
+            <link rel="prerender" href="blog@33f22ee7_page=2.html" />
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 </Layout>

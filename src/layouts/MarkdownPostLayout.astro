@@ -1,4 +1,5 @@
 ---
+import MainNews from "../components/MainNews.astro";
 import Layout from "./Layout.astro";
 
 const { frontmatter } = Astro.props;
@@ -15,7 +16,7 @@ const { frontmatter } = Astro.props;
             <div class="article-category-wrap">
               <div class="text-small semibold">{frontmatter.alt}</div>
               <div class="text-small opacity-50">·</div>
-              <div class="text-small">{frontmatter.pubDate}</div>
+              <div class="text-small">{frontmatter.pubDate.split("T")[0]}</div>
             </div>
             <h1 class="text-h1">
               {frontmatter.title}
@@ -84,99 +85,7 @@ const { frontmatter } = Astro.props;
       </div>
     </div>
   </section>
-  <section class="section related-blog-section">
-    <div class="w-layout-blockcontainer main-container w-container">
-      <div class="headline-related">
-        <h3 class="no-margins">Latest articles</h3>
-      </div>
-      <div class="related-block w-dyn-list">
-        <div role="list" class="blog-thirds w-dyn-items">
-          <div role="listitem" class="w-dyn-item">
-            <a
-              href="5-essential-strategies-for-sustainable-business-growth.html"
-              class="article-tile w-inline-block"
-            >
-              <div class="image-wrap-blog">
-                <img
-                  alt=""
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth.jpg"
-                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 991px) 46vw, 30vw"
-                  srcset="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da42b5ab54badd667406_Earth.jpg 5464w"
-                  class="image-cover"
-                />
-              </div>
-              <div class="article-info-wrap">
-                <div class="article-category-wrap">
-                  <div class="text-small">Welness</div>
-                  <div class="text-small opacity-50">·</div>
-                  <div class="text-small">November 13, 2024</div>
-                </div>
-                <div class="text-h5">
-                  5 Essential Strategies for Sustainable Business Growth
-                </div>
-              </div>
-            </a>
-          </div>
-          <div role="listitem" class="w-dyn-item">
-            <a
-              href="how-to-optimize-your-business-operations-for-maximum-efficiency-2.html"
-              class="article-tile w-inline-block"
-            >
-              <div class="image-wrap-blog">
-                <img
-                  alt=""
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow.jpg"
-                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 991px) 46vw, 30vw"
-                  srcset="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da2880e071d8ed9bf624_Cow.jpg 3888w"
-                  class="image-cover"
-                />
-              </div>
-              <div class="article-info-wrap">
-                <div class="article-category-wrap">
-                  <div class="text-small">Welness</div>
-                  <div class="text-small opacity-50">·</div>
-                  <div class="text-small">November 13, 2024</div>
-                </div>
-                <div class="text-h5">
-                  How to Optimize Your Business Operations for Maximum
-                  Efficiency
-                </div>
-              </div>
-            </a>
-          </div>
-          <div role="listitem" class="w-dyn-item">
-            <a
-              href="unlocking-new-markets-a-step-by-step-guide-to-expansion-2.html"
-              class="article-tile w-inline-block"
-            >
-              <div class="image-wrap-blog">
-                <img
-                  alt=""
-                  loading="lazy"
-                  src="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da0ec2f2d5cfa12bda5d_Article%20Thumbnail%204.png"
-                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 991px) 46vw, 30vw"
-                  srcset="https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da0ec2f2d5cfa12bda5d_Article%20Thumbnail%204-p-500.png 500w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da0ec2f2d5cfa12bda5d_Article%20Thumbnail%204-p-800.png 800w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da0ec2f2d5cfa12bda5d_Article%20Thumbnail%204-p-1080.png 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064d1a/6734da0ec2f2d5cfa12bda5d_Article%20Thumbnail%204.png 1263w"
-                  class="image-cover"
-                />
-              </div>
-              <div class="article-info-wrap">
-                <div class="article-category-wrap">
-                  <div class="text-small">Welness</div>
-                  <div class="text-small opacity-50">·</div>
-                  <div class="text-small">November 13, 2024</div>
-                </div>
-                <div class="text-h5">
-                  Unlocking New Markets: A Step-by-Step Guide to Expansion
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <MainNews limit={3} />
   <section class="section cta-section">
     <div class="cta-video">
       <div class="w-layout-blockcontainer main-container w-container">
