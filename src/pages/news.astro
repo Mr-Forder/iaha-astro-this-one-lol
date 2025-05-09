@@ -1,88 +1,10 @@
 ---
 import MainNews from "../components/MainNews.astro";
 import Layout from "../layouts/Layout.astro";
-
-// Get the current page from URL parameters
-const currentPage = Number(Astro.url.searchParams.get("page")) || 1;
-
-interface BlogPost {
-  url: string;
-  frontmatter: {
-    pubDate: string;
-    image: {
-      url: string;
-      alt: string;
-    };
-    alt: string;
-    description: string;
-  };
-}
-
-const allPosts = Object.values(
-  import.meta.glob<BlogPost>("../pages/posts/*.md", { eager: true })
-).filter((post) => {
-  const isScheduled = new Date(post.frontmatter.pubDate).getTime() > Date.now();
-  return !isScheduled;
-});
 ---
 
 <Layout>
   <body>
-    <section class="section hero-blog">
-      <div class="w-layout-blockcontainer main-container w-container">
-        <div class="headline-blog">
-          <div class="label">Assistive Listening News</div>
-          <h1 class="text-h1">News &amp; Articles</h1>
-        </div>
-        <div class="related-block w-dyn-list">
-          <div role="list" class="w-dyn-items">
-            <div role="listitem" class="w-dyn-item">
-              <a
-                href={allPosts[0].url}
-                class="article-tile pinned w-inline-block"
-              >
-                <div class="image-wrap-blog pinned">
-                  <img
-                    alt=""
-                    loading="lazy"
-                    src={allPosts[0].frontmatter.image.url}
-                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 54vw"
-                    class="image-cover"
-                  />
-                </div>
-                <div class="article-info-wrap">
-                  <div class="article-category-wrap">
-                    <div class="text-small opacity-50">·</div>
-                    <div class="text-small">
-                      {allPosts[0].frontmatter.alt}
-                    </div>
-                  </div>
-                  <div class="text-h3">
-                    {allPosts[0].frontmatter.description}
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <MainNews currentPage={currentPage} limit={6} />
-    <section>
-      <div class="w-layout-blockcontainer main-container w-container">
-        <div class="related-block w-dyn-list">
-          <div role="navigation" aria-label="List" class="w-pagination-wrapper">
-            <a
-              href="blog@33f22ee7_page=2.html"
-              aria-label="Next Page"
-              class="w-pagination-next pagination-button-article"
-            >
-              <div class="text-h3 w-inline-block">Next</div>
-            </a>
-            <link rel="prerender" href="blog@33f22ee7_page=2.html" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <MainNews showHeader limit={9} />
   </body>
 </Layout>

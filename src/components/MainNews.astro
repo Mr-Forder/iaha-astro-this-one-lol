@@ -1,41 +1,65 @@
 ---
-const { limit = 6, currentPage = 1 } = Astro.props;
-
-interface BlogPost {
-  url: string;
-  frontmatter: {
-    pubDate: string;
-    image: {
-      url: string;
-      alt: string;
-    };
-    alt: string;
-    description: string;
-  };
-}
-
+const { limit, technology, showHeader } = Astro.props;
 const allPosts = Object.values(
-  import.meta.glob<BlogPost>("../pages/posts/*.md", { eager: true })
+  import.meta.glob("../pages/posts/*.md", { eager: true })
 )
-  .filter((post) => {
+  .filter((post: any) => {
     const isScheduled =
       new Date(post.frontmatter.pubDate).getTime() > Date.now();
+    if (technology) {
+      return !isScheduled && post.frontmatter.alt === technology;
+    }
     return !isScheduled;
   })
-  .sort((a, b) => {
+  .sort((a: any, b: any) => {
     return (
       new Date(b.frontmatter.pubDate).getTime() -
       new Date(a.frontmatter.pubDate).getTime()
     );
   });
-
-// Calculate pagination values
-const totalPosts = allPosts.length;
-const totalPages = Math.ceil(totalPosts / limit);
-const startIndex = (currentPage - 1) * limit;
-const endIndex = startIndex + limit;
-const paginatedPosts = allPosts.slice(startIndex, endIndex);
 ---
+
+{
+  showHeader && (
+    <section class="section hero-blog">
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="headline-blog">
+          <div class="label">Assistive Listening News</div>
+          <h1 class="text-h1">News &amp; Articles</h1>
+        </div>
+        <div class="related-block w-dyn-list">
+          <div role="list" class="w-dyn-items">
+            <div role="listitem" class="w-dyn-item">
+              <a
+                href={allPosts[0].url}
+                class="article-tile pinned w-inline-block"
+              >
+                <div class="image-wrap-blog pinned">
+                  <img
+                    alt=""
+                    loading="lazy"
+                    src={allPosts[0].frontmatter.image.url}
+                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 54vw"
+                    class="image-cover"
+                  />
+                </div>
+                <div class="article-info-wrap">
+                  <div class="article-category-wrap">
+                    <div class="text-small opacity-50">·</div>
+                    <div class="text-small">{allPosts[0].frontmatter.alt}</div>
+                  </div>
+                  <div class="text-h3">
+                    {allPosts[0].frontmatter.description}
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
 
 <section class="section">
   <div class="w-layout-blockcontainer main-container w-container">
@@ -45,7 +69,7 @@ const paginatedPosts = allPosts.slice(startIndex, endIndex);
     <div class="related-block w-dyn-list">
       <div role="list" class="blog-thirds w-dyn-items">
         {
-          paginatedPosts.map((post) => (
+          allPosts.slice(0, limit).map((post: any) => (
             <div role="listitem" class="w-dyn-item">
               <a href={post.url} class="article-tile w-inline-block">
                 <div class="image-wrap-blog">
@@ -72,58 +96,22 @@ const paginatedPosts = allPosts.slice(startIndex, endIndex);
           ))
         }
       </div>
-
-      {
-        totalPages > 1 && (
-          <div
-            role="navigation"
-            aria-label="Pagination"
-            class="w-pagination-wrapper pagination blog-pagination"
-          >
-            {currentPage > 1 && (
-              <a
-                href={`?page=${currentPage - 1}`}
-                aria-label="Previous Page"
-                class="w-pagination-previous pagination-button-article"
-              >
-                <div class="text-h3 w-inline-block">Previous</div>
-              </a>
-            )}
-
-            <div class="pagination-info">
-              <span class="text-small">
-                Page {currentPage} of {totalPages}
-              </span>
-            </div>
-
-            {currentPage < totalPages && (
-              <a
-                href={`?page=${currentPage + 1}`}
-                aria-label="Next Page"
-                class="w-pagination-next pagination-button-article"
-              >
-                <div class="text-h3 w-inline-block">Next</div>
-              </a>
-            )}
-          </div>
-        )
-      }
     </div>
   </div>
 </section>
-
-<style>
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .pagination-info {
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
-  }
-</style>
+<section>
+  <div class="w-layout-blockcontainer main-container w-container">
+    <div class="related-block w-dyn-list">
+      <div role="navigation" aria-label="List" class="w-pagination-wrapper">
+        <a
+          href="blog@33f22ee7_page=2.html"
+          aria-label="Next Page"
+          class="w-pagination-next pagination-button-article"
+        >
+          <div class="text-h3 w-inline-block">Next</div>
+        </a>
+        <link rel="prerender" href="blog@33f22ee7_page=2.html" />
+      </div>
+    </div>
+  </div>
+</section>
