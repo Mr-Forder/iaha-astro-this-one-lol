@@ -1,0 +1,127 @@
+---
+import MainNews from "../components/MainNews.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="section hero-contact-a">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid contact-a-halves">
+        <div class="contact-a-left">
+          <div class="headline-contact-a">
+            <div class="label">Contact IAHA</div>
+            <div class="heading-contact-a">
+              <div class="text-h1">Get in touch</div>
+            </div>
+            <div class="text-h4">
+              At IAHA, we believe accessibility is a right — not a luxury.
+              Whether you're an advocate, professional, or someone seeking
+              better Assistive Listening solutions, we’re here to help.
+            </div>
+            <div class="text-body">
+              For questions related to assistive listening systems,
+              accessibility standards, or technology integration, IAHA offers
+              expert guidance and industry collaboration. Whether you're a
+              manufacturer, venue operator, or accessibility consultant, we
+              invite you to reach out using the form below.
+            </div>
+          </div>
+          <div class="w-layout-grid contact-a-address-block">
+            <div class="contact-a-address-tile">
+              <div class="text-body semibold">Address</div>
+              <div class="text-body">
+                PO Box 3251 <br />Gloucestershire, GL1 9FU
+              </div>
+            </div>
+            <div class="contact-a-address-tile">
+              <div class="text-body semibold">Email</div>
+              <a href="mailt:admin@iaha-global.com">
+                <div class="text-body">admin@iaha-global.com</div></a
+              >
+            </div>
+          </div>
+          <div class="w-form">
+            <form
+              id="wf-form-Email-Form"
+              name="wf-form-Email-Form"
+              data-name="Email Form"
+              method="POST"
+              class="contact-form"
+              action="https://api.web3forms.com/submit"
+              data-wf-element-id="ba2d1bf6-b4f1-904b-4100-318d9149ae98"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="49f7f987-d3fe-469b-b5e7-19f107eea0bc"
+              />
+              <div class="w-layout-grid input-halves">
+                <div class="contact-input-wrap">
+                  <div class="label">Your name</div><input
+                    class="text-field w-input"
+                    maxlength="256"
+                    name="name"
+                    data-name="Name"
+                    placeholder="Name"
+                    type="text"
+                    id="name"
+                    required
+                  />
+                </div>
+                <div class="contact-input-wrap">
+                  <div class="label">Email Address</div><input
+                    class="text-field w-input"
+                    maxlength="256"
+                    name="Email"
+                    data-name="Email"
+                    placeholder="Email"
+                    type="email"
+                    id="Email-2"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="contact-input-wrap">
+                <div class="label">Your Message</div><textarea
+                  placeholder="Message"
+                  maxlength="5000"
+                  id="Message"
+                  name="Message"
+                  data-name="Message"
+                  class="text-field text-area w-input"
+                  required></textarea>
+              </div>
+
+              <input
+                type="submit"
+                data-wait="Please wait..."
+                class="cta-main small w-button"
+                value="Send message"
+              />
+            </form>
+            <div class="success-message w-form-done">
+              <div>Thank you ! Your submission has been received !</div>
+            </div>
+            <div class="error-message w-form-fail">
+              <div>Oops ! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="w-node-_7f54b512-2237-d830-8642-e97738a56880-e2064d66"
+          class="contact-a-right"
+        >
+          <img
+            src="/img/contact.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 557px"
+            alt="Contact IAHA"
+            class="image-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <MainNews limit={3} />
+</Layout>

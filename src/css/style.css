@@ -1472,7 +1472,7 @@ textarea.w-select {
 
 .w-dropdown-list {
   background: #ddd;
-  min-width: 100%;
+  min-width: 230px;
   display: none;
   position: absolute;
 }

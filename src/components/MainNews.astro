@@ -185,6 +185,15 @@ const totalPages = Math.ceil(allPosts.length / limit);
     if (window.currentPage < window.totalPages) {
       window.currentPage++;
       updatePosts();
+      // Scroll to the Latest articles section with offset
+      const element = document.querySelector(".headline-related");
+      const offset = 80; // 5rem offset (assuming 1rem = 16px)
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   });
 
@@ -192,6 +201,15 @@ const totalPages = Math.ceil(allPosts.length / limit);
     if (window.currentPage > 1) {
       window.currentPage--;
       updatePosts();
+      // Scroll to the Latest articles section with offset
+      const element = document.querySelector(".headline-related");
+      const offset = 80; // 5rem offset (assuming 1rem = 16px)
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   });
 </script>
