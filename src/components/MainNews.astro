@@ -1,14 +1,5 @@
 ---
 const { limit = 6, technology, showHeader, showPagination } = Astro.props;
-
-function truncateText(text: string, wordLimit: number = 30) {
-  const words = text.split(" ");
-  if (words.length > wordLimit) {
-    return words.slice(0, wordLimit).join(" ") + "...";
-  }
-  return text;
-}
-
 const allPosts = Object.values(
   import.meta.glob("../pages/posts/*.md", { eager: true })
 )
@@ -28,6 +19,14 @@ const allPosts = Object.values(
   });
 
 const totalPages = Math.ceil(allPosts.length / limit);
+
+function truncateText(text: string, wordLimit: number = 30) {
+  const words = text.split(" ");
+  if (words.length > wordLimit) {
+    return words.slice(0, wordLimit).join(" ") + "...";
+  }
+  return text;
+}
 ---
 
 {
@@ -51,12 +50,16 @@ const totalPages = Math.ceil(allPosts.length / limit);
                   />
                 </div>
                 <div class="article-info-wrap">
-                  <div class="article-category-wrap">
-                    <div class="text-small opacity-50">·</div>
-                    <div class="text-small">{allPosts[0].frontmatter.alt}</div>
+                  <div class="">
+                    <div class="article-category-wrap">
+                      <div class="text-small opacity-50">·</div>
+                      <div class="text-small">
+                        {allPosts[0].frontmatter.alt}
+                      </div>
+                    </div>
+                    <h2 class="teal-text">{allPosts[0].frontmatter.title}</h2>
+                    <div class="section-divider home-c-numbers" />
                   </div>
-                  <h2>{allPosts[0].frontmatter.title}</h2>
-                  <div class="section-divider home-c-numbers" />
                   <div class="text-h4">
                     {truncateText(allPosts[0].frontmatter.description)}
                   </div>
@@ -98,9 +101,7 @@ const totalPages = Math.ceil(allPosts.length / limit);
                       {post.frontmatter.pubDate.split("T")[0]}
                     </div>
                   </div>
-                  <div class="text-h5">
-                    {truncateText(post.frontmatter.title)}
-                  </div>
+                  <div class="text-h5">{post.frontmatter.title}</div>
                 </div>
               </a>
             </div>
@@ -174,7 +175,7 @@ const totalPages = Math.ceil(allPosts.length / limit);
               ${post.frontmatter.pubDate.split("T")[0]}
             </div>
           </div>
-          <div class="text-h5">${truncateText(post.frontmatter.description)}</div>
+          <div class="text-h5">${post.frontmatter.description}</div>
         </div>
       </a>
     </div>

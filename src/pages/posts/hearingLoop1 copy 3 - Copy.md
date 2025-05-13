@@ -5,7 +5,7 @@ author: Astro Learner
 description: "As public venues continue to embrace inclusive design, infrared (IR) assistive listening systems are playing a growing role in making shared spaces more accessible for people with hearing loss. Unlike radio frequency or hearing loop systems, infrared ALTs use light-based transmission to deliver high-quality audio directly to listeners — offering a discreet, secure, and effective solution in settings where privacy and signal containment are essential."
 alt: "Infrared"
 image:
-  url: "https://images.pexels.com/photos/236321/pexels-photo-236321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  url: "https://images.pexels.com/photos/10029803/pexels-photo-10029803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   alt: "The word astro against an illustration of planets and stars."
 pubDate: 2025-05-13
 tags: ["astro", "successes"]
