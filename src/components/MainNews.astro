@@ -95,7 +95,9 @@ function truncateText(text: string, wordLimit: number = 30) {
                 </div>
                 <div class="article-info-wrap">
                   <div class="article-category-wrap">
-                    <div class="text-small">{post.frontmatter.alt}</div>
+                    <div class="text-small teal-text">
+                      {post.frontmatter.alt}
+                    </div>
                     <div class="text-small opacity-50">·</div>
                     <div class="text-small">
                       {post.frontmatter.pubDate.split("T")[0]}
@@ -169,13 +171,13 @@ function truncateText(text: string, wordLimit: number = 30) {
         </div>
         <div class="article-info-wrap">
           <div class="article-category-wrap">
-            <div class="text-small">${post.frontmatter.alt}</div>
+            <div class="text-small teal-text">${post.frontmatter.alt}</div>
             <div class="text-small opacity-50">·</div>
             <div class="text-small">
               ${post.frontmatter.pubDate.split("T")[0]}
             </div>
           </div>
-          <div class="text-h5">${post.frontmatter.description}</div>
+          <div class="text-h5">${post.frontmatter.title}</div>
         </div>
       </a>
     </div>

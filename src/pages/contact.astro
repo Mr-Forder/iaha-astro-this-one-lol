@@ -4,15 +4,71 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="section hero-contact-a">
+  <section class="section hero-careers">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="headline-careers">
+        <div class="careers-top-tile">
+          <div class="spacer-sm"></div>
+          <div class="heading-careers">
+            <div class="headline-blog">
+              <div class="label">Contact IAHA</div>
+              <h1 class="text-h1">Get in Touch With IAHA</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-b-button-wrap">
+          <a href="#contact-form" class="cta-main accent w-inline-block">
+            <div class="button-animation-hide">
+              <div class="button-animation-wrap">
+                <div class="button-content-tile">
+                  <div>Contact Us</div>
+                  <div class="button-arrow w-embed">
+                    <svg
+                      width="7"
+                      height="10"
+                      viewBox="0 0 7 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 9L5 5L1 1"
+                        stroke="currentColor"
+                        stroke-width="2"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="button-content-tile">
+                  <div>Contact Us</div>
+                  <div class="button-arrow w-embed">
+                    <svg
+                      width="7"
+                      height="10"
+                      viewBox="0 0 7 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 9L5 5L1 1"
+                        stroke="currentColor"
+                        stroke-width="2"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="section-divider home-c-numbers"></div>
+      </div>
+    </div>
+  </section>
+  <section class="hero-contact-a">
     <div class="w-layout-blockcontainer main-container w-container">
       <div class="w-layout-grid contact-a-halves">
         <div class="contact-a-left">
-          <div class="headline-contact-a">
-            <div class="label">Contact IAHA</div>
-            <div class="heading-contact-a">
-              <div class="text-h1">Get in touch</div>
-            </div>
+          <div id="contact-form" class="headline-contact-a">
             <div class="text-h4">
               At IAHA, we believe accessibility is a right — not a luxury.
               Whether you're an advocate, professional, or someone seeking
@@ -122,6 +178,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </section>
-
+  <div class="spacer-sm"></div>
+  <div class="spacer-sm"></div>
   <MainNews limit={3} />
 </Layout>
