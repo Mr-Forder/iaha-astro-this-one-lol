@@ -1,204 +1,31 @@
 ---
+import MainNews from "../components/MainNews.astro";
+import Standards from "../components/Standards.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <a
-    href="https://webflow.com/templates/designers/byq-studio"
-    target="_blank"
-    class="cta-fixed w-inline-block"
-    ><img
-      src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2064e95_BYQ%20Logo.webp"
-      loading="lazy"
-      alt=""
-      class="icon-cta-fixed"
-    /><div class="text-body semibold">More Templates</div></a
-  >
-  <section class="section hero-about-a">
+  <section class="section hero-careers">
     <div class="w-layout-blockcontainer main-container w-container">
-      <div class="headline-hero-about-a">
-        <div class="label">more than a template</div>
-        <h1 class="text-h0">Embracing circular economy</h1>
-      </div>
-    </div>
-    <div
-      data-w-id="dc71a756-ed33-08e6-a94c-7bf761c73089"
-      class="container-marquee"
-    >
-      <div class="home-b-marquee">
-        <div
-          data-w-id="dc71a756-ed33-08e6-a94c-7bf761c7308b"
-          class="home-b-marquee-item"
-        >
-          <div class="home-b-marquee-image-wrap">
-            <img
-              sizes="(max-width: 479px) 300px, (max-width: 991px) 701.65625px, 964.78125px"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204-p-500.avif 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204.avif 1263w"
-              alt=""
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204.avif"
-              loading="lazy"
-              class="home-b-marquee-image"
-            />
-          </div>
-          <div class="home-b-marquee-image-wrap">
-            <img
-              sizes="(max-width: 479px) 300px, (max-width: 991px) 600.4375px, 825.59375px"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth.jpg 5464w"
-              alt=""
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth.jpg"
-              loading="lazy"
-              class="home-b-marquee-image"
-            />
-          </div>
-          <div class="home-b-marquee-image-wrap">
-            <img
-              sizes="(max-width: 479px) 300px, (max-width: 991px) 599.9375px, 824.90625px"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg 4891w"
-              alt=""
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg"
-              loading="lazy"
-              class="home-b-marquee-image"
-            />
-          </div>
-          <div class="home-b-marquee-image-wrap">
-            <img
-              sizes="(max-width: 479px) 300px, (max-width: 991px) 265.890625px, 365.59375px"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water.jpg 3543w"
-              alt=""
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water.jpg"
-              loading="lazy"
-              class="home-b-marquee-image"
-            />
-          </div>
-          <div class="home-b-marquee-image-wrap">
-            <img
-              sizes="(max-width: 479px) 300px, (max-width: 991px) 600px, 825px"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif 3888w"
-              alt=""
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif"
-              loading="lazy"
-              class="home-b-marquee-image"
-            />
+      <div class="headline-careers">
+        <div class="careers-top-tile">
+          <div class="spacer-sm"></div>
+          <div class="heading-careers">
+            <div class="headline-blog">
+              <div class="label">About IAHA</div>
+              <h1 class="text-h1">
+                The International Association for Hearing Accessibility
+              </h1>
+            </div>
           </div>
         </div>
-        <div class="marquee-mask-top"></div>
-        <div class="marquee-mask-bottom"></div>
-      </div>
-    </div>
-  </section>
-  <section class="section about-a-about-section">
-    <div class="w-layout-blockcontainer main-container w-container">
-      <div class="about-text-master">
-        <div class="label">OUR MISSION</div>
-        <div class="about-text-wrap">
-          <div class="text-h2">terra–tory™</div>
-          <div class="text-h2">is</div>
-          <div class="text-h2">more</div>
-          <div class="text-h2">than</div>
-          <div class="text-h2">a</div>
-          <div class="text-h2">template,</div>
-          <div class="text-h2">it&#x27;s</div>
-          <div class="text-h2">a</div>
-          <div class="text-h2">commitment</div>
-          <div class="text-h2">to</div>
-          <div class="text-h2">our</div>
-          <div class="about-text-image">
-            <img
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735175c7301ee0bb2a7a86a_Carousel%20Image.webp"
-              loading="lazy"
-              sizes="(max-width: 479px) 56px, 72px"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735175c7301ee0bb2a7a86a_Carousel%2520Image-p-500.png 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735175c7301ee0bb2a7a86a_Carousel%2520Image-p-800.png 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735175c7301ee0bb2a7a86a_Carousel%20Image.webp 1004w"
-              alt=""
-              class="image-cover"
-            />
-          </div>
-          <div class="text-h2">planet.</div>
-          <div class="text-h2">Designed</div>
-          <div class="text-h2">for</div>
-          <div class="text-h2">those</div>
-          <div class="text-h2">who</div>
-          <div class="text-h2">build</div>
-          <div class="text-h2">with</div>
-          <div class="text-h2">purpose,</div>
-          <div class="text-h2">each</div>
-          <div class="text-h2">element</div>
-          <div class="text-h2">reflects</div>
-          <div class="text-h2">our</div>
-          <div class="about-text-image">
-            <img
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673507cdce2af0291e8278e8_Tomato.avif"
-              loading="lazy"
-              alt=""
-              class="image-cover"
-            />
-          </div>
-          <div class="text-h2">dedication</div>
-          <div class="text-h2">to</div>
-          <div class="text-h2">sustainability</div>
-          <div class="text-h2">and</div>
-          <div class="text-h2">thougtful</div>
-          <div class="text-h2">design.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section about-a-story-section">
-    <div class="w-layout-blockcontainer main-container w-container">
-      <div class="headline-story">
-        <div class="heading-story">
-          <h2 class="no-margins">
-            Ultimate template for businesses driven by sustainability and
-            positive impact.
-          </h2>
-        </div>
-      </div>
-      <div class="w-layout-grid story-halves">
-        <div class="story-image-wrap">
-          <div
-            data-poster-url="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-poster-00001.jpg"
-            data-video-urls="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.mp4,https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.webm"
-            data-autoplay="true"
-            data-loop="true"
-            data-wf-ignore="true"
-            class="video-cover w-background-video w-background-video-atom"
-          >
-            <video
-              id="159c16c6-e550-cca8-fd97-8dcd80ed2d7e-video"
-              autoplay=""
-              loop=""
-              style='background-image:url(https://terra-tory-template.webflow.io/about/"https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-poster-00001.jpg")'
-              muted=""
-              playsinline=""
-              data-wf-ignore="true"
-              data-object-fit="cover"
-              ><source
-                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.mp4"
-                data-wf-ignore="true"
-              /><source
-                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.webm"
-                data-wf-ignore="true"
-              /></video
-            >
-          </div>
-        </div>
-        <div class="story-right">
-          <div class="story-text">
-            <p class="text-big">
-              With terra–tory™, you’re choosing a template built to enhance
-              your business’s credibility and appeal. Designed for companies at
-              the forefront of environmental change, terra–tory™ supports your
-              journey toward sustainable growth and innovation, helping you
-              connect authentically with like-minded customers.
-            </p>
-          </div>
-          <a
-            href="../contact/contact-a.html"
-            class="cta-main accent w-inline-block"
-          >
+
+        <div class="home-b-button-wrap">
+          <a href="#aims" class="cta-main accent w-inline-block">
             <div class="button-animation-hide">
               <div class="button-animation-wrap">
                 <div class="button-content-tile">
-                  <div>Get Started</div>
+                  <div>See our Aims</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
@@ -215,7 +42,7 @@ import Layout from "../layouts/Layout.astro";
                   </div>
                 </div>
                 <div class="button-content-tile">
-                  <div>Get Started</div>
+                  <div>See our Aims</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
@@ -235,269 +62,209 @@ import Layout from "../layouts/Layout.astro";
             </div>
           </a>
         </div>
+        <div class="section-divider home-c-numbers"></div>
       </div>
     </div>
   </section>
-  <section class="section about-a-services-section">
+
+  <section class="section home-a-story-section">
     <div class="w-layout-blockcontainer main-container w-container">
-      <div class="w-layout-grid about-a-services-halves">
-        <div class="about-a-services-image">
+      <div class="w-layout-grid story-halves">
+        <div class="story-image-wrap">
           <img
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth.jpg"
+            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg"
             loading="lazy"
-            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 640px"
-            srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734653c96c925d22249f409_Earth.jpg 5464w"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+            srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg 4891w"
             alt=""
             class="image-cover"
           />
         </div>
-        <div class="about-a-services-right">
-          <div class="headline-services-about-a">
-            <div class="label">OUR services</div>
-          </div>
-          <div class="service-list-about-a">
-            <a href="about-a.html#" class="text-blured text-h0">Biology</a><a
-              href="about-a.html#"
-              class="text-blured text-h0">Progress</a
-            ><a href="about-a.html#" class="text-blured text-h0">Research</a><a
-              href="about-a.html#"
-              class="text-blured text-h0">Technology</a
-            >
-            <a href="about-a.html#" class="text-blured text-h0">Creativity</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="master-marquees">
-      <div
-        data-w-id="8f06eae9-5c5e-b467-6e86-ef78b0c6a7ca"
-        class="marquee-text-wrap"
-      >
-        <div class="single-text-marquee">
-          <img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e206504f_Company%20Logo.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e206504e_Company%20Logo-2.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2065050_Company%20Logo-1.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2065051_Company%20Logo-4.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e206504d_Company%20Logo-3.svg"
-            alt=""
-            class="marquee-logo"
-          />
-        </div>
-        <div class="single-text-marquee">
-          <img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e206504f_Company%20Logo.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e206504e_Company%20Logo-2.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2065050_Company%20Logo-1.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2065051_Company%20Logo-4.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e206504d_Company%20Logo-3.svg"
-            alt=""
-            class="marquee-logo"
-          />
-        </div>
-        <div class="single-text-marquee">
-          <img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e206504f_Company%20Logo.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e206504e_Company%20Logo-2.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2065050_Company%20Logo-1.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2065051_Company%20Logo-4.svg"
-            alt=""
-            class="marquee-logo"
-          /><img
-            loading="lazy"
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e206504d_Company%20Logo-3.svg"
-            alt=""
-            class="marquee-logo"
-          />
-        </div>
-      </div>
-      <div class="marquee-shadow-light left"></div>
-      <div class="marquee-shadow-light"></div>
-    </div>
-  </section>
-  <section class="section about-a-features-section">
-    <div class="w-layout-blockcontainer main-container w-container">
-      <div class="headline-about-a-cards">
-        <div class="text-h1">Ultimate template</div>
-        <div class="heading-line-about-cards"></div>
-        <div class="text-h1">for</div>
-        <div class="text-h1">businesses</div>
-      </div>
-      <div class="w-layout-grid about-a-features-grid">
-        <div
-          data-w-id="f86989ef-3694-b9a9-2e83-f49c97610a7a"
-          style="opacity:0"
-          class="about-features-card"
-        >
-          <div class="feature-card-image-wrap">
-            <img
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf.jpg"
-              loading="lazy"
-              sizes="(max-width: 479px) 100vw, (max-width: 767px) 87vw, (max-width: 991px) 90vw, 92vw"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf.jpg 3024w"
-              alt=""
-              class="image-cover"
-            />
-          </div>
-          <div class="feature-card-text-wrap">
-            <div class="label">Endless Possibilities</div>
-            <div class="text-h4">Unlock possibilities</div>
-            <p class="text-body">
-              With full control, you’re the master of your domain, tailoring
-              everything to your vision and unleashing the true potential of
-              your endeavors.”
-            </p>
-          </div>
-        </div>
-        <div
-          data-w-id="6d726903-f5df-05c7-91ad-b4107a59d615"
-          style="opacity:0"
-          class="about-features-card"
-        >
-          <div class="feature-card-image-wrap">
-            <img
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water.jpg"
-              loading="lazy"
-              sizes="(max-width: 479px) 100vw, (max-width: 767px) 87vw, (max-width: 991px) 90vw, 92vw"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465393dd434a47f3adb05_Water.jpg 3543w"
-              alt=""
-              class="image-cover"
-            />
-          </div>
-          <div class="feature-card-text-wrap">
-            <div class="label">Endless Possibilities</div>
-            <div class="text-h4">Unlock possibilities</div>
-            <p class="text-body">
-              With full control, you’re the master of your domain, tailoring
-              everything to your vision and unleashing the true potential of
-              your endeavors.”
-            </p>
-          </div>
-        </div>
-        <div
-          data-w-id="109560bc-a35f-d854-8603-dca199ed33d4"
-          style="opacity:0"
-          class="about-features-card"
-        >
-          <div class="feature-card-image-wrap">
-            <img
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204.avif"
-              loading="lazy"
-              sizes="(max-width: 479px) 100vw, (max-width: 767px) 87vw, (max-width: 991px) 90vw, 92vw"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204-p-500.avif 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204.avif 1263w"
-              alt=""
-              class="image-cover"
-            />
-          </div>
-          <div class="feature-card-text-wrap">
-            <div class="label">Endless Possibilities</div>
-            <div class="text-h4">Unlock possibilities</div>
-            <p class="text-body">
-              With full control, you’re the master of your domain, tailoring
-              everything to your vision and unleashing the true potential of
-              your endeavors.”
-            </p>
+        <div class="headline-story">
+          <div class="heading-story">
+            <h2 class="no-margins">
+              IAHA is a global association dedicated to improving hearing
+              accessibility through the promotion and support of assistive
+              listening technologies.
+            </h2>
+            <div class="spacer-sm"></div>
+            <div class="section-divider home-c-numbers"></div>
+
+            <div class="spacer-sm"></div>
+            <h5>
+              As hearing needs evolve across all age groups, from older adults
+              to younger people with hearing loss, IAHA seeks to bring together
+              manufacturers, experts, and advocates to ensure inclusive access
+              in public spaces and beyond.
+            </h5>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      data-w-id="757f4637-cac0-d8fc-d63a-7dd63e333c8f"
-      class="circle-about-cards"
-    >
-    </div>
-  </section>
-  <section class="section no-padding">
-    <div
-      data-poster-url="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-poster-00001.jpg"
-      data-video-urls="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-transcode.mp4,https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-transcode.webm"
-      data-autoplay="true"
-      data-loop="true"
-      data-wf-ignore="true"
-      class="video-cta w-background-video w-background-video-atom"
-    >
-      <video
-        id="96cf218b-8389-7beb-e247-eb6dfcceecd8-video"
-        autoplay=""
-        loop=""
-        style='background-image:url(https://terra-tory-template.webflow.io/about/"https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-poster-00001.jpg")'
-        muted=""
-        playsinline=""
-        data-wf-ignore="true"
-        data-object-fit="cover"
-        ><source
-          src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-transcode.mp4"
-          data-wf-ignore="true"
-        /><source
-          src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-transcode.webm"
-          data-wf-ignore="true"
-        /></video
-      >
-      <div class="overlay-30"></div>
-      <div class="w-layout-blockcontainer main-container w-container">
-        <div class="cta-video-inner">
-          <div class="headline-video">
-            <div class="label">LETTER FROM CEO</div>
-            <div class="text-h1">
-              With technology designed to respect natural processes,
-              terra–tory™ provides tools and systems.
+
+      <section class="section home-a-bento-section">
+        <div class="w-layout-blockcontainer main-container w-container">
+          <div class="headline-home-c-features">
+            <div id="aims" class="label">IAHA's Purpose</div>
+            <div class="heading-home-c-features">
+              <h2 class="no-margins">Our Aims</h2>
             </div>
           </div>
-          <a
-            href="../contact/contact-a.html"
-            class="cta-main accent w-inline-block"
+          <div
+            id="standards"
+            class="w-layout-grid feature-grid-home-c"
+            style="margin-top:6rem;"
           >
+            <div
+              id="w-node-_335d5572-f17e-b978-95fe-23ad4ef73028-e2064dab"
+              class="feature-card-home-c"
+            >
+              <div class="label">One</div>
+              <div class="feature-card-bottom-tile">
+                <h4 class="no-margins">
+                  To be the credible <span class="teal-text"
+                    >Voice of the industry</span
+                  > to government and its agencies, legislators, standards agencies,
+                  advocacy organisations, specifiers and other interested parties.
+                </h4>
+              </div>
+            </div>
+
+            <div class="feature-card-home-c">
+              <div class="label">Two</div>
+              <div class="feature-card-bottom-tile">
+                <h4 class="no-margins">
+                  To provide information to <span class="teal-text"
+                    >facilitate the promotion</span
+                  > of Assistive Listening technologies and their applications.
+                </h4>
+              </div>
+            </div>
+
+            <div
+              id="w-node-_335d5572-f17e-b978-95fe-23ad4ef7301a-e2064dab"
+              class="features-video-home-c"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf.jpg"
+                loading="lazy"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+                srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/673465398de5bc7d2aa25fa1_Leaf.jpg 3024w"
+                alt=""
+                class="image-cover"
+              />
+            </div>
+
+            <div class="feature-card-home-c">
+              <div class="label">Three</div>
+              <div class="feature-card-bottom-tile">
+                <h4 class="no-margins">
+                  To collect and present <span class="teal-text"
+                    >information and statistics</span
+                  > on hearing assistance and Assistive Listening technologies.
+                </h4>
+              </div>
+            </div>
+
+            <div class="feature-card-image">
+              <img
+                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif"
+                loading="lazy"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+                srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif 3888w"
+                alt=""
+                class="image-cover"
+              />
+            </div>
+
+            <div
+              id="w-node-_335d5572-f17e-b978-95fe-23ad4ef73026-e2064dab"
+              class="feature-card-image"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204.avif"
+                loading="lazy"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+                srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204-p-500.avif 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6734f06f9f734cc9c75f9cd7_Article%20Thumbnail%204.avif 1263w"
+                alt=""
+                class="image-cover"
+              />
+            </div>
+          </div>
+          <!-- PART 2 -->
+          <div
+            class="w-layout-grid feature-grid-home-c"
+            style="margin-top:1rem;"
+          >
+            <div class="feature-card-home-c">
+              <div class="label">Four</div>
+              <div class="feature-card-bottom-tile">
+                <h4 class="no-margins">
+                  To act as a <span class="teal-text">technical centre</span> to
+                  provide commentary, guidance and advice on technical, regulatory
+                  and legal aspects of Assistive Listening technologies and systems.
+                </h4>
+              </div>
+            </div>
+
+            <div
+              id="w-node-_335d5572-f17e-b978-95fe-23ad4ef73028-e2064dab"
+              class="feature-card-home-c accent"
+            >
+              <div class="label">Five</div>
+              <div class="feature-card-bottom-tile">
+                <h4 class="no-margins">
+                  To define <span class="teal-text"
+                    >standards of excellence and best-practice</span
+                  > for the assistive listening industries, including a code-of-practice
+                  for its members.
+                </h4>
+              </div>
+            </div>
+
+            <div class="feature-card-home-c">
+              <div class="label">Six</div>
+              <div class="feature-card-bottom-tile">
+                <h4 class="no-margins">
+                  To provide a <span class="teal-text">forum</span> for the sharing
+                  of information across members.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="section home-a-story-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="headline-story">
+        <div class="heading-story">
+          <h2 class="no-margins">Membership info and CTA</h2>
+        </div>
+      </div>
+      <div class="w-layout-grid story-halves">
+        <div class="story-image-wrap">
+          <img
+            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+            srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg 4891w"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+        <div class="story-right">
+          <div class="story-text">
+            <h4>
+              A paragraph on the benefits of IAHA membership and CTA to members
+              page goes here.
+            </h4>
+          </div><a href="/members" class="cta-main accent w-inline-block">
             <div class="button-animation-hide">
               <div class="button-animation-wrap">
                 <div class="button-content-tile">
-                  <div>Get Started</div>
+                  <div>Become a Member</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
@@ -514,7 +281,7 @@ import Layout from "../layouts/Layout.astro";
                   </div>
                 </div>
                 <div class="button-content-tile">
-                  <div>Get Started</div>
+                  <div>Become a Member</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
@@ -537,235 +304,8 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </section>
-  <section class="section about-a-faq">
-    <div class="w-layout-blockcontainer main-container w-container">
-      <div class="w-layout-grid faq-halves">
-        <div class="heading-faq">
-          <h3 class="no-margins">Frequently asked questions</h3>
-        </div>
-        <div class="faq-block">
-          <div class="expandable-single">
-            <div class="expandable-top">
-              <div class="text-h5">
-                What makes terra–tory™ different from other Webflow templates?
-              </div>
-              <div class="faq-animated-box">
-                <div class="faq-horizontal"></div>
-                <div class="faq-vertical"></div>
-              </div>
-            </div>
-            <div class="expandable-bottom">
-              <p class="faq-paragraph">
-                erra–tory™ is specifically designed with eco-conscious brands
-                in mind. Unlike standard templates, it incorporates sustainable
-                design principles, focusing on eco-friendly aesthetics,
-                optimized performance, and features that resonate with
-                businesses dedicated to environmental responsibility. It’s
-                perfect for brands that want to make a positive impact and
-                connect with like-minded audiences.
-              </p>
-            </div>
-          </div>
-          <div class="expandable-single">
-            <div class="expandable-top">
-              <div class="text-h5">
-                Is terra–tory™ customizable, and do I need design or coding
-                skills to use it?
-              </div>
-              <div class="faq-animated-box">
-                <div class="faq-horizontal"></div>
-                <div class="faq-vertical"></div>
-              </div>
-            </div>
-            <div class="expandable-bottom">
-              <p class="faq-paragraph">
-                Absolutely! terra–tory™ is fully customizable and
-                user-friendly. You don’t need any coding experience to tailor
-                the template to your brand’s needs. With Webflow’s intuitive
-                drag-and-drop editor, you can easily adjust colors, fonts,
-                layout, and content. Plus, we provide clear documentation and
-                support to help you make the most of it.
-              </p>
-            </div>
-          </div>
-          <div class="expandable-single">
-            <div class="expandable-top">
-              <div class="text-h5">
-                Is the terra–tory™ template optimized for SEO and mobile
-                devices?
-              </div>
-              <div class="faq-animated-box">
-                <div class="faq-horizontal"></div>
-                <div class="faq-vertical"></div>
-              </div>
-            </div>
-            <div class="expandable-bottom">
-              <p class="faq-paragraph">
-                Yes, terra–tory™ is designed with SEO and mobile optimization
-                in mind. It includes eco-friendly SEO practices to boost your
-                brand’s visibility, while ensuring fast load times and a
-                seamless experience across all devices. This means your message
-                reaches a broader audience while staying true to sustainable
-                values.
-              </p>
-            </div>
-          </div>
-          <div class="expandable-single">
-            <div class="expandable-top">
-              <div class="text-h5">
-                Can I integrate e-commerce features with terra–tory™?
-              </div>
-              <div class="faq-animated-box">
-                <div class="faq-horizontal"></div>
-                <div class="faq-vertical"></div>
-              </div>
-            </div>
-            <div class="expandable-bottom">
-              <p class="faq-paragraph">
-                Yes, terra–tory™ is fully compatible with Webflow’s e-commerce
-                functionality. You can easily set up an online store, manage
-                products, and create a smooth, eco-conscious shopping experience
-                for your customers. It’s perfect for sustainable brands that
-                want to sell eco-friendly products directly through their site
-              </p>
-            </div>
-          </div>
-          <div class="expandable-single">
-            <div class="expandable-top">
-              <div class="text-h5">
-                What kind of support and documentation is available for
-                terra–tory™ users?
-              </div>
-              <div class="faq-animated-box">
-                <div class="faq-horizontal"></div>
-                <div class="faq-vertical"></div>
-              </div>
-            </div>
-            <div class="expandable-bottom">
-              <p class="faq-paragraph">
-                Absolutely! terra–tory™ comes with CMS (Content Management
-                System) integration, making it easy to add, manage, and update
-                blog posts, news, case studies, and other dynamic content. This
-                feature is ideal for brands that want to keep their audience
-                informed and engaged with fresh, relevant content about
-                sustainability and other topics.
-              </p>
-            </div>
-          </div>
-          <div class="expandable-single">
-            <div class="expandable-top">
-              <div class="text-h5">
-                Does terra–tory™ support CMS collections for blogging or
-                content updates?
-              </div>
-              <div class="faq-animated-box">
-                <div class="faq-horizontal"></div>
-                <div class="faq-vertical"></div>
-              </div>
-            </div>
-            <div class="expandable-bottom">
-              <p class="faq-paragraph">
-                We provide detailed documentation and video tutorials to guide
-                you through setup and customization. If you encounter any
-                issues, our support team is available to help answer questions
-                and resolve problems, ensuring you get the most out of
-                terra–tory™. Whether you’re new to Webflow or an experienced
-                user, we’re here to support your journey with this eco-friendly
-                template.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section cta-section">
-    <div class="cta-video">
-      <div class="w-layout-blockcontainer main-container w-container">
-        <div class="cta-master">
-          <div class="cta-top-tile">
-            <div class="label">terra–tory™</div>
-            <div class="heading-cta">
-              <div class="text-h1">Uncover your website’s potential</div>
-            </div>
-          </div>
-          <div class="cta-button-wrap">
-            <a
-              href="https://webflow.com/templates/designers/byq-studio"
-              target="_blank"
-              class="cta-main accent w-inline-block"
-            >
-              <div class="button-animation-hide">
-                <div class="button-animation-wrap">
-                  <div class="button-content-tile">
-                    <div>Buy Template</div>
-                    <div class="button-arrow w-embed">
-                      <svg
-                        width="7"
-                        height="10"
-                        viewBox="0 0 7 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 9L5 5L1 1"
-                          stroke="currentColor"
-                          stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="button-content-tile bottom-tile">
-                    <div>Buy Template</div>
-                    <div class="button-arrow w-embed">
-                      <svg
-                        width="7"
-                        height="10"
-                        viewBox="0 0 7 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 9L5 5L1 1"
-                          stroke="currentColor"
-                          stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a
-              href="../contact/contact-a.html"
-              class="cta-booking w-inline-block"
-            >
-              <div class="cta-image-wrap">
-                <img
-                  src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2064f0f_Button%20Image.webp"
-                  loading="lazy"
-                  alt=""
-                  class="image-cover"
-                />
-              </div>
-              <div class="text-body semibold">Book an intro call</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        data-w-id="6d31e448-0cad-78cf-9898-37953bfbda47"
-        class="cta-circle-regular"
-      >
-      </div>
-      <div
-        data-w-id="5705fcc2-f633-58e3-1c4e-f911fd308ab2"
-        class="cta-circle-big"
-      >
-      </div>
-      <div
-        data-w-id="6fae3469-06b3-95c8-5c38-abda8ce051ed"
-        class="cta-circle-small"
-      >
-      </div>
-    </div>
-  </section>
+
+  <div class="spacer-sm" style="margin-top:3rem;"></div>
+
+  <MainNews limit={3} />
 </Layout>
