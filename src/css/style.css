@@ -11442,6 +11442,11 @@ figcaption {
   #w-node-_1f86fa11-f171-fa0a-12b2-fd562f079ad9-e2064dd5 {
     place-self: end;
   }
+  .brand-navbar {
+    height: 165% !important;
+    margin-top: -8px;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -11459,6 +11464,12 @@ figcaption {
   #w-node-a5f3ba68-5737-ba51-d962-8ba2f53b4505-e2064dd4 {
     grid-column: span 1 / span 1;
   }
+
+  .brand-navbar {
+    height: 165% !important;
+    margin-top: -8px;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -11468,6 +11479,12 @@ figcaption {
 
   #w-node-_335d5572-f17e-b978-95fe-23ad4ef73028-e2064dab {
     grid-column: span 1 / span 1;
+  }
+
+  .brand-navbar {
+    height: 165% !important;
+    margin-top: -8px;
+    margin-left: 0;
   }
 }
 
