@@ -1,5 +1,6 @@
 ---
 import MainNews from "../components/MainNews.astro";
+import MemberCta from "../components/MemberCta.astro";
 import Standards from "../components/Standards.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -12,7 +13,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="spacer-sm"></div>
           <div class="heading-careers">
             <div class="headline-blog">
-              <div class="label">About</div>
+              <div class="label">About IAHA</div>
               <h1 class="text-h1">
                 The International Association for Hearing Accessibility
               </h1>
@@ -105,7 +106,7 @@ import Layout from "../layouts/Layout.astro";
       <section class="section home-a-bento-section">
         <div class="w-layout-blockcontainer main-container w-container">
           <div class="headline-home-c-features">
-            <div id="aims" class="label"></div>
+            <div id="aims" class="label">IAHA's Purpose</div>
             <div class="heading-home-c-features">
               <h2 class="no-margins">Our Aims</h2>
             </div>
@@ -237,74 +238,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <section class="section home-a-story-section">
-    <div class="w-layout-blockcontainer main-container w-container">
-      <div class="headline-story">
-        <div class="heading-story">
-          <h2 class="no-margins">Membership info and CTA</h2>
-        </div>
-      </div>
-      <div class="w-layout-grid story-halves">
-        <div class="story-image-wrap">
-          <img
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg"
-            loading="lazy"
-            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
-            srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg 4891w"
-            alt=""
-            class="image-cover"
-          />
-        </div>
-        <div class="story-right">
-          <div class="story-text">
-            <h4>
-              A paragraph on the benefits of IAHA membership and CTA to members
-              page goes here.
-            </h4>
-          </div><a href="/members" class="cta-main accent w-inline-block">
-            <div class="button-animation-hide">
-              <div class="button-animation-wrap">
-                <div class="button-content-tile">
-                  <div>Become a Member</div>
-                  <div class="button-arrow w-embed">
-                    <svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 9L5 5L1 1"
-                        stroke="currentColor"
-                        stroke-width="2"></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="button-content-tile">
-                  <div>Become a Member</div>
-                  <div class="button-arrow w-embed">
-                    <svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 9L5 5L1 1"
-                        stroke="currentColor"
-                        stroke-width="2"></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <MemberCta />
 
   <div class="spacer-sm" style="margin-top:3rem;"></div>
 

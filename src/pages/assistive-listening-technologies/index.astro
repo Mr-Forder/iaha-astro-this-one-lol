@@ -1,4 +1,5 @@
 ---
+import MemberCta from "../../components/MemberCta.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -19,7 +20,7 @@ import Layout from "../../layouts/Layout.astro";
         </div>
 
         <div class="home-b-button-wrap">
-          <a href="#aims" class="cta-main accent w-inline-block">
+          <a href="#technologies" class="cta-main accent w-inline-block">
             <div class="button-animation-hide">
               <div class="button-animation-wrap">
                 <div class="button-content-tile">
@@ -65,47 +66,96 @@ import Layout from "../../layouts/Layout.astro";
     </div>
   </section>
 
-  <section class="section home-c-numbers-section">
+  <section class="section home-a-story-section">
     <div class="w-layout-blockcontainer main-container w-container">
-      <div class="w-layout-grid numbers-halves">
-        <div class="numbers-left">
-          <div class="label">What is an Assistive Listening Technology?</div>
+      <div class="w-layout-grid story-halves">
+        <div class="story-image-wrap">
+          <video
+            src="/video/about.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="image-cover"
+            loading="lazy"
+            style="width: 100%; height: auto;"></video>
         </div>
-        <div class="numbers-right">
-          <div class="text-h4">
-            Assistive listening systems help to safeguard people who experience
-            hearing loss. In law, their rights include:
-          </div>
-          <div class="w-layout-grid number-features-grid">
-            <div class="home-number-feature">
-              <div class="text-h3">Equality</div>
-              <div>Equality before the law without discrimination.</div>
-            </div>
-            <div class="home-number-feature">
-              <div class="text-h3">Inclusivity</div>
-              <div>Inclusive education and a decent standard of living.</div>
-            </div>
-            <div class="home-number-feature">
-              <div class="text-h3">Support</div>
-              <div>
-                Support to participate in society and live in the community.
-              </div>
-            </div>
-            <div class="home-number-feature">
-              <div class="text-h3">Accessiblity</div>
-              <div>Accessible physical environments and information.</div>
-            </div>
-          </div>
-          <div class="text-h4">
-            If used correctly, such systems consistently meet or exceed
-            nationally and internationally agreed performance standards.
+        <div class="headline-story">
+          <div class="heading-story">
+            <h2 class="no-margins">
+              Assistive Listening Technologies are essential tools for improving
+              speech clarity in spaces where acoustics or background noise make
+              communication difficult.
+            </h2>
+            <div class="spacer-sm"></div>
+            <div class="section-divider home-c-numbers"></div>
+
+            <h5>
+              In spaces like auditoriums, classrooms, houses of worship, or
+              public venues, factors such as background noise, reverberation,
+              and speaker-to-listener distance can make speech difficult to
+              follow — even for individuals using hearing aids or cochlear
+              implants.
+            </h5>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <div class="section-divider home-c-numbers"></div>
-  <section class="section">
+
+  <div class="w-layout-blockcontainer main-container w-container">
+    <div class="w-layout-grid home-b-about-b-grid">
+      <div
+        id="w-node-e106a09e-d9b8-b472-a1fe-00f18e4443c8-e2064dc4"
+        class="home-b-about-image"
+      >
+        <div class="headline-story">
+          <div class="heading-story">
+            <div class="section-divider home-c-numbers"></div>
+            <div class="spacer-sm"></div>
+            <h5>
+              ALTs help to address this problem by delivering sound directly to
+              the listener, cutting through noise and reverberation to enhance
+              intelligibility. For organisations, installing an effective ALS
+              isn’t just good practice — it’s a key part of meeting
+              accessibility requirements and creating environments that are
+              genuinely inclusive.
+            </h5>
+            <div class="w-layout-grid number-features-grid">
+              <div class="home-number-feature">
+                <div class="text-h3">Equality</div>
+                <div>Equality before the law without discrimination.</div>
+              </div>
+              <div class="home-number-feature">
+                <div class="text-h3">Inclusivity</div>
+                <div>Inclusive education and a decent standard of living.</div>
+              </div>
+            </div>
+            <h5>
+              A wide range of assistive listening technologies are available
+              today, and navigating the options can often feel overwhelming. At
+              IAHA, our goal is to make these systems easier to understand and
+              to provide clear, practical guidance on choosing the right
+              solution for your needs. The most commonly used assistive
+              listening technologies include:
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="home-b-about-image">
+        <img
+          src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif"
+          loading="lazy"
+          sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+          srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif 3888w"
+          alt=""
+          class="image-cover"
+        />
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="technologies">
     <div class="w-layout-blockcontainer main-container w-container">
       <a href="/assistive-listening-technologies/hearing-loops">
         <div class="w-layout-grid home-b-features-halves">
@@ -361,6 +411,403 @@ import Layout from "../../layouts/Layout.astro";
 
   <section class="section home-c-numbers-section">
     <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid numbers-halves">
+        <div class="numbers-left">
+          <div class="home-b-about-image">
+            <img
+              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif"
+              loading="lazy"
+              sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif 3888w"
+              alt=""
+              class="image-cover"
+            />
+          </div>
+        </div>
+        <div class="numbers-right">
+          <div class="text-h4">
+            Assistive listening systems help to safeguard people who experience
+            hearing loss. In law, their rights include:
+          </div>
+          <div class="w-layout-grid number-features-grid">
+            <div class="home-number-feature">
+              <div class="text-h3">Equality</div>
+              <div>Equality before the law without discrimination.</div>
+            </div>
+            <div class="home-number-feature">
+              <div class="text-h3">Inclusivity</div>
+              <div>Inclusive education and a decent standard of living.</div>
+            </div>
+            <div class="home-number-feature">
+              <div class="text-h3">Support</div>
+              <div>
+                Support to participate in society and live in the community.
+              </div>
+            </div>
+            <div class="home-number-feature">
+              <div class="text-h3">Accessiblity</div>
+              <div>Accessible physical environments and information.</div>
+            </div>
+          </div>
+          <div class="text-h4">
+            If used correctly, such systems consistently meet or exceed
+            nationally and internationally agreed performance standards.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero-faq">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid faq-halves">
+        <div class="faq-left">
+          <div class="label">FAQ</div>
+          <div class="faq-heading">
+            <h1>Frequently<br />Asked <br />Questions</h1>
+          </div>
+        </div>
+        <div
+          id="w-node-_5d2379a6-d067-2bd0-b2a0-dab4130fbf03-e2064dd1"
+          class="faq-right"
+        >
+          <div class="faq-tile">
+            <div class="faq-block">
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    What is assistive listening technology?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    Assistive listening technology (ALT) refers to tools and
+                    devices that enhance sound clarity for individuals who
+                    experience difficulty hearing. These technologies make it
+                    easier to understand speech, music, and environmental
+                    sounds, allowing for fuller participation in daily life at
+                    home, work, school, and public places.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    Who can benefit from assistive listening technology?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    ALT can be helpful for anyone experiencing hearing
+                    challenges—whether you have mild hearing loss or use hearing
+                    aids or cochlear implants. The right solution depends on
+                    your hearing needs and the environments where you need
+                    support.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    What are assistive listening devices (ALDs)?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    ALDs are personal devices designed to improve communication
+                    in small group settings or one-on-one conversations. They
+                    typically include a microphone for the speaker and a
+                    receiver or amplifier to help the listener hear more
+                    clearly. They’re especially useful in noisy places or for
+                    direct communication.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    What are assistive listening systems (ALSs)?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    ALSs are designed for use in larger public spaces, such as
+                    theaters, places of worship, airports, or lecture halls.
+                    They capture sound from a microphone or sound system and
+                    send it directly to hearing aids, cochlear implants, or
+                    receivers worn by the listener. These systems minimize
+                    background noise and improve clarity.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    What are the main types of assistive listening systems?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    The three primary ALS technologies are:<br />
+                    <strong>Hearing loops:</strong> Use magnetic fields to transmit
+                    sound to hearing aids or cochlear implants with a telecoil setting.<br
+                    />
+                    <strong>FM or DM systems:</strong> Use radio signals to transmit
+                    sound from a source to personal receivers, often used in classrooms
+                    or meetings.<br />
+                    <strong>Infrared (IR) systems:</strong> Use light waves to send
+                    sound to a receiver. These require a clear line of sight and
+                    are often used in settings like cinemas or conference rooms.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">How do hearing loops work?</div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    A hearing loop system sends audio directly into a hearing
+                    aid or cochlear implant via a magnetic signal. Users must
+                    switch their device to the "T" (telecoil) setting to receive
+                    the signal. Hearing loops are commonly found in theaters,
+                    auditoriums, and other public venues.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    What is a personal infrared loop system?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    This system uses infrared light to wirelessly send sound to
+                    a portable receiver worn around the neck. The receiver has a
+                    built-in loop that sends the audio directly to a hearing
+                    aid’s telecoil. These are often available in classrooms or
+                    lecture halls.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    Are there smartphone apps that help with hearing?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    Yes. Many mobile apps offer features such as real-time
+                    captioning, sound amplification, or audio streaming. Some
+                    are designed to work with hearing aids or implants, while
+                    others function independently to improve listening in
+                    specific environments.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    Can phones work with assistive listening technology?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    Yes. By law, phones must be compatible with hearing aids.
+                    Most modern smartphones, including iPhones and Androids,
+                    offer either <strong>acoustic coupling</strong> (amplifies surrounding
+                    and phone audio) or <strong>telecoil compatibility</strong> (direct
+                    connection for clearer sound without background noise). Ask your
+                    audiologist if your device’s telecoil feature is activated.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    Are smartwatches assistive listening tools?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    They can be. Devices like Apple Watches can vibrate to alert
+                    users to calls or messages—offering a helpful, non-audio cue
+                    for those with hearing difficulties.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    Do I still need assistive listening devices if I use hearing
+                    aids?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    Possibly. While hearing aids offer excellent amplification,
+                    they may not always be enough—especially in noisy
+                    environments or public venues. ALDs and ALSs complement your
+                    hearing aids by providing clearer sound in specific
+                    settings.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    How do these technologies help in daily life?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    Assistive listening tools make activities like attending
+                    religious services, watching movies, riding public
+                    transport, or participating in meetings more accessible.
+                    They reduce listening fatigue, improve comprehension, and
+                    help users feel more connected and independent.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    Are public venues required to offer assistive listening
+                    systems?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    In many countries, yes. Laws such as the Americans with
+                    Disabilities Act (ADA) in the U.S., the UK Equality Act
+                    2010, and Australia’s Disability Discrimination Act require
+                    public facilities to provide ALS options for people with
+                    hearing loss.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    Are there standards for assistive listening systems?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    Yes. International standards like <strong>IEC60118-4</strong
+                    > ensure that systems—especially hearing loops—are properly installed
+                    and effective. These regulations promote high-quality experiences
+                    and prevent low-performance installations that fail to meet users’
+                    needs.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">Which type of system is best?</div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    It depends on the environment and the user’s preferences.
+                    Hearing loops are widely favored by users for their
+                    simplicity and effectiveness, but FM, DM, and IR systems
+                    also offer benefits in specific settings. A hearing care
+                    professional can help determine what suits your needs best.
+                  </p>
+                </div>
+              </div>
+              <div class="expandable-single">
+                <div class="expandable-top">
+                  <div class="text-h5">
+                    How do assistive listening systems work with hearing aids?
+                  </div>
+                  <div class="faq-animated-box">
+                    <div class="faq-horizontal"></div>
+                    <div class="faq-vertical"></div>
+                  </div>
+                </div>
+                <div class="expandable-bottom">
+                  <p class="faq-paragraph">
+                    Most systems transmit sound directly to hearing aids using a
+                    telecoil or Bluetooth feature. If your device has a
+                    telecoil, connecting to a hearing loop is often as simple as
+                    switching to the "T" setting. Otherwise, a neckloop or
+                    dedicated receiver may be needed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section home-c-numbers-section">
+    <div class="spacer-sm"></div>
+    <div class="spacer-sm"></div>
+    <div class="w-layout-blockcontainer main-container w-container">
       <div class="section-divider home-c-numbers"></div>
       <div class="w-layout-grid numbers-halves">
         <div class="numbers-left">
@@ -383,455 +830,9 @@ import Layout from "../../layouts/Layout.astro";
         </div>
       </div>
     </div>
+    <div class="spacer-sm"></div>
+    <div class="spacer-sm"></div>
+    <div class="section-divider home-c-numbers"></div>
   </section>
-
-  <section class="section about-video-section">
-    <div
-      data-poster-url="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-poster-00001.jpg"
-      data-video-urls="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-transcode.mp4,https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-transcode.webm"
-      data-autoplay="true"
-      data-loop="true"
-      data-wf-ignore="true"
-      class="about-video w-background-video w-background-video-atom"
-    >
-      <video
-        id="006ac042-2d55-f87c-e705-a6ca4fcf1724-video"
-        autoplay=""
-        loop=""
-        style='background-image:url(https://terra-tory-template.webflow.io/"https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-poster-00001.jpg")'
-        muted=""
-        playsinline=""
-        data-wf-ignore="true"
-        data-object-fit="cover"
-      >
-        <source
-          src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-transcode.mp4"
-          data-wf-ignore="true"
-        />
-        <source
-          src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F6734f6d6c9fcacdb28c79dc0_8467126-uhd_3840_2160_25fps-transcode.webm"
-          data-wf-ignore="true"
-        />
-      </video>
-      <div class="overlay-30"></div>
-      <div class="w-layout-blockcontainer main-container w-container">
-        <div class="headline-video">
-          <div class="label">LETTER FROM CEO</div>
-          <h3 class="no-margins">
-            “At terra–tory™, we believe the future of digital innovation lies
-            in blending technology with nature. By harnessing sustainable
-            practices, we’re not just building websites—we’re creating tools for
-            a better tomorrow.”
-          </h3>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section job-listing">
-    <div class="w-layout-blockcontainer main-container w-container">
-      <div class="section-divider careers"></div>
-      <div class="w-layout-grid careers-halves">
-        <div class="headline-career-jobs">
-          <div class="label">Open positions</div>
-          <h2 class="no-margins">Open positions</h2>
-        </div>
-        <div id="open-positions" class="jobs-list">
-          <div class="job-tile">
-            <div class="job-top-tile">
-              <div class="label">Location:</div>
-              <div class="job-location-tile">
-                <div class="label">On-site</div>
-                <div class="label">|</div>
-                <div class="label">Part-time</div>
-              </div>
-            </div>
-            <div class="job-mid-tile">
-              <div class="text-h4">Senior Bioinformatics Scientist</div><a
-                href="http://www.linkedin.com"
-                target="_blank"
-                class="cta-main bg-color w-inline-block"
-              >
-                <div class="button-animation-hide">
-                  <div class="button-animation-wrap">
-                    <div class="button-content-tile">
-                      <div>View offer</div>
-                      <div class="button-arrow w-embed">
-                        <svg
-                          width="7"
-                          height="10"
-                          viewBox="0 0 7 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 9L5 5L1 1"
-                            stroke="currentColor"
-                            stroke-width="2"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="button-content-tile">
-                      <div>View offer</div>
-                      <div class="button-arrow w-embed">
-                        <svg
-                          width="7"
-                          height="10"
-                          viewBox="0 0 7 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 9L5 5L1 1"
-                            stroke="currentColor"
-                            stroke-width="2"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <p class="text-body">
-              Lead the development of bioinformatics solutions that integrate
-              biological data with our advanced technologies. Requires expertise
-              in bioinformatics, machine learning, and data analytics.
-            </p>
-          </div>
-          <div class="job-tile">
-            <div class="job-top-tile">
-              <div class="label">Location:</div>
-              <div class="job-location-tile">
-                <div class="label">On-site</div>
-                <div class="label">|</div>
-                <div class="label">Part-time</div>
-              </div>
-            </div>
-            <div class="job-mid-tile">
-              <div class="text-h4">Junior Research Associate</div><a
-                href="http://www.linkedin.com"
-                target="_blank"
-                class="cta-main bg-color w-inline-block"
-              >
-                <div class="button-animation-hide">
-                  <div class="button-animation-wrap">
-                    <div class="button-content-tile">
-                      <div>View offer</div>
-                      <div class="button-arrow w-embed">
-                        <svg
-                          width="7"
-                          height="10"
-                          viewBox="0 0 7 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 9L5 5L1 1"
-                            stroke="currentColor"
-                            stroke-width="2"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="button-content-tile">
-                      <div>View offer</div>
-                      <div class="button-arrow w-embed">
-                        <svg
-                          width="7"
-                          height="10"
-                          viewBox="0 0 7 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 9L5 5L1 1"
-                            stroke="currentColor"
-                            stroke-width="2"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <p class="text-body">
-              Assist in lab research and development projects that bridge
-              biology and technology. Ideal for recent graduates passionate
-              about sustainable innovation.
-            </p>
-          </div>
-          <div class="job-tile">
-            <div class="job-top-tile">
-              <div class="label">Location:</div>
-              <div class="job-location-tile">
-                <div class="label">On-site</div>
-                <div class="label">|</div>
-                <div class="label">Part-time</div>
-              </div>
-            </div>
-            <div class="job-mid-tile">
-              <div class="text-h4">Product Designer</div><a
-                href="http://www.linkedin.com"
-                target="_blank"
-                class="cta-main bg-color w-inline-block"
-              >
-                <div class="button-animation-hide">
-                  <div class="button-animation-wrap">
-                    <div class="button-content-tile">
-                      <div>View offer</div>
-                      <div class="button-arrow w-embed">
-                        <svg
-                          width="7"
-                          height="10"
-                          viewBox="0 0 7 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 9L5 5L1 1"
-                            stroke="currentColor"
-                            stroke-width="2"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="button-content-tile">
-                      <div>View offer</div>
-                      <div class="button-arrow w-embed">
-                        <svg
-                          width="7"
-                          height="10"
-                          viewBox="0 0 7 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 9L5 5L1 1"
-                            stroke="currentColor"
-                            stroke-width="2"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <p class="text-body">
-              Design intuitive, bio-inspired interfaces and user experiences
-              that reflect our commitment to human-centered technology.
-              Experience in UX/UI and a passion for sustainable design
-              preferred.
-            </p>
-          </div>
-          <div class="job-tile">
-            <div class="job-top-tile">
-              <div class="label">Location:</div>
-              <div class="job-location-tile">
-                <div class="label">On-site</div>
-                <div class="label">|</div>
-                <div class="label">Part-time</div>
-              </div>
-            </div>
-            <div class="job-mid-tile">
-              <div class="text-h4">Data Analyst (Biotechnology Focus)</div><a
-                href="http://www.linkedin.com"
-                target="_blank"
-                class="cta-main bg-color w-inline-block"
-              >
-                <div class="button-animation-hide">
-                  <div class="button-animation-wrap">
-                    <div class="button-content-tile">
-                      <div>View offer</div>
-                      <div class="button-arrow w-embed">
-                        <svg
-                          width="7"
-                          height="10"
-                          viewBox="0 0 7 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 9L5 5L1 1"
-                            stroke="currentColor"
-                            stroke-width="2"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="button-content-tile">
-                      <div>View offer</div>
-                      <div class="button-arrow w-embed">
-                        <svg
-                          width="7"
-                          height="10"
-                          viewBox="0 0 7 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 9L5 5L1 1"
-                            stroke="currentColor"
-                            stroke-width="2"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <p class="text-body">
-              Analyze biological and technological data to uncover insights that
-              drive our innovation strategies. Requires a strong background in
-              data science and biotechnology.”
-            </p>
-          </div>
-          <div class="job-tile">
-            <div class="job-top-tile">
-              <div class="label">Location:</div>
-              <div class="job-location-tile">
-                <div class="label">On-site</div>
-                <div class="label">|</div>
-                <div class="label">Part-time</div>
-              </div>
-            </div>
-            <div class="job-mid-tile">
-              <div class="text-h4">Senior Project Manager</div><a
-                href="http://www.linkedin.com"
-                target="_blank"
-                class="cta-main bg-color w-inline-block"
-              >
-                <div class="button-animation-hide">
-                  <div class="button-animation-wrap">
-                    <div class="button-content-tile">
-                      <div>View offer</div>
-                      <div class="button-arrow w-embed">
-                        <svg
-                          width="7"
-                          height="10"
-                          viewBox="0 0 7 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 9L5 5L1 1"
-                            stroke="currentColor"
-                            stroke-width="2"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="button-content-tile">
-                      <div>View offer</div>
-                      <div class="button-arrow w-embed">
-                        <svg
-                          width="7"
-                          height="10"
-                          viewBox="0 0 7 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1 9L5 5L1 1"
-                            stroke="currentColor"
-                            stroke-width="2"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <p class="text-body">
-              Oversee complex, cross-disciplinary projects that integrate
-              biology with technology. Experience in project management within
-              biotech or tech industries required.”
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section cta-section">
-    <div class="cta-video">
-      <div class="w-layout-blockcontainer main-container w-container">
-        <div class="cta-master">
-          <div class="cta-top-tile">
-            <div class="label">terra–tory™</div>
-            <div class="heading-cta">
-              <div class="text-h1">Uncover your website’s potential</div>
-            </div>
-          </div>
-          <div class="cta-button-wrap">
-            <a
-              href="https://webflow.com/templates/designers/byq-studio"
-              target="_blank"
-              class="cta-main accent w-inline-block"
-            >
-              <div class="button-animation-hide">
-                <div class="button-animation-wrap">
-                  <div class="button-content-tile">
-                    <div>Buy Template</div>
-                    <div class="button-arrow w-embed">
-                      <svg
-                        width="7"
-                        height="10"
-                        viewBox="0 0 7 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 9L5 5L1 1"
-                          stroke="currentColor"
-                          stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="button-content-tile bottom-tile">
-                    <div>Buy Template</div>
-                    <div class="button-arrow w-embed">
-                      <svg
-                        width="7"
-                        height="10"
-                        viewBox="0 0 7 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 9L5 5L1 1"
-                          stroke="currentColor"
-                          stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a><a
-              href="contact/contact-a.html"
-              class="cta-booking w-inline-block"
-            >
-              <div class="cta-image-wrap">
-                <img
-                  src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2064f0f_Button%20Image.webp"
-                  loading="lazy"
-                  alt=""
-                  class="image-cover"
-                />
-              </div>
-              <div class="text-body semibold">Book an intro call</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        data-w-id="6d31e448-0cad-78cf-9898-37953bfbda47"
-        class="cta-circle-regular"
-      >
-      </div>
-      <div
-        data-w-id="5705fcc2-f633-58e3-1c4e-f911fd308ab2"
-        class="cta-circle-big"
-      >
-      </div>
-      <div
-        data-w-id="6fae3469-06b3-95c8-5c38-abda8ce051ed"
-        class="cta-circle-small"
-      >
-      </div>
-    </div>
-  </section>
+  <MemberCta />
 </Layout>
