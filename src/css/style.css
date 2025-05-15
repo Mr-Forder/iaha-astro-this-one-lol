@@ -11548,6 +11548,9 @@ figcaption {
 .spacer-sm {
   height: 3rem;
 }
+.spacer-xs {
+  height: 1rem;
+}
 .card-header {
   display: flex;
   flex-direction: row;
