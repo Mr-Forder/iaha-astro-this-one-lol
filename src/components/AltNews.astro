@@ -24,14 +24,14 @@ const allPosts = Object.values(
         <h3 class="text-h1">{technology} News</h3>
         <div class="home-b-button-wrap">
           <a
-            href=`/news/${technology}`
+            href={`/news/${technology.replace(/[\s/]+/g, "-").toLowerCase()}`}
             class="cta-main accent w-inline-block"
             style="margin-top:1rem;"
           >
             <div class="button-animation-hide">
               <div class="button-animation-wrap">
                 <div class="button-content-tile">
-                  <div>More news on {technology}</div>
+                  <div>More News on {technology}</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
