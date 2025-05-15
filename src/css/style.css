@@ -8250,6 +8250,18 @@ figcaption {
   display: flex;
 }
 
+
+.home-b-tab-menu-small {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  flex-direction: row;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-columns: 1fr;
+  height: 110px;
+  display: flex;
+}
+
 .tab-relative {
   z-index: 1;
   display: flex;
