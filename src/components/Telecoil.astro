@@ -43,9 +43,9 @@
                 <div class="text-h4" style="color: #30f1e1;">Simple to use</div>
                 <div class="">
                   A telecoil lets you connect directly to hearing loops in
-                  public venues and at home with no extra equipment needed. Simply
-                  switch your hearing aid or implant to T-mode to tap into
-                  clear, direct sound.
+                  public venues and at home with no extra equipment needed.
+                  Simply switch your hearing aid or implant to T-mode to tap
+                  into clear, direct sound.
                 </div>
               </div>
               <div
@@ -82,8 +82,7 @@
           <div class="w-layout-blockcontainer main-container w-container">
             <div class="w-layout-grid faq-halves">
               <div class="faq-left">
-                <div class="label">Telecoil FAQs
-                </div>
+                <div class="label">Telecoil FAQs</div>
                 <div class="faq-heading">
                   <h1>
                     Frequently<br />Asked <br />Questions<br />About <br
@@ -274,41 +273,48 @@
           <div class="text-h3">How to use your Telecoil</div>
           <div class="spacer-xs"></div>
 
+          <div
+            class="home-number-feature"
+            style="background-color: #1f2937; color:white;"
+          >
+            <div class="text-h5" style="color: #30f1e1;">
+              <span style="color:white;">1. </span>Check your device
+            </div>
+            <div class="">
+              Confirm your hearing aid or cochlear implant has a built-in
+              telecoil. <br />It’s often listed as “T” or “MT” in the manual or
+              settings.
+            </div>
+          </div>
 
-
-
+          <div class="spacer-xs"></div>
 
           <div
-          class="home-number-feature"
-          style="background-color: #1f2937; color:white;"
-        >
-          <div class="text-h5" style="color: #30f1e1;"><span style="color:white;">1. </span>Check your device</div>
-          <div class="">
-            Confirm your hearing aid or cochlear implant has a built-in telecoil. <br>It’s often listed as “T” or “MT” in the manual or settings.
+            class="home-number-feature"
+            style="background-color: #1f3537; color:white;"
+          >
+            <div class="text-h5" style="color: #30f1e1;">
+              <span style="color:white;">2. </span>Find the "T" switch
+            </div>
+            <div class="">
+              Look for a physical switch, button, or app setting to toggle
+              T-mode. Some devices switch automatically when near a loop.
+            </div>
           </div>
-        </div>
-
-        <div class="spacer-xs"></div>
-
-        <div
-        class="home-number-feature"
-        style="background-color: #1f3537; color:white;"
-      >
-        <div class="text-h5" style="color: #30f1e1;"><span style="color:white;">2. </span>Find the "T" switch</div>
-        <div class="">
-          Look for a physical switch, button, or app setting to toggle T-mode. Some devices switch automatically when near a loop.        </div>
-      </div>
-      <div class="spacer-xs"></div>
-      <div
-      class="home-number-feature"
-      style="background-color: #1f2e37; color:white;"
-    >
-      <div class="text-h5" style="color: #30f1e1;"><span style="color:white;">3. </span>Test It Out</div>
-      <div class="">
-        Your telecoil will pick up sound in venues with hearing loops, or when using a neckloop provided by IR or FM systems. No extra equipment needed on your end.     </div>
-    </div>
-
-
+          <div class="spacer-xs"></div>
+          <div
+            class="home-number-feature"
+            style="background-color: #1f2e37; color:white;"
+          >
+            <div class="text-h5" style="color: #30f1e1;">
+              <span style="color:white;">3. </span>Test It Out
+            </div>
+            <div class="">
+              Your telecoil will pick up sound in venues with hearing loops, or
+              when using a neckloop provided by IR or FM systems. No extra
+              equipment needed on your end.
+            </div>
+          </div>
 
           <!-- <div class="card">
             <div class="card-image"></div>
@@ -330,8 +336,7 @@
               </p>
             </div>
           </div> -->
-          <div class="spacer-sm"></div>         
-
+          <div class="spacer-sm"></div>
         </div>
       </div>
     </div>
@@ -348,116 +353,6 @@
     /* Adjust the breakpoint as needed */
     .number-features-grid {
       grid-template-columns: 1fr; /* Change to 1 column on mobile */
-    }
-  }
-
-  .card {
-    display: flex;
-    background:   #1f2937;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow:
-      0 15px 35px rgba(0, 0, 0, 0.7),
-      0 0 30px rgba(103, 58, 183, 0.08);
-    max-width: 800px;
-    position: relative;
-  }
-
-  /* Gradient overlay for the entire card */
-
-  /* Image section with overlay - BRIGHTENED */
-  .card-image {
-    flex: 1;
-    min-width: 40%;
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-  }
-
-  .card-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
-    background-size: cover;
-    background-position: center;
-    filter: saturate(1.1) contrast(1.05) brightness(1);
-    transition: transform 0.5s ease;
-  }
-
-  .card-image::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-  }
-
-  .card:hover .card-image::before {
-    transform: scale(1.05);
-  }
-
-  /* Content section */
-  .card-content {
-    flex: 1;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-  }
-
- 
-
-  .card-title {
-    font-size: 26px;
-
-    color: #30f1e1;
-    margin-bottom: 16px;
-    position: relative;
-    display: inline-block;
-
-  }
-
-  /* Enhanced title underline gradient */
-
-
-  .card-text {
-    font-size: 16px;
-
-    line-height: 1.7;
-    margin-bottom: 25px;
-    font-weight: 400;
-  }
-
-
-
-
-
-  .card-button:hover {
-    transform: translateY(-3px);
-  
-
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .card {
-      flex-direction: column;
-      max-width: 400px;
-    }
-
-    .card-image {
-      height: 220px;
-      min-width: 100%;
-    }
-
-    .card-content {
-      padding: 30px;
     }
   }
 </style>
