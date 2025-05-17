@@ -28,16 +28,19 @@
               minimizing ambient noise and enhancing speech transmitted through
               microphones or public address systems.
             </h5>
-            <div class="spacer-xs"></div>
+            <div class="spacer-sm"></div>
             <div class="section-divider-light"></div>
-            <div class="spacer-xs"></div>
+            <div class="spacer-sm"></div>
 
             <div
               class="w-layout-grid number-features-grid"
               style="color: var(--dark);"
             >
-              <div class="home-number-feature limitation">
-                <div class="text-h4">Simple to use</div>
+              <div
+                class="home-number-feature"
+                style="background-color: #1f2937; color:white;"
+              >
+                <div class="text-h4" style="color: #30f1e1;">Simple to use</div>
                 <div class="">
                   A telecoil lets you connect directly to hearing loops in
                   public venues and at home—no extra equipment needed. Simply
@@ -45,8 +48,13 @@
                   clear, direct sound.
                 </div>
               </div>
-              <div class="home-number-feature limitation">
-                <div class="text-h4">Often Overlooked</div>
+              <div
+                class="home-number-feature"
+                style="background-color: #1f2937; color:white;"
+              >
+                <div class="text-h4" style="color: #30f1e1;">
+                  Often Overlooked
+                </div>
                 <div class="">
                   Many hearing-aid and implant users are never informed that a
                   telecoil exists. Unaware of it, they miss out on any benefits
@@ -70,7 +78,7 @@
       </div>
 
       <div class="w-layout-grid story-halves">
-        <section class="section hero-faq" style="background:none; color:white;">
+        <section class="section" style="background:none; color:white;">
           <div class="w-layout-blockcontainer main-container w-container">
             <div class="w-layout-grid faq-halves">
               <div class="faq-left">
@@ -256,266 +264,190 @@
             </div>
           </div>
         </section>
-
-        <div class="card-wrapper">
-          <div class="card-container">
-            <div class="top"></div>
-            <div class="bottom">
-              <div class="left">
-                <div class="details">
-                  <h1>Chair</h1>
-                  <p>£250</p>
-                </div>
-                <div class="buy">
-                  <i class="material-icons">add_shopping_cart</i>
-                </div>
-              </div>
-              <div class="right">
-                <div class="done"><i class="material-icons">done</i></div>
-                <div class="details">
-                  <h1>Chair</h1>
-                  <p>Added to your cart</p>
-                </div>
-                <div class="remove"><i class="material-icons">clear</i></div>
-              </div>
-            </div>
-          </div>
-          <div class="inside">
-            <div class="icon"><i class="material-icons">info_outline</i></div>
-            <div class="contents">
-              <table>
-                <tr>
-                  <th>Width</th>
-                  <th>Height</th>
-                </tr>
-                <tr>
-                  <td>3000mm</td>
-                  <td>4000mm</td>
-                </tr>
-                <tr>
-                  <th>Something</th>
-                  <th>Something</th>
-                </tr>
-                <tr>
-                  <td>200mm</td>
-                  <td>200mm</td>
-                </tr>
-                <tr>
-                  <th>Something</th>
-                  <th>Something</th>
-                </tr>
-                <tr>
-                  <td>200mm</td>
-                  <td>200mm</td>
-                </tr>
-                <tr>
-                  <th>Something</th>
-                  <th>Something</th>
-                </tr>
-                <tr>
-                  <td>200mm</td>
-                  <td>200mm</td>
-                </tr>
-              </table>
-            </div>
-          </div>
+         
+        <div class="home-number-feature"
+        style="background-color: #1f2937; color:white;"
+      >
+        <div class="text-h4" style="color: #30f1e1;">Simple to use</div>
+        <div class="">
+          A telecoil lets you connect directly to hearing loops in
+          public venues and at home—no extra equipment needed. Simply
+          switch your hearing aid or implant to T-mode to tap into
+          clear, direct sound.
         </div>
       </div>
+      </div>
+
+
+      
     </div>
   </div>
 </section>
 
 <style>
-  .card-wrapper {
-    width: 100%;
-    height: 500px;
-    background: white;
-    margin: auto;
+  .number-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default to 2 columns */
+  }
+
+  @media (max-width: 767px) {
+    /* Adjust the breakpoint as needed */
+    .number-features-grid {
+      grid-template-columns: 1fr; /* Change to 1 column on mobile */
+    }
+  }
+
+  .card {
+    display: flex;
+    background: linear-gradient(
+      135deg,
+      #0a0518 0%,
+      #080816 25%,
+      #0c0c24 50%,
+      #0e051d 75%,
+      #12051a 100%
+    );
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow:
+      0 15px 35px rgba(0, 0, 0, 0.7),
+      0 0 30px rgba(103, 58, 183, 0.08);
+    max-width: 800px;
     position: relative;
-    overflow: hidden;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0;
-    transform: scale(0.95);
-    transition:
-      box-shadow 0.5s,
-      transform 0.5s;
   }
-  .card-wrapper:hover {
-    transform: scale(1);
-    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
-  }
-  .card-wrapper .card-container {
-    width: 100%;
-    height: 100%;
-  }
-  .card-wrapper .card-container .top {
-    height: 80%;
-    width: 100%;
-    background: url(https://s-media-cache-ak0.pinimg.com/736x/49/80/6f/49806f3f1c7483093855ebca1b8ae2c4.jpg)
-      no-repeat center center;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-  }
-  .card-wrapper .card-container .bottom {
-    width: 200%;
-    height: 20%;
-    transition: transform 0.5s;
-  }
-  .card-wrapper .card-container .bottom.clicked {
-    transform: translateX(-50%);
-  }
-  .card-wrapper .card-container .bottom h1 {
-    margin: 0;
-    padding: 0;
-  }
-  .card-wrapper .card-container .bottom p {
-    margin: 0;
-    padding: 0;
-  }
-  .card-wrapper .card-container .bottom .left {
-    height: 100%;
-    width: 50%;
-    background: #f4f4f4;
-    position: relative;
-    float: left;
-  }
-  .card-wrapper .card-container .bottom .left .details {
-    padding: 20px;
-    float: left;
-    width: calc(70% - 40px);
-  }
-  .card-wrapper .card-container .bottom .left .buy {
-    float: right;
-    width: calc(30% - 2px);
-    height: 100%;
-    background: #f1f1f1;
-    transition: background 0.5s;
-    border-left: solid thin rgba(0, 0, 0, 0.1);
-  }
-  .card-wrapper .card-container .bottom .left .buy i {
-    font-size: 30px;
-    padding: 30px;
-    color: #254053;
-    transition: transform 0.5s;
-  }
-  .card-wrapper .card-container .bottom .left .buy:hover {
-    background: #a6cdde;
-  }
-  .card-wrapper .card-container .bottom .left .buy:hover i {
-    transform: translateY(5px);
-    color: #00394b;
-  }
-  .card-wrapper .card-container .bottom .right {
-    width: 50%;
-    background: #a6cdde;
-    color: white;
-    float: right;
-    height: 200%;
-    overflow: hidden;
-  }
-  .card-wrapper .card-container .bottom .right .details {
-    padding: 20px;
-    float: right;
-    width: calc(70% - 40px);
-  }
-  .card-wrapper .card-container .bottom .right .done {
-    width: calc(30% - 2px);
-    float: left;
-    transition: transform 0.5s;
-    border-right: solid thin rgba(255, 255, 255, 0.3);
-    height: 50%;
-  }
-  .card-wrapper .card-container .bottom .right .done i {
-    font-size: 30px;
-    padding: 30px;
-    color: white;
-  }
-  .card-wrapper .card-container .bottom .right .remove {
-    width: calc(30% - 1px);
-    clear: both;
-    border-right: solid thin rgba(255, 255, 255, 0.3);
-    height: 50%;
-    background: #bc3b59;
-    transition:
-      transform 0.5s,
-      background 0.5s;
-  }
-  .card-wrapper .card-container .bottom .right .remove:hover {
-    background: #9b2847;
-  }
-  .card-wrapper .card-container .bottom .right .remove:hover i {
-    transform: translateY(5px);
-  }
-  .card-wrapper .card-container .bottom .right .remove i {
-    transition: transform 0.5s;
-    font-size: 30px;
-    padding: 30px;
-    color: white;
-  }
-  .card-wrapper .card-container .bottom .right:hover .remove,
-  .card-wrapper .card-container .bottom .right:hover .done {
-    transform: translateY(-100%);
-  }
-  .card-wrapper .inside {
-    z-index: 9;
-    background: #92879b;
-    width: 140px;
-    height: 140px;
+
+  /* Gradient overlay for the entire card */
+  .card::before {
+    content: "";
     position: absolute;
-    top: -70px;
-    right: -70px;
-    border-radius: 0px 0px 200px 200px;
-    transition:
-      all 0.5s,
-      border-radius 2s,
-      top 1s;
-    overflow: hidden;
-  }
-  .card-wrapper .inside .icon {
-    position: absolute;
-    right: 85px;
-    top: 85px;
-    color: white;
-    opacity: 1;
-  }
-  .card-wrapper .inside:hover {
-    width: 100%;
-    right: 0;
     top: 0;
-    border-radius: 0;
-    height: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   background-color: var(--dark);
+    pointer-events: none;
+    z-index: 1;
   }
-  .card-wrapper .inside:hover .icon {
-    opacity: 0;
-    right: 15px;
-    top: 15px;
+
+  /* Image section with overlay - BRIGHTENED */
+  .card-image {
+    flex: 1;
+    min-width: 40%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
   }
-  .card-wrapper .inside:hover .contents {
-    opacity: 1;
-    transform: scale(1);
-    transform: translateY(0);
-  }
-  .card-wrapper .inside .contents {
-    padding: 5%;
-    opacity: 0;
-    transform: scale(0.5);
-    transform: translateY(-200%);
-    transition:
-      opacity 0.2s,
-      transform 0.8s;
-  }
-  .card-wrapper .inside .contents table {
-    text-align: left;
+
+  .card-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+    background-size: cover;
+    background-position: center;
+    filter: saturate(1.1) contrast(1.05) brightness(1);
+    transition: transform 0.5s ease;
   }
-  .card-wrapper .inside .contents h1,
-  .card-wrapper .inside .contents p,
-  .card-wrapper .inside .contents table {
-    color: white;
+
+  .card-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
   }
-  .card-wrapper .inside .contents p {
-    font-size: 13px;
+
+  .card:hover .card-image::before {
+    transform: scale(1.05);
+  }
+
+  /* Content section */
+  .card-content {
+    flex: 1;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Enhanced gradient accent in the corner */
+  .card-content::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 180px;
+    height: 180px;
+    background: blue;
+
+
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  /* Additional gradient accent */
+  .card-content::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 150px;
+    height: 150px;
+    background: red;
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  .card-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+    position: relative;
+    display: inline-block;
+
+  }
+
+  /* Enhanced title underline gradient */
+
+
+  .card-text {
+    font-size: 16px;
+
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+
+
+
+
+
+  .card-button:hover {
+    transform: translateY(-3px);
+  
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      max-width: 400px;
+    }
+
+    .card-image {
+      height: 220px;
+      min-width: 100%;
+    }
+
+    .card-content {
+      padding: 30px;
+    }
   }
 </style>
