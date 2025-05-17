@@ -2234,6 +2234,13 @@ textarea.w-select {
   display: block;
 }
 
+.w-layout-blockcontainer-rev {
+  max-width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .w-layout-grid {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
@@ -4864,6 +4871,19 @@ figcaption {
 
 .faq-vertical {
   background-color: var(--dark);
+  width: 1.5px;
+  height: 12px;
+  position: absolute;
+}
+
+.faq-horizontal-light {
+  background-color: white;
+  width: 12px;
+  height: 1.5px;
+}
+
+.faq-vertical-light {
+  background-color: white;
   width: 1.5px;
   height: 12px;
   position: absolute;
@@ -11583,4 +11603,13 @@ figcaption {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+}
+.split-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem; /* optional spacing between columns */
+}
+
+.split-feature-col {
+  /* No special styling needed unless you want padding etc. */
 }
