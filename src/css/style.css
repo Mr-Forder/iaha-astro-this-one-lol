@@ -5550,6 +5550,10 @@ figcaption {
   display: flex;
 }
 
+.dotted {
+  border: 1px dashed white;
+  border-radius: var(--radius--small);
+}
 .headline-contact-b {
   grid-column-gap: 24px;
   grid-row-gap: 24px;

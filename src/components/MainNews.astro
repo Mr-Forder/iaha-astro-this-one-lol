@@ -29,7 +29,10 @@ function truncateText(text: string, wordLimit: number = 30) {
 }
 ---
 
-<section class="section hero-careers">
+
+{
+  showHeader && (
+  <section class="section hero-careers">
   <div class="w-layout-blockcontainer main-container w-container">
     <div class="headline-careers">
       <div class="careers-top-tile">
@@ -104,8 +107,6 @@ function truncateText(text: string, wordLimit: number = 30) {
     </div>
   </div>
 </section>
-{
-  showHeader && (
     <section class="">
       <div class="w-layout-blockcontainer main-container w-container">
         <div class="related-block w-dyn-list">
