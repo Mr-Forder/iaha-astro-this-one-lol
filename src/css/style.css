@@ -2250,6 +2250,12 @@ textarea.w-select {
   display: grid;
 }
 
+.team-grid {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 .w-commerce-commercecartwrapper {
   display: inline-block;
   position: relative;
@@ -3594,7 +3600,12 @@ figcaption {
   padding-bottom: 80px;
   position: relative;
 }
-
+.temp-section {
+  z-index: 1;
+  background-color: var(--light);
+  padding-top: 80px;
+  position: relative;
+}
 .section.template-hero {
   padding-top: 144px;
   padding-bottom: 64px;
@@ -5656,12 +5667,6 @@ figcaption {
   color: var(--accent);
 }
 
-.team-grid {
-  grid-column-gap: 32px;
-  grid-row-gap: 32px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
 .member-card {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
@@ -6884,7 +6889,7 @@ figcaption {
 
 .lightbox-home-a {
   border-radius: var(--radius--small);
-  background-image: url("https://cdn.prod.website-files.com/67337f627413b847e2064cec/673507cdce2af0291e8278e8_Tomato.avif");
+  background-image: url("/img/guide.jpg");
   background-position: 50%;
   background-size: cover;
   justify-content: center;
