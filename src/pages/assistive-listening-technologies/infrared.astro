@@ -6,6 +6,7 @@ import LookIcon from "../../components/icons/LookIcon.astro";
 import SwitchIcon from "../../components/icons/SwitchIcon.astro";
 import VenuesIcon from "../../components/icons/VenuesIcon.astro";
 import MainNews from "../../components/MainNews.astro";
+import Telecoil from "../../components/Telecoil.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -71,7 +72,7 @@ import Layout from "../../layouts/Layout.astro";
             </p>
 
             <div class="home-b-button-wrap">
-              <a href="#scrollto" class="cta-main accent w-inline-block">
+              <a href="#part-2" class="cta-main accent w-inline-block">
                 <div class="button-animation-hide">
                   <div class="button-animation-wrap">
                     <div class="button-content-tile">
@@ -145,6 +146,55 @@ import Layout from "../../layouts/Layout.astro";
   </section>
 
   <div class="spacer-sm"></div>
+
+  <section class="section home-a-story-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid story-halves">
+        <div class="headline-story">
+          <div class="heading-story">
+            <div class="spacer-sm"></div>
+            <div class="section-divider home-c-numbers"></div>
+
+            <h2 id="part-2" class="no-margins">
+              Infra-red (IR) assistive-listening systems deliver clear speech
+              intelligibility in theatres, conference rooms, and training spaces
+              by transmitting audio directly to headsets or hearing-aid
+              receivers.
+            </h2>
+            <div class="spacer-sm"></div>
+            <div class="section-divider home-c-numbers"></div>
+
+            <h5>
+              The focused IR signal minimises ambient noise and bypasses
+              electrical interference. This can be an advantage when induction
+              loops are impractical or privacy is a factor.
+            </h5>
+
+            <h5>
+              Infrared receivers can either be used with headphones or a
+              neck-loop to connect to a hearing aid / cochlear implant via <a
+                href="#telecoil"
+                class="teal-text">telecoil (T-Coil)</a
+              >.
+            </h5>
+          </div>
+        </div>
+        <div class="story-image-wrap">
+          <img
+            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+            srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif 3888w"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="spacer-sm"></div>
+
+  <div class="spacer-sm"></div>
   <div class="spacer-sm"></div>
 
   <section class="section home-a-about-section">
@@ -161,7 +211,12 @@ import Layout from "../../layouts/Layout.astro";
             <div class="text-h4">Look</div>
           </div>
 
-          <div class="text-h6">Look for assistive listening signs.</div>
+          <div class="text-h6">
+            Look for assistive listening signs. <a
+              href="/assistive-listening-technologies#signage"
+              class="teal-text">(Find out more about signeage here)</a
+            >
+          </div>
         </div>
         <div class="home-a-feature-card second-card">
           <div class="card-header">
@@ -285,12 +340,23 @@ import Layout from "../../layouts/Layout.astro";
     <div class="w-layout-blockcontainer main-container w-container">
       <div class="w-layout-grid numbers-halves">
         <div class="numbers-right">
-          <div class="text-h1">Advantages</div>
+          <div class="text-h1">Infrared Advantages</div>
 
           <div class="w-layout-grid number-features-grid">
             <div class="home-number-feature advantage">
               <div class="text-h4">Simple</div>
-              <div class="text-small">Relatively simple installation.</div>
+              <div class="text-small">
+                Relatively simple installation (avoids the requirement for
+                installation of a loop cable around the perimeter of the room).
+              </div>
+            </div>
+            <div class="home-number-feature advantage">
+              <div class="text-h4">Universal access</div>
+              <div class="text-small">
+                Infrared systems remain accessible to users without hearing aids
+                or cochlear implants; they can simply connect their own
+                headphones to the receiver.
+              </div>
             </div>
             <div class="home-number-feature advantage">
               <div class="text-h4">Private</div>
@@ -316,11 +382,11 @@ import Layout from "../../layouts/Layout.astro";
           </div>
         </div>
         <div class="numbers-right">
-          <div class="text-h1">Limitations</div>
+          <div class="text-h1">Infrared Limitations</div>
 
           <div class="w-layout-grid number-features-grid">
             <div class="home-number-feature limitation">
-              <div class="text-h4">Multiple Receivers</div>
+              <div class="text-h4">Needs Multiple Receivers</div>
               <div class="text-small">
                 Receivers required for all users (approximately 1 for every 25
                 seats).
@@ -357,6 +423,8 @@ import Layout from "../../layouts/Layout.astro";
       </div>
     </div>
   </section>
+
+  <Telecoil mode="dark" />
 
   <section class="section">
     <div class="w-layout-blockcontainer main-container w-container">
@@ -587,7 +655,7 @@ import Layout from "../../layouts/Layout.astro";
   <section class="section hero-product" style="margin-top: -1rem;">
     <div class="w-layout-blockcontainer main-container w-container">
       <div class="headline-product">
-        <h1 class="text-h1">Standards</h1>
+        <h1 class="text-h1">Infrared Standards</h1>
         <div>
           <div class="home-b-button-wrap">
             <a

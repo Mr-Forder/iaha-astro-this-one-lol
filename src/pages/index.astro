@@ -1,6 +1,8 @@
 ---
 import Bento from "../components/homepage/Bento.astro";
 import Hero from "../components/homepage/Hero.astro";
+import MainNews from "../components/MainNews.astro";
+import MemberCta from "../components/MemberCta.astro";
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -593,92 +595,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </section>
-  <section class="section cta-section">
-    <div class="cta-video">
-      <div class="w-layout-blockcontainer main-container w-container">
-        <div class="cta-master">
-          <div class="cta-top-tile">
-            <div class="label">terra–tory™</div>
-            <div class="heading-cta">
-              <div class="text-h1">Uncover your website’s potential</div>
-            </div>
-          </div>
-          <div class="cta-button-wrap">
-            <a
-              href="https://webflow.com/templates/designers/byq-studio"
-              target="_blank"
-              class="cta-main accent w-inline-block"
-            >
-              <div class="button-animation-hide">
-                <div class="button-animation-wrap">
-                  <div class="button-content-tile">
-                    <div>Buy Template</div>
-                    <div class="button-arrow w-embed">
-                      <svg
-                        width="7"
-                        height="10"
-                        viewBox="0 0 7 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 9L5 5L1 1"
-                          stroke="currentColor"
-                          stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="button-content-tile bottom-tile">
-                    <div>Buy Template</div>
-                    <div class="button-arrow w-embed">
-                      <svg
-                        width="7"
-                        height="10"
-                        viewBox="0 0 7 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 9L5 5L1 1"
-                          stroke="currentColor"
-                          stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a><a
-              href="../contact/contact-a.html"
-              class="cta-booking w-inline-block"
-            >
-              <div class="cta-image-wrap">
-                <img
-                  src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67337f627413b847e2064f0f_Button%20Image.webp"
-                  loading="lazy"
-                  alt=""
-                  class="image-cover"
-                />
-              </div>
-              <div class="text-body semibold">Book an intro call</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        data-w-id="6d31e448-0cad-78cf-9898-37953bfbda47"
-        class="cta-circle-regular"
-      >
-      </div>
-      <div
-        data-w-id="5705fcc2-f633-58e3-1c4e-f911fd308ab2"
-        class="cta-circle-big"
-      >
-      </div>
-      <div
-        data-w-id="6fae3469-06b3-95c8-5c38-abda8ce051ed"
-        class="cta-circle-small"
-      >
-      </div>
-    </div>
-  </section>
+
+  <MainNews showHeader limit={6} showPagination />
+  <MemberCta mode="dark" />
 </Layout>
