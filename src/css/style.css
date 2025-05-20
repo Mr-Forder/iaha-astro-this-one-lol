@@ -7663,6 +7663,22 @@ figcaption {
   overflow: hidden;
 }
 
+.feat-card {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  width: 100%;
+  display: flex;
+}
+
+.feat-image {
+  border-radius: var(--radius--small);
+  background-color: var(--bg);
+  width: 100%;
+  height: 274px;
+  overflow: hidden;
+}
+
 .member-image.big {
   height: 493px;
 }

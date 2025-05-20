@@ -1,5 +1,5 @@
 ---
-const { limit = 6, technology, showHeader, showPagination } = Astro.props;
+const { limit = 6, technology, showHeader, showPagination, frontPage } = Astro.props;
 const allPosts = Object.values(
   import.meta.glob("../pages/posts/*.md", { eager: true })
 )
@@ -57,7 +57,51 @@ function truncateText(text: string, wordLimit: number = 30) {
         </div>
       </div>
 
-      <div class="home-b-button-wrap">
+      {frontPage ? (<div class="home-b-button-wrap">
+        <a
+          href="/news"
+          class="cta-main accent w-inline-block"
+        >
+          <div class="button-animation-hide">
+            <div class="button-animation-wrap">
+              <div class="button-content-tile">
+                <div>See All News</div>
+                <div class="button-arrow w-embed">
+                  <svg
+                    width="7"
+                    height="10"
+                    viewBox="0 0 7 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 9L5 5L1 1"
+                      stroke="currentColor"
+                      stroke-width="2"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="button-content-tile">
+                <div>See All News</div>
+                <div class="button-arrow w-embed">
+                  <svg
+                    width="7"
+                    height="10"
+                    viewBox="0 0 7 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 9L5 5L1 1"
+                      stroke="currentColor"
+                      stroke-width="2"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>) : (<div class="home-b-button-wrap">
         <a
           href="/assistive-listening-technologies"
           class="cta-main accent w-inline-block"
@@ -101,7 +145,7 @@ function truncateText(text: string, wordLimit: number = 30) {
             </div>
           </div>
         </a>
-      </div>
+      </div>)}
 
       <div class="section-divider home-c-numbers"></div>
     </div>

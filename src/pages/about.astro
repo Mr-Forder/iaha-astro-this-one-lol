@@ -103,10 +103,10 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
 
-      <section class="section home-a-bento-section">
+      <section id="aims" class="section home-a-bento-section">
         <div class="w-layout-blockcontainer main-container w-container">
           <div class="headline-home-c-features">
-            <div id="aims" class="label">IAHA's Purpose</div>
+            <div class="label">IAHA's Purpose</div>
             <div class="heading-home-c-features">
               <h2 class="no-margins">Our Aims</h2>
             </div>
@@ -267,8 +267,6 @@ import Layout from "../layouts/Layout.astro";
     <div class="spacer-sm"></div>
     <div class="section-divider home-c-numbers"></div>
   </section>
-
-  <MainNews limit={3} />
-
   <MemberCta mode="dark" />
+  <MainNews limit={3} />
 </Layout>
