@@ -1,4 +1,5 @@
 ---
+import AboutUsMore from "../components/AboutUsMore.astro";
 import Bento from "../components/homepage/Bento.astro";
 import Hero from "../components/homepage/Hero.astro";
 import MainNews from "../components/MainNews.astro";
@@ -157,85 +158,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <section class="section home-a-story-section">
-    <div class="w-layout-blockcontainer main-container w-container">
-      <div class="headline-story">
-        <div class="section-divider"></div>
-        <div class="heading-story">
-          <h2 class="no-margins">
-            By blending ecological insights with advanced digital design,
-            terra–tory™ offers the ultimate template for businesses driven by
-            sustainability and positive impact.
-          </h2>
-        </div>
-      </div>
-      <div class="w-layout-grid story-halves">
-        <div class="story-image-wrap">
-          <img
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg"
-            loading="lazy"
-            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
-            srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-1600.jpg 1600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2000.jpg 2000w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-2600.jpg 2600w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill-p-3200.jpg 3200w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533bc5f919c00859c80_Windmill.jpg 4891w"
-            alt=""
-            class="image-cover"
-          />
-        </div>
-        <div class="story-right">
-          <div class="story-text">
-            <p class="text-big">
-              With terra–tory™, you’re choosing a template built to enhance
-              your business’s credibility and appeal. Designed for companies at
-              the forefront of environmental change, terra–tory™ supports your
-              journey toward sustainable growth and innovation, helping you
-              connect authentically with like-minded customers.
-            </p>
-          </div><a
-            href="../contact/contact-a.html"
-            class="cta-main accent w-inline-block"
-          >
-            <div class="button-animation-hide">
-              <div class="button-animation-wrap">
-                <div class="button-content-tile">
-                  <div>Get Started</div>
-                  <div class="button-arrow w-embed">
-                    <svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 9L5 5L1 1"
-                        stroke="currentColor"
-                        stroke-width="2"></path>
-                    </svg>
-                  </div>
-                </div>
-                <div class="button-content-tile">
-                  <div>Get Started</div>
-                  <div class="button-arrow w-embed">
-                    <svg
-                      width="7"
-                      height="10"
-                      viewBox="0 0 7 10"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 9L5 5L1 1"
-                        stroke="currentColor"
-                        stroke-width="2"></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <AboutUsMore />
 
   <Bento />
 
@@ -249,68 +172,79 @@ import Layout from "../layouts/Layout.astro";
         >
           <div class="member-image big">
             <img
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488c26620adac518f2b8_Team%20Member%20(2).avif"
+              src="/img/standards-thumb.jpg"
               loading="lazy"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488c26620adac518f2b8_Team%20Member%20(2)-p-500.avif 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488c26620adac518f2b8_Team%20Member%20(2)-p-800.avif 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488c26620adac518f2b8_Team%20Member%20(2).avif 1335w"
-              alt=""
+              alt="Assistive Listening standards"
               class="image-cover"
             />
           </div>
           <div class="member-info-tile">
-            <div class="text-h5 teal-text">Kristine Runolfsson</div>
-            <div class="text-p">sdsadsa sdsadsa dsad sadsa sd efrsdsd</div>
+            <div class="text-h5 teal-text">Assistive Listening Standards</div>
+            <div class="text-p">
+              Find out about Assistive Listening Standards, what they're for,
+              and why they're so important for ensuring consistent accessibility
+              in public spaces for people with hearing loss
+            </div>
           </div>
         </a>
-        <div
-          id="w-node-bb2c37e6-dbc4-c1cf-09c1-33fdec38e012-b235a4dc"
+        <a
+          href="/assistive-listening-technologies#telecoil"
+          id="w-node-_73fefbbb-0330-2f67-2787-7348b235a4dd-b235a4dc"
           class="member-card"
         >
           <div class="member-image big">
             <img
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488c66b9ed5a91a8e3c8_Team%20Member%20(3).avif"
+              src="/img/standards-thumb.jpg"
               loading="lazy"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488c66b9ed5a91a8e3c8_Team%20Member%20(3)-p-500.avif 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488c66b9ed5a91a8e3c8_Team%20Member%20(3)-p-800.avif 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488c66b9ed5a91a8e3c8_Team%20Member%20(3).avif 1334w"
-              alt=""
+              alt="Assistive Listening standards"
               class="image-cover"
             />
           </div>
           <div class="member-info-tile">
-            <div class="text-h6">Lena Konopelski</div>
-            <div class="label opacity-50">CTO</div>
+            <div class="text-h5 teal-text">Telecoils</div>
+            <div class="text-p">
+              What's a Telecoil? built into most hearing aids and cochlear
+              implants, they can provide direct, latency-free audio access in
+              public spaces, but not many people know what they are.
+            </div>
           </div>
-        </div>
-        <div
-          id="w-node-ff423a31-ea8e-d9d4-89c9-7c8002717a76-b235a4dc"
+        </a>
+        <a
+          href="/assistive-listening-technologies#signage"
+          id="w-node-_73fefbbb-0330-2f67-2787-7348b235a4dd-b235a4dc"
           class="member-card"
         >
           <div class="member-image big">
             <img
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488cac9864d565f09d6b_Team%20Member%20(4).avif"
+              src="/img/standards-thumb.jpg"
               loading="lazy"
               sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
-              srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488cac9864d565f09d6b_Team%20Member%20(4)-p-500.avif 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488cac9864d565f09d6b_Team%20Member%20(4)-p-800.avif 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/6735488cac9864d565f09d6b_Team%20Member%20(4).avif 1333w"
-              alt=""
+              alt="Assistive Listening standards"
               class="image-cover"
             />
           </div>
           <div class="member-info-tile">
-            <div class="text-h6">Jessica Mercedes</div>
-            <div class="label opacity-50">Infrastructure Supervisor</div>
+            <div class="text-h5 teal-text">
+              Finding an Assitive Listening System
+            </div>
+            <div class="text-p">
+              Find out how to locate Assistive Listening Systems and why signage
+              is crucial to ensuring people with hearing loss know they’re
+              available.
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
-  <MemberCta mode="dark" />
-  <div class="spacer-sm"></div>
+
+  <MemberCta />
 
   <div class="" style="margin-top: -3rem;">
     <MainNews frontPage showHeader limit={6} />
   </div>
-
-  <div class="spacer-sm"></div>
 
   <section class="about-a-services-section">
     <div class="w-layout-blockcontainer main-container w-container">
@@ -326,21 +260,67 @@ import Layout from "../layouts/Layout.astro";
             class="image-cover"
           />
         </div>
-        <div class="about-a-services-right">
+        <div class="">
           <div class="headline-services-about-a">
-            <div class="label">ALT Resources</div>
+            <div class="label">Assistive Listening Resources</div>
           </div>
-          <div class="heading-story">
-            <h2 class="no-margins">
-              We seek to make Assistive Listening Technologies clearer by
-              cuttintg throught the confusion...
-            </h2>
-          </div>
-          <div class="service-list-about-a">
-            <a href="about-a.html#" class="text-blured text-h0">Standards</a><a
-              href="about-a.html#"
-              class="text-blured text-h0">Links</a
-            ><a href="about-a.html#" class="text-blured text-h0">Glossary</a>
+          <div class="spacer-sm"></div>
+          <div class="headline-story">
+            <div class="heading-story">
+              <h3 class="no-margins">
+                The International Association for Hearing Accessibility seeks to
+                clear up confusion around assistive listening technologies.
+              </h3>
+              <div class="spacer-sm"></div>
+              <h5>
+                This includes supporting greater awareness, implementation, and
+                accessibility for people with hearing loss. Here's some more
+                links that may help that.
+              </h5>
+            </div>
+
+            <div class="service-list-about-a">
+              <div
+                class="section-divider"
+                style="margin-top:0.5rem; margin-bottom: 0.5rem;"
+              >
+              </div>
+              <a href="/about" class="text-blured text-h0">About IAHA</a>
+              <div
+                class="section-divider"
+                style="margin-top:0.5rem; margin-bottom: 0.5rem;"
+              >
+              </div>
+              <a href="/assistive-listening-systems" class="text-blured text-h0"
+                >Available Assistive Listening Systems</a
+              >
+              <div
+                class="section-divider"
+                style="margin-top:0.5rem; margin-bottom: 0.5rem;"
+              >
+              </div>
+              <a href="/standards" class="text-blured text-h0">Standards</a>
+              <div
+                class="section-divider"
+                style="margin-top:0.5rem; margin-bottom: 0.5rem;"
+              >
+              </div>
+              <a href="/contact" class="text-blured text-h0"
+                >Technical Documents</a
+              >
+              <div
+                class="section-divider"
+                style="margin-top:0.5rem; margin-bottom: 0.5rem;"
+              >
+              </div>
+              <a href="/contact" class="text-blured text-h0">Useful Links</a>
+              <div
+                class="section-divider"
+                style="margin-top:0.5rem; margin-bottom: 0.5rem;"
+              >
+              </div>
+              <a href="/contact" class="text-blured text-h0">Contact Us</a>
+            </div>
           </div>
         </div>
       </div>
