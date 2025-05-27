@@ -2216,7 +2216,7 @@ textarea.w-select {
   --border-light: #ffffff29;
   --radius--medium: 24px;
   --white\<deleted\|variable-75369ad5-5fd4-9139-b6e3-c0b27c5f1325\>: white;
-  --heading--h0: 36px;
+  --heading--h0: 112px;
   --green\<deleted\|variable-dc7b9626-9039-8987-b71f-5c79a7eb5e15\>: #aedcb9;
   --letter-spacing--8: -0.08em;
   --letter-spacing--5: -0.05em;
@@ -6736,6 +6736,7 @@ figcaption {
   font-weight: 400;
   line-height: 93.3%;
 }
+
 
 .cta-circle-regular {
   border: 1px dashed var(--semi-transparent-light);
