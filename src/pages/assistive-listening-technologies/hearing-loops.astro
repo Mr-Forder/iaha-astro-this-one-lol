@@ -15,8 +15,7 @@ import Layout from "../../layouts/Layout.astro";
     <div class="w-layout-grid home-b-hero-halves">
       <div class="home-b-hero-video">
         <div
-          data-poster-url="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-poster-00001.jpg"
-          data-video-urls="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.mp4,https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.webm"
+          data-poster-url="/img/crowd.jpg"
           data-autoplay="true"
           data-loop="true"
           data-wf-ignore="true"
@@ -26,20 +25,12 @@ import Layout from "../../layouts/Layout.astro";
             id="dd4a4a55-d02d-e713-cd77-aca276f208b2-video"
             autoplay=""
             loop=""
-            style='background-image:url(https://terra-tory-template.webflow.io/homepage/"https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-poster-00001.jpg")'
             muted=""
             playsinline=""
             data-wf-ignore="true"
             data-object-fit="cover"
           >
-            <source
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.mp4"
-              data-wf-ignore="true"
-            />
-            <source
-              src="https://cdn.prod.website-files.com/67337f627413b847e2064cec%2F67352e2e93015edef00e8c12_-1614-457c-ad9e-12b699823904-transcode.webm"
-              data-wf-ignore="true"
-            />
+            <source src="/video/crowd.mp4" data-wf-ignore="true" />
           </video>
         </div>
       </div>
@@ -182,11 +173,10 @@ import Layout from "../../layouts/Layout.astro";
         </div>
         <div class="story-image-wrap">
           <img
-            src="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif"
+            src="/img/hearing-aid-close.jpg"
             loading="lazy"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
-            srcset="https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-500.jpg 500w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-800.jpg 800w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow-p-1080.jpg 1080w, https://cdn.prod.website-files.com/67337f627413b847e2064cec/67346533d0734c72af49c024_Cow.avif 3888w"
-            alt=""
+            alt="hearing aid close up"
             class="image-cover"
           />
         </div>
@@ -199,7 +189,7 @@ import Layout from "../../layouts/Layout.astro";
       <div class="w-layout-grid story-halves">
         <div class="story-image-wrap">
           <video
-            src="/video/about.mp4"
+            src="/video/counter.mp4"
             autoplay
             muted
             loop
