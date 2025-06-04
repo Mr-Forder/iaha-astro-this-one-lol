@@ -5,7 +5,7 @@ alt: "Hearing Loops"
 image:
   url: "https://images.pexels.com/photos/7312173/pexels-photo-7312173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   alt: "A man using a hearing aid device in a public auditorium."
-pubDate: 2026-05-12
+pubDate: 2025-05-12
 ---
 
 ### Creating Connections with Hearing Loop Systems

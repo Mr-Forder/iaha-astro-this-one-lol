@@ -16,7 +16,9 @@ const { frontmatter } = Astro.props;
             <div class="article-category-wrap">
               <div class="text-small semibold">{frontmatter.alt}</div>
               <div class="text-small opacity-50">·</div>
-              <div class="text-small">{frontmatter.pubDate.split("T")[0]}</div>
+              <div class="text-small">
+                {frontmatter.pubDate.toISOString().split("T")[0]}
+              </div>
             </div>
             <h1 class="text-h1">
               {frontmatter.title}
