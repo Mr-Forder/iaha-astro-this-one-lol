@@ -1,20 +1,24 @@
 ---
-const { limit = 6, technology, showHeader, showPagination, frontPage } = Astro.props;
-const allPosts = Object.values(
-  import.meta.glob("../pages/posts/*.md", { eager: true })
-)
-  .filter((post: any) => {
-    const isScheduled =
-      new Date(post.frontmatter.pubDate).getTime() > Date.now();
+import { getCollection } from "astro:content";
+const {
+  limit = 6,
+  technology,
+  showHeader,
+  showPagination,
+  frontPage,
+} = Astro.props;
+
+const allPosts = (await getCollection("posts"))
+  .filter((post) => {
+    const isScheduled = new Date(post.data.pubDate).getTime() > Date.now();
     if (technology) {
-      return !isScheduled && post.frontmatter.alt === technology;
+      return !isScheduled && post.data.alt === technology;
     }
     return !isScheduled;
   })
-  .sort((a: any, b: any) => {
+  .sort((a, b) => {
     return (
-      new Date(b.frontmatter.pubDate).getTime() -
-      new Date(a.frontmatter.pubDate).getTime()
+      new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
     );
   });
 
@@ -29,231 +33,233 @@ function truncateText(text: string, wordLimit: number = 30) {
 }
 ---
 
-
 {
   showHeader && (
-  <section class="section hero-careers">
-  <div class="w-layout-blockcontainer main-container w-container">
-   {frontPage &&  <div class="section-divider home-c-numbers"></div>}
-    <div class="headline-careers">
-      <div class="careers-top-tile">
-        <div class="spacer-sm"></div>
-        <div class="heading-careers">
-          <div class="headline-blog">
-            <div class="label">News</div>
-            <h1 class="text-h1">
-              {
-                technology ? (
-                  `The latest news on ${technology}`
-                ) : (
-                  <>
-                    Latest News
-                    <br />
-                    and Articles
-                  </>
-                )
-              }
-            </h1>
-          </div>
-        </div>
-      </div>
-
-      {frontPage ? (<div class="home-b-button-wrap">
-        <a
-          href="/news"
-          class="cta-main accent w-inline-block"
-        >
-          <div class="button-animation-hide">
-            <div class="button-animation-wrap">
-              <div class="button-content-tile">
-                <div>See All News</div>
-                <div class="button-arrow w-embed">
-                  <svg
-                    width="7"
-                    height="10"
-                    viewBox="0 0 7 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 9L5 5L1 1"
-                      stroke="currentColor"
-                      stroke-width="2"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="button-content-tile">
-                <div>See All News</div>
-                <div class="button-arrow w-embed">
-                  <svg
-                    width="7"
-                    height="10"
-                    viewBox="0 0 7 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 9L5 5L1 1"
-                      stroke="currentColor"
-                      stroke-width="2"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>) : (<div class="home-b-button-wrap">
-        <a
-          href="/assistive-listening-technologies"
-          class="cta-main accent w-inline-block"
-        >
-          <div class="button-animation-hide">
-            <div class="button-animation-wrap">
-              <div class="button-content-tile">
-                <div>See Assistive Listening Technologies</div>
-                <div class="button-arrow w-embed">
-                  <svg
-                    width="7"
-                    height="10"
-                    viewBox="0 0 7 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 9L5 5L1 1"
-                      stroke="currentColor"
-                      stroke-width="2"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="button-content-tile">
-                <div>See Assistive Listening Technologies</div>
-                <div class="button-arrow w-embed">
-                  <svg
-                    width="7"
-                    height="10"
-                    viewBox="0 0 7 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 9L5 5L1 1"
-                      stroke="currentColor"
-                      stroke-width="2"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>)}
-
-      <div class="section-divider home-c-numbers"></div>
-    </div>
-  </div>
-
-
-
-{  frontPage && (
-  <div class="w-layout-blockcontainer main-container w-container">
-      <div class="w-layout-grid numbers-halves">
-        <div class="numbers-left">
-          <div class="">
-            <img
-              src="/img/iscve-guide.jpg"
-              loading="lazy"
-              sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
-              alt="ISCVE launches guide and Code of Practice for Assistive Listening Systems "
-              class="image-cover"
-            />
-          </div>
-        </div>
-        <div class="numbers-right">
-          <div class="label">Featured News</div>
-          <h2 class="no-margins">
-            ISCVE launches guide and Code of Practice for Assistive Listening
-            Systems
-          </h2>
-          <div class="section-divider"></div>
-          <div class="text-h5">
-            In a world where technology is rapidly advancing, it can be
-            overwhelming to keep up with the latest innovations in assistive
-            listening systems for the hearing impaired.
-          </div>
-
-          <div class="text-h5">
-            This comprehensive Guide and Code of Practice are aimed at venue
-            managers, audiologists, users, system designers, and installation
-            companies looking to improve their knowledge and understanding of
-            assistive listening systems.
-          </div>
-          <div class="home-b-button-wrap">
-            <a
-              href="https://iscve.org.uk/iscve-launches-comprehensive-guide-and-a-code-of-practice-for-assistive-listening-systems/"
-              class="cta-main accent w-inline-block"
-            >
-              <div class="button-animation-hide">
-                <div class="button-animation-wrap">
-                  <div class="button-content-tile">
-                    <div>Get ISCVE's Guide</div>
-                    <div class="button-arrow w-embed">
-                      <svg
-                        width="7"
-                        height="10"
-                        viewBox="0 0 7 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 9L5 5L1 1"
-                          stroke="currentColor"
-                          stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="button-content-tile">
-                    <div>Get ISCVE's Guide</div>
-                    <div class="button-arrow w-embed">
-                      <svg
-                        width="7"
-                        height="10"
-                        viewBox="0 0 7 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 9L5 5L1 1"
-                          stroke="currentColor"
-                          stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="section-divider home-c-numbers"></div>
-    </div>
-  )}
-  
-</section>
-<div class="spacer-lg"></div>
-    <section class="">
+    <section class="section hero-careers">
       <div class="w-layout-blockcontainer main-container w-container">
-        <div class="related-block w-dyn-list">
-          <div role="list" class="w-dyn-items">
-            <div role="listitem" class="w-dyn-item">
+        {frontPage && <div class="section-divider home-c-numbers" />}
+        <div class="headline-careers">
+          <div class="careers-top-tile">
+            <div class="spacer-sm" />
+            <div class="heading-careers">
+              <div class="headline-blog">
+                <div class="label">News</div>
+                <h1 class="text-h1">
+                  {technology ? (
+                    `The latest news on ${technology}`
+                  ) : (
+                    <>
+                      Latest News
+                      <br />
+                      and Articles
+                    </>
+                  )}
+                </h1>
+              </div>
+            </div>
+          </div>
+          {frontPage ? (
+            <div class="home-b-button-wrap">
+              <a href="/news" class="cta-main accent w-inline-block">
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>See All News</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>See All News</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          ) : (
+            <div class="home-b-button-wrap">
               <a
-                href={allPosts[0].url}
+                href="/assistive-listening-technologies"
+                class="cta-main accent w-inline-block"
+              >
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>See Assistive Listening Technologies</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>See Assistive Listening Technologies</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          )}
+          <div class="section-divider home-c-numbers" />
+        </div>
+      </div>
+      {frontPage && (
+        <div class="w-layout-blockcontainer main-container w-container">
+          <div class="w-layout-grid numbers-halves">
+            <div class="numbers-left">
+              <div class="">
+                <img
+                  src="/img/iscve-guide.jpg"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+                  alt="ISCVE launches guide and Code of Practice for Assistive Listening Systems "
+                  class="image-cover"
+                />
+              </div>
+            </div>
+            <div class="numbers-right">
+              <div class="label">Featured News</div>
+              <h2 class="no-margins">
+                ISCVE launches guide and Code of Practice for Assistive
+                Listening Systems
+              </h2>
+              <div class="section-divider" />
+              <div class="text-h5">
+                In a world where technology is rapidly advancing, it can be
+                overwhelming to keep up with the latest innovations in assistive
+                listening systems for the hearing impaired.
+              </div>
+              <div class="text-h5">
+                This comprehensive Guide and Code of Practice are aimed at venue
+                managers, audiologists, users, system designers, and
+                installation companies looking to improve their knowledge and
+                understanding of assistive listening systems.
+              </div>
+              <div class="home-b-button-wrap">
+                <a
+                  href="https://iscve.org.uk/iscve-launches-comprehensive-guide-and-a-code-of-practice-for-assistive-listening-systems/"
+                  class="cta-main accent w-inline-block"
+                >
+                  <div class="button-animation-hide">
+                    <div class="button-animation-wrap">
+                      <div class="button-content-tile">
+                        <div>Get ISCVE's Guide</div>
+                        <div class="button-arrow w-embed">
+                          <svg
+                            width="7"
+                            height="10"
+                            viewBox="0 0 7 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 9L5 5L1 1"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="button-content-tile">
+                        <div>Get ISCVE's Guide</div>
+                        <div class="button-arrow w-embed">
+                          <svg
+                            width="7"
+                            height="10"
+                            viewBox="0 0 7 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 9L5 5L1 1"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="section-divider home-c-numbers" />
+        </div>
+      )}
+    </section>
+  )
+}
+
+<div class="spacer-lg"></div>
+<section class="">
+  <div class="w-layout-blockcontainer main-container w-container">
+    <div class="related-block w-dyn-list">
+      <div role="list" class="w-dyn-items">
+        <div role="listitem" class="w-dyn-item">
+          {
+            allPosts[0] && (
+              <a
+                href={allPosts[0].slug ? `/posts/${allPosts[0].slug}/` : "#"}
                 class="article-tile pinned w-inline-block"
               >
                 <div class="image-wrap-blog pinned">
                   <img
                     alt=""
                     loading="lazy"
-                    src={allPosts[0].frontmatter.image.url}
+                    src={allPosts[0].data.image?.url}
                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, 54vw"
                     class="image-cover"
                   />
@@ -262,25 +268,23 @@ function truncateText(text: string, wordLimit: number = 30) {
                   <div class="">
                     <div class="article-category-wrap">
                       <div class="text-small opacity-50">·</div>
-                      <div class="text-small">
-                        {allPosts[0].frontmatter.alt}
-                      </div>
+                      <div class="text-small">{allPosts[0].data.alt}</div>
                     </div>
-                    <h3 class="teal-text">{allPosts[0].frontmatter.title}</h3>
+                    <h3 class="teal-text">{allPosts[0].data.title}</h3>
                     <div class="section-divider home-c-numbers" />
                   </div>
                   <div class="text-h4">
-                    {truncateText(allPosts[0].frontmatter.description)}
+                    {truncateText(allPosts[0].data.description)}
                   </div>
                 </div>
               </a>
-            </div>
-          </div>
+            )
+          }
         </div>
       </div>
-    </section>
-  )
-}
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="w-layout-blockcontainer main-container w-container">
@@ -290,29 +294,30 @@ function truncateText(text: string, wordLimit: number = 30) {
     <div class="related-block w-dyn-list">
       <div role="list" class="blog-thirds w-dyn-items" id="posts-container">
         {
-          allPosts.slice(0, limit).map((post: any) => (
+          allPosts.slice(0, limit).map((post) => (
             <div role="listitem" class="w-dyn-item">
-              <a href={post.url} class="article-tile w-inline-block">
+              <a
+                href={post.slug ? `/posts/${post.slug}/` : "#"}
+                class="article-tile w-inline-block"
+              >
                 <div class="image-wrap-blog">
                   <img
                     alt=""
                     loading="lazy"
-                    src={post.frontmatter.image.url}
+                    src={post.data.image?.url}
                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 991px) 46vw, 30vw"
-                    class={post.frontmatter.image.alt}
+                    class={post.data.image?.alt}
                   />
                 </div>
                 <div class="article-info-wrap">
                   <div class="article-category-wrap">
-                    <div class="text-small teal-text">
-                      {post.frontmatter.alt}
-                    </div>
+                    <div class="text-small teal-text">{post.data.alt}</div>
                     <div class="text-small opacity-50">·</div>
                     <div class="text-small">
-                      {post.frontmatter.pubDate.split("T")[0]}
+                      {post.data.pubDate.toISOString().split("T")[0]}
                     </div>
                   </div>
-                  <div class="text-h5">{post.frontmatter.title}</div>
+                  <div class="text-h5">{post.data.title}</div>
                 </div>
               </a>
             </div>
@@ -352,7 +357,6 @@ function truncateText(text: string, wordLimit: number = 30) {
 }
 
 <script define:vars={{ allPosts, limit, totalPages }}>
-  // Store all posts data in a global variable
   window.allPosts = allPosts;
   window.currentPage = 1;
   window.postsPerPage = limit;
@@ -368,25 +372,25 @@ function truncateText(text: string, wordLimit: number = 30) {
       .map(
         (post) => `
     <div role="listitem" class="w-dyn-item">
-      <a href="${post.url}" class="article-tile w-inline-block">
+      <a href="${post.slug ? `/posts/${post.slug}/` : "#"}" class="article-tile w-inline-block">
         <div class="image-wrap-blog">
           <img
             alt=""
             loading="lazy"
-            src="${post.frontmatter.image.url}"
+            src="${post.data.image?.url || ""}"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 44vw, (max-width: 991px) 46vw, 30vw"
-            class="${post.frontmatter.image.alt}"
+            class="${post.data.image?.alt || ""}"
           />
         </div>
         <div class="article-info-wrap">
           <div class="article-category-wrap">
-            <div class="text-small teal-text">${post.frontmatter.alt}</div>
+            <div class="text-small teal-text">${post.data.alt}</div>
             <div class="text-small opacity-50">·</div>
             <div class="text-small">
-              ${post.frontmatter.pubDate.split("T")[0]}
+              ${post.data.pubDate instanceof Date ? post.data.pubDate.toISOString().split("T")[0] : ""}
             </div>
           </div>
-          <div class="text-h5">${post.frontmatter.title}</div>
+          <div class="text-h5">${post.data.title}</div>
         </div>
       </a>
     </div>
@@ -394,21 +398,18 @@ function truncateText(text: string, wordLimit: number = 30) {
       )
       .join("");
 
-    // Update button visibility
     document.getElementById("prev-btn").style.display =
       window.currentPage > 1 ? "block" : "none";
     document.getElementById("next-btn").style.display =
       window.currentPage < window.totalPages ? "block" : "none";
   }
 
-  // Add event listeners to pagination buttons
   document.getElementById("next-btn").addEventListener("click", () => {
     if (window.currentPage < window.totalPages) {
       window.currentPage++;
       updatePosts();
-      // Scroll to the Latest articles section with offset
       const element = document.querySelector(".headline-related");
-      const offset = 80; // 5rem offset (assuming 1rem = 16px)
+      const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
       window.scrollTo({
@@ -422,9 +423,8 @@ function truncateText(text: string, wordLimit: number = 30) {
     if (window.currentPage > 1) {
       window.currentPage--;
       updatePosts();
-      // Scroll to the Latest articles section with offset
       const element = document.querySelector(".headline-related");
-      const offset = 80; // 5rem offset (assuming 1rem = 16px)
+      const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
       window.scrollTo({
