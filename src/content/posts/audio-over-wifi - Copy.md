@@ -8,6 +8,8 @@ image:
 pubDate: 2025-06-01
 ---
 
+### Staying Connected with Audio Over Wi-Fi
+
 As assistive listening continues to evolve, **audio over Wi-Fi** has emerged as a **flexible and discreet** option—particularly in environments where installing fixed infrastructure isn’t possible or practical.
 
 These systems transmit live audio over a venue’s Wi-Fi network to a user’s personal device, such as a smartphone or tablet. A dedicated app—provided by the system’s manufacturer—allows users to access and control the stream in real time. This “bring your own device” (BYOD) model can feel natural and familiar for many, offering a **personalised listening experience**.

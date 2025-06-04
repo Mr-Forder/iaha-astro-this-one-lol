@@ -20,18 +20,14 @@ const { frontmatter } = Astro.props;
                 {frontmatter.pubDate.toISOString().split("T")[0]}
               </div>
             </div>
-            <h1 class="text-h1">
-              {frontmatter.title}
-            </h1>
-            <!-- <p>
-              Every business aspires to grow, but not all growth is sustainable.
-              Rapid expansion without a solid foundation can lead to operational
-              challenges, financial strain, and inefficiencies that ultimately
-              stifle success. To ensure long-term growth, businesses must focus
-              on strategies that prioritize stability, adaptability, and
-              scalability. Here are five essential strategies to drive
-              sustainable business growth.
-            </p> -->
+            <div class="article-title-wrap">
+              <h1 class="text-h1">
+                {frontmatter.title}
+              </h1>
+              <h3 class="text-h4 light-accent">
+                {frontmatter.description}
+              </h3>
+            </div>
           </div><a href="#Article" class="article-down-button w-inline-block">
             <div class="icon-down-arrow w-embed">
               <svg
@@ -89,3 +85,12 @@ const { frontmatter } = Astro.props;
   </section>
   <MainNews limit={3} />
 </Layout>
+
+<style>
+  .article-title-wrap {
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+</style>

@@ -1,18 +1,16 @@
 ---
+import { getCollection } from "astro:content";
 const { technology } = Astro.props;
-const allPosts = Object.values(
-  import.meta.glob("../pages/posts/*.md", { eager: true })
-)
+
+const allPosts = (await getCollection("posts"))
   .filter((post) => {
-    const isScheduled =
-      new Date(post.frontmatter.pubDate).getTime() > Date.now();
-    const isInfrared = post.frontmatter.alt === technology;
+    const isScheduled = new Date(post.data.pubDate).getTime() > Date.now();
+    const isInfrared = post.data.alt === technology;
     return !isScheduled && isInfrared;
   })
-  .sort((a: any, b: any) => {
+  .sort((a, b) => {
     return (
-      new Date(b.frontmatter.pubDate).getTime() -
-      new Date(a.frontmatter.pubDate).getTime()
+      new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
     );
   });
 ---
@@ -75,21 +73,21 @@ const allPosts = Object.values(
       <a
         id="w-node-d3fc33a7-4793-5f6e-7bc4-31a4856e0ae8-e2064dc4"
         data-w-id="d3fc33a7-4793-5f6e-7bc4-31a4856e0ae8"
-        href={allPosts[0]?.url}
+        href={allPosts[0]?.slug ? `/posts/${allPosts[0].slug}/` : "#"}
         class="case-card-home-b long w-inline-block"
       >
         <div class="case-card-image">
           <img
-            src={allPosts[0]?.frontmatter.image.url}
+            src={allPosts[0]?.data.image?.url}
             loading="lazy"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 81vw, (max-width: 991px) 85vw, 89vw"
-            alt={allPosts[0]?.frontmatter.alt}
+            alt={allPosts[0]?.data.image?.alt}
             class="image-cover"
           />
         </div>
         <div class="case-home-b-bottom-tile">
           <h3 class="no-margins">
-            {allPosts[0]?.frontmatter.title}
+            {allPosts[0]?.data.title}
           </h3>
           <div class="cta-main light">
             <div class="button-animation-hide">
@@ -133,12 +131,12 @@ const allPosts = Object.values(
           </div>
         </div>
       </a><a
-        href={allPosts[1]?.url}
+        href={allPosts[1]?.slug ? `/posts/${allPosts[1].slug}/` : "#"}
         class="case-card-home-b accent w-inline-block"
       >
         <div class="case-home-b-bottom-tile">
           <h4 class="no-margins">
-            {allPosts[1]?.frontmatter.title}
+            {allPosts[1]?.data.title}
           </h4>
         </div>
         <div class="cta-main light">
@@ -181,10 +179,13 @@ const allPosts = Object.values(
             </div>
           </div>
         </div>
-      </a><a href={allPosts[2]?.url} class="case-card-home-b w-inline-block">
+      </a><a
+        href={allPosts[2]?.slug ? `/posts/${allPosts[2].slug}/` : "#"}
+        class="case-card-home-b w-inline-block"
+      >
         <div class="case-home-b-bottom-tile">
           <h4 class="no-margins">
-            {allPosts[2]?.frontmatter.title}
+            {allPosts[2]?.data.title}
           </h4>
         </div>
         <div class="cta-main light">
@@ -229,12 +230,12 @@ const allPosts = Object.values(
         </div>
       </a><a
         id="w-node-_5c284b14-56eb-3474-fd51-3c6faf670198-e2064dc4"
-        href={allPosts[3]?.url}
+        href={allPosts[3]?.slug ? `/posts/${allPosts[3].slug}/` : "#"}
         class="case-card-home-b w-inline-block"
       >
         <div class="case-home-b-bottom-tile">
           <h4 class="no-margins">
-            {allPosts[3]?.frontmatter.title}
+            {allPosts[3]?.data.title}
           </h4>
         </div>
         <div class="cta-main light">
