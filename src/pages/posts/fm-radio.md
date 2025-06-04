@@ -1,22 +1,22 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Staying Connected with FM Assistive Listening Systems
-description: "FM systems offer a flexible, portable solution for people with hearing loss, especially in settings where background noise and distance make hearing difficult. By wirelessly transmitting sound from a microphone directly to a listener’s receiver, FM technology enhances clarity and independence in everyday situations."
+title: Creating Connections with FM Assistive Listening Systems
+description: "FM systems offer a flexible, portable solution for people with hearing loss, especially in settings where background noise and distance make hearing difficult. By wirelessly transmitting sound from a microphone directly to a listener’s receiver, FM technology enhances clarity and accessibility."
 alt: "FM/Radio"
 image:
-  url: "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  alt: "A person holding a small FM microphone during a guided tour."
-pubDate: 2025-06-02
+  url: "https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  alt: "A speaker giving a presentation to a group, with a microphone clipped to their shirt."
+pubDate: 2025-06-03
 ---
 
-### Staying Connected with FM Assistive Listening Systems
+### Creating Connections with FM Assistive Listening Systems
 
-In the world of assistive listening, **FM systems** (short for _Frequency Modulation_) provide a **versatile and mobile solution** for people with hearing loss—especially in places where background noise, distance, or poor acoustics make hearing difficult.
+When it comes to improving access for people with hearing loss, **FM assistive listening systems** remain a **reliable and effective** option—especially in environments where background noise or distance can interfere with sound clarity.
 
-Whether it's a **teacher speaking in a classroom**, a **tour guide leading a group**, or a **conversation in a busy café**, FM systems transmit sound directly from a microphone worn by the speaker to a personal receiver worn by the listener. This direct connection cuts through environmental noise, **delivering clearer, more focused sound**.
+These systems work by transmitting audio from a microphone—typically worn by a speaker—via **FM radio frequencies** directly to a **personal receiver** used by the listener. The result is a **clearer, more direct sound**, bypassing ambient noise and acoustic challenges.
 
-Unlike fixed systems such as induction loops, FM systems are **lightweight, portable**, and can be used almost anywhere—even outdoors. They're ideal for people who need support across multiple locations or activities throughout the day, from **meetings and lectures to travel and social events**.
+FM systems are **portable and versatile**, making them ideal for classrooms, places of worship, tour groups, and temporary event spaces. They’re particularly helpful in **dynamic or mobile settings** where fixed installations aren’t feasible.
 
-At IAHA, we recognize that accessibility needs to be **flexible and personal**. FM systems empower users to bring their own tools with them, reducing reliance on venue-provided technology. As public awareness and expectations grow, FM technology remains a trusted and effective option that gives users **freedom, independence, and clarity**—no matter where life takes them.
+While FM technology is robust and easy to use, it does require compatible receivers and occasional management of channel interference or range limitations. It’s not a one-size-fits-all solution—but when chosen with care, it can provide **meaningful, immediate support** for individuals with hearing loss.
 
-Let's keep working toward a world where everyone can tune in, wherever they are.
+At IAHA, we believe that **inclusive design means having options**. FM systems continue to play a vital role in the assistive listening landscape, helping to create spaces where **everyone can stay connected and engaged**.
