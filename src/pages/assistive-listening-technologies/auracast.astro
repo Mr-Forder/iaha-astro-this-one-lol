@@ -1,0 +1,701 @@
+---
+import AltNews from "../../components/AltNews.astro";
+import AskIcon from "../../components/icons/AskIcon.astro";
+import ListenIcon from "../../components/icons/ListenIcon.astro";
+import LookIcon from "../../components/icons/LookIcon.astro";
+import SwitchIcon from "../../components/icons/SwitchIcon.astro";
+import VenuesIcon from "../../components/icons/VenuesIcon.astro";
+import MainNews from "../../components/MainNews.astro";
+import Telecoil from "../../components/Telecoil.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="section home-b-hero">
+    <div class="w-layout-grid home-b-hero-halves">
+      <div class="home-b-hero-video">
+        <div
+          data-poster-url="/img/crowd.jpg"
+          data-autoplay="true"
+          data-loop="true"
+          data-wf-ignore="true"
+          class="video-cover w-background-video w-background-video-atom"
+        >
+          <video
+            id="dd4a4a55-d02d-e713-cd77-aca276f208b2-video"
+            autoplay=""
+            loop=""
+            muted=""
+            playsinline=""
+            data-wf-ignore="true"
+            data-object-fit="cover"
+          >
+            <source src="/video/crowd.mp4" data-wf-ignore="true" />
+          </video>
+        </div>
+      </div>
+      <div
+        id="w-node-b3e792f4-cab4-dd11-8ea4-9fc938cf4fa3-e2064dc4"
+        class="home-b-hero-right"
+        style="background: #f3f6f3;"
+      >
+        <div class="headline-home-b">
+          <div class="hero-home-b-top-tile">
+            <div class="label">Assistive Listening Technology</div>
+            <div class="home-b-heading">
+              <h1 class="text-h0">Auracast</h1>
+            </div>
+            <div class="section-divider home-c-numbers"></div>
+            <div class="text-h4">How they work</div>
+            <p class="text-big">
+              Sound from a source such as a person speaking into a microphone or
+              music from a sound system, is sent to an induction loop driver.
+              The driver converts the audio into a magnetic signal, transmitted
+              through a wire loop. This signal is picked up wirelessly by the
+              <a href="#telecoil" class="teal-text">telecoil (T-Coil)</a> in a hearing
+              aid or cochlear implant, which then converts it back into clear audio
+              for the listener.
+            </p>
+
+            <p class="text-big">
+              Zero latency sound is delivered directly to the ear via a hearing
+              aid or cochlear implant.
+            </p>
+
+            <div class="home-b-button-wrap">
+              <a href="#part-2" class="cta-main accent w-inline-block">
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>Find out more</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>Find out more</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            data-w-id="1ffd7efb-f14d-f551-08f8-9dc596336054"
+            style="opacity:0"
+            class="rating"
+          >
+            <div class="rating-icon-wrap">
+              <div class="icon-rating accent w-embed">
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.9987 1.33203L10.0587 5.50536L14.6654 6.1787L11.332 9.42537L12.1187 14.012L7.9987 11.8454L3.8787 14.012L4.66536 9.42537L1.33203 6.1787L5.9387 5.50536L7.9987 1.33203Z"
+                    fill="currentColor"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w-layout-blockcontainer main-container right-padding-8 w-container"
+    >
+    </div>
+  </section>
+
+  <div class="spacer-sm"></div>
+
+  <section class="section home-a-story-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid story-halves">
+        <div class="headline-story">
+          <div class="heading-story">
+            <div class="spacer-sm"></div>
+            <div class="section-divider home-c-numbers"></div>
+
+            <h2 id="part-2" class="no-margins">
+              Devices with a telecoil (T-Coil) pick up the signal from a Hearing
+              Loop and convert it into clear audio, <span class="light-accent"
+                >delivering sound directly to the user without the need for
+                extra equipment.</span
+              >
+            </h2>
+            <div class="spacer-sm"></div>
+            <div class="section-divider home-c-numbers"></div>
+
+            <h5>
+              T-coil users can receive sound invisibly, simply and directly to
+              their own hearing aid or cochlear implant without the need for a
+              separate receiver.
+            </h5>
+
+            <h5>
+              Simply switching the hearing aid over to its ‘T setting’ will give
+              the user access to broadcast audio signals in the looped area.
+              Using a T-coil enabled device enables an audio signal to be picked
+              up anywhere within a properly looped area, making it easy for
+              people to move around and still hear clearly.
+            </h5>
+          </div>
+        </div>
+        <div class="story-image-wrap">
+          <img
+            src="/img/hearing-aid-close.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+            alt="hearing aid close up"
+            class="image-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="spacer-sm"></div>
+  <section class="section home-a-story-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid story-halves">
+        <div class="story-image-wrap">
+          <video
+            src="/video/counter.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="image-cover"
+            style="width: 100%; height: auto;"></video>
+        </div>
+        <div class="headline-story">
+          <div class="heading-story">
+            <h2 class="no-margins">
+              Hearing loops have their own quality and performance standard for
+              installations.
+            </h2>
+          </div>
+          <div class="spacer-xs"></div>
+          <div class="section-divider home-c-numbers"></div>
+
+          <h5>
+            This ensures that, regardless of the make of hearing loop, It
+            provides clear, consistent sound throughout the looped area.<br />
+            Typically, hearing loops are a fit once device, and hearing loop drivers
+            can last many years, making them attractive to venue owners and facilities
+            managers. This may be one of the reasons why there are so many more loops
+            available than any other technology.
+          </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer-sm"></div>
+
+  <div class="spacer-sm"></div>
+
+  <section class="section home-a-story-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid story-halves">
+        <div class="headline-story">
+          <div class="heading-story">
+            <div class="section-divider home-c-numbers"></div>
+
+            <h2 class="no-margins">
+              Hearing loops can be found wherever you see this Assistive
+              Listening sign.
+            </h2>
+            <div class="spacer-sm"></div>
+            <div class="section-divider home-c-numbers"></div>
+
+            <h5>
+              A hearing loop symbol should be mounted at eye level beside every
+              entrance to a looped room, with an additional, larger sign
+              positioned prominently on an internal wall. At reception desks or
+              service counters, place the sign on, or immediately adjacent to,
+              the counter in a spot that cannot be obscured by the person being
+              served. For intercoms and help points, fix a small symbol beside
+              the call button at a height that remains clearly visible to the
+              user.
+            </h5>
+
+            <h5>
+              At reception desks or service counters, place the sign on, or
+              immediately adjacent to, the counter in a spot that cannot be
+              obscured by the person being served.
+            </h5>
+            <h5>
+              For intercoms and help points, fix a small symbol beside the call
+              button at a height that remains clearly visible to the user.
+            </h5>
+            <h5>
+              Even if you cannot find any sign of a loop system, it's always a
+              good idea to ask the venue if one is available.
+            </h5>
+          </div>
+        </div>
+        <div class="story-image-wrap">
+          <img
+            src="/img/assistive-listening-sign.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+            alt="assistive listening sign"
+            class="image-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="spacer-sm"></div>
+  <section class="section home-a-about-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div id="scrollto" class="text-h1">How to Access a Hearing Loop</div>
+      <div class="spacer-sm"></div>
+      <div class="spacer-sm"></div>
+      <div class="w-layout-grid home-a-grid">
+        <div class="home-a-feature-card first-card">
+          <div class="card-header">
+            <div class="home-a-feature-icon">
+              <LookIcon />
+            </div>
+            <div class="text-h4">Look</div>
+          </div>
+
+          <div class="text-h6">
+            Look for assistive listening signs. <a
+              href="/assistive-listening-technologies#signage"
+              class="teal-text">(Find out more about signeage here)</a
+            >
+          </div>
+        </div>
+        <div class="home-a-feature-card second-card">
+          <div class="card-header">
+            <div class="home-a-feature-icon">
+              <AskIcon />
+            </div>
+            <div class="text-h4">Ask</div>
+          </div>
+          <div class="text-h6">
+            Although adequate signage must communicate a loop system is
+            available, this isn't always the case.
+          </div>
+        </div>
+        <div class="home-a-feature-card third-card">
+          <div class="card-header">
+            <div class="home-a-feature-icon">
+              <SwitchIcon />
+            </div>
+            <div class="text-h4">Switch</div>
+          </div>
+
+          <div class="text-h6">
+            Switch to the ‘T’ or ‘MT’ setting on your hearing aid(s), cochlear
+            implant or bone conduction device.
+          </div>
+        </div>
+        <div class="home-a-feature-card fourth-card">
+          <div class="card-header">
+            <div class="home-a-feature-icon">
+              <ListenIcon />
+            </div>
+            <div class="text-h4">Listen</div>
+          </div>
+          <div class="text-h6">Listen to clear, latency free audio.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-b-numbers-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid numbers-halves">
+        <div class="numbers-right">
+          <div class="text-h1">Hearing Loop Advantages</div>
+
+          <div class="w-layout-grid number-features-grid">
+            <div class="home-number-feature advantage">
+              <div class="text-h4">Low Overheads</div>
+              <div class="text-small">
+                Minimal time and capital overhead for facility providing
+                assistance to T-coil users.
+              </div>
+            </div>
+            <div class="home-number-feature advantage">
+              <div class="text-h4">Flexible</div>
+              <div class="text-small">
+                Can be integrated into large areas such as a concert hall,
+                theatre or cinema, or fitted to something as small as an
+                intercom in a doorway or lift / elevator.
+              </div>
+            </div>
+            <div class="home-number-feature advantage">
+              <div class="text-h4">Standardised</div>
+              <div class="text-small">
+                Have sound quality standard (IEC60118-4) for installations.
+              </div>
+            </div>
+            <div class="home-number-feature advantage">
+              <div class="text-h4">Clear</div>
+              <div class="text-small">
+                bypasses any external or background noise and other acoustic
+                distortions.
+              </div>
+            </div>
+            <div class="home-number-feature advantage">
+              <div class="text-h4">Zero Latency</div>
+              <div class="text-small">
+                No latency due to end-to-end analogue transmission.
+              </div>
+            </div>
+            <div class="home-number-feature advantage">
+              <div class="text-h4">Discreet</div>
+              <div class="text-small">
+                Use the person’s own device to connect to the audio signal
+                without drawing attention to themselves.
+              </div>
+            </div>
+            <div class="home-number-feature advantage">
+              <div class="text-h4">Accessory Agnostic</div>
+              <div class="text-small">
+                Non T-coil users can use loop receivers with headsets.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="numbers-right">
+          <div class="text-h1">Hearing Loop Limitations</div>
+
+          <div class="w-layout-grid number-features-grid">
+            <div class="home-number-feature limitation">
+              <div class="text-h4">Potential Interference</div>
+              <div class="text-small">
+                T-coils can pick up electromagnetic interference – avoidable
+                with an IEC60118-4 compliant installation
+              </div>
+            </div>
+            <div class="home-number-feature limitation">
+              <div class="text-h4">Potentially Complex</div>
+              <div class="text-small">
+                In some cases installation can be complex.
+              </div>
+            </div>
+            <div class="home-number-feature limitation">
+              <div class="text-h4">Metal Issues</div>
+              <div class="text-small">
+                Metal content in building structure can cause signal loss -
+                resolved by effective loop layout design.
+              </div>
+            </div>
+            <div class="home-number-feature limitation">
+              <div class="text-h4">Privacy</div>
+              <div class="text-small">
+                Sound privacy requires appropriate loop design
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Telecoil />
+
+  <section class="section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="headline-home-c-tabs">
+        <h3 class="text-h1">Common Hearing Loop Applications</h3>
+      </div>
+      <div
+        data-current="Tab 1"
+        data-easing="ease"
+        data-duration-in="300"
+        data-duration-out="100"
+        class="home-b-tabs w-tabs"
+      >
+        <div class="home-b-tab-menu w-tab-menu">
+          <a
+            data-w-tab="Tab 1"
+            data-w-id="9717cd62-6764-10cd-fdbe-99fd64033c04"
+            class="home-c-tab w-inline-block w-tab-link w--current"
+          >
+            <div class="tab-relative">
+              <div class="tab-text-wrap">
+                <VenuesIcon />
+                <div class="text-h5">Learning & Civic Spaces</div>
+              </div>
+            </div>
+            <div class="tab-top-tile">
+              <VenuesIcon />
+              <div class="text-h4">Learning & Civic Spaces</div>
+            </div>
+            <div class="tab-b-text-wrap">
+              <div class="limit-520">
+                <ul>
+                  <li class="text-h5">Classrooms</li>
+                  <li class="text-h5">Courtrooms</li>
+                  <li class="text-h5">Conference Rooms</li>
+                  <li class="text-h5">Meeting Rooms</li>
+                </ul>
+              </div>
+            </div><img
+              sizes="(max-width: 479px) 100vw, (max-width: 767px) 91vw, (max-width: 991px) 45vw, 29vw"
+              alt="Classrooms"
+              src="/img/alts/class.avif"
+              loading="lazy"
+              class="tab-b-image"
+            />
+            <div class="tab-b-overlay"></div>
+          </a><a
+            data-w-tab="Tab 2"
+            class="home-c-tab w-inline-block w-tab-link"
+          >
+            <div class="tab-relative">
+              <div class="tab-text-wrap">
+                <VenuesIcon />
+                <div class="text-h5">Performance & Cultural Venues</div>
+              </div>
+            </div>
+            <div class="tab-top-tile">
+              <VenuesIcon />
+              <div class="text-h4">Performance & Cultural Venues</div>
+            </div>
+            <div class="tab-b-text-wrap">
+              <div class="limit-520">
+                <ul>
+                  <li class="text-h5">Houses of worship</li>
+                  <li class="text-h5">Theates & Auditoriums</li>
+                  <li class="text-h5">Arenas and stadiums</li>
+                  <li class="text-h5">Museums</li>
+                  <li class="text-h5">Theme Parks</li>
+                </ul>
+              </div>
+            </div><img
+              sizes="(max-width: 479px) 100vw, (max-width: 767px) 91vw, (max-width: 991px) 45vw, 21vw"
+              alt="Stadiums"
+              src="/img/alts/stadium.avif"
+              loading="lazy"
+              class="tab-b-image"
+            />
+            <div class="tab-b-overlay"></div>
+          </a><a
+            data-w-tab="Tab 3"
+            class="home-c-tab w-inline-block w-tab-link"
+          >
+            <div class="tab-relative">
+              <div class="tab-text-wrap">
+                <VenuesIcon />
+                <div class="text-h5">Transport & Service Points</div>
+              </div>
+            </div>
+            <div class="tab-top-tile">
+              <VenuesIcon />
+              <div class="text-h4">Transport & Service Points</div>
+            </div>
+            <div class="tab-b-text-wrap">
+              <div class="limit-520">
+                <ul>
+                  <li class="text-h5">
+                    Service counters (banks, retail, airports)
+                  </li>
+                  <li class="text-h5">Taxis, buses, trains and trams</li>
+                  <li class="text-h5">Ticket machines</li>
+                  <li class="text-h5">Cash machines / ATMs</li>
+                  <li class="text-h5">Door entry systems & intercoms</li>
+                  <li class="text-h5">Lifts / Elevators</li>
+                </ul>
+              </div>
+            </div><img
+              sizes="(max-width: 479px) 100vw, (max-width: 767px) 91vw, (max-width: 991px) 45vw, 21vw"
+              alt="airport"
+              src="/img/alts/airport.avif"
+              loading="lazy"
+              class="tab-b-image"
+            />
+            <div class="tab-b-overlay"></div>
+          </a><a
+            data-w-tab="Tab 4"
+            class="home-c-tab w-inline-block w-tab-link"
+          >
+            <div class="tab-relative">
+              <div class="tab-text-wrap">
+                <VenuesIcon />
+                <div class="text-h5">Hospitality & Care</div>
+              </div>
+            </div>
+            <div class="tab-top-tile">
+              <VenuesIcon />
+              <div class="text-h4">Hospitality & Care</div>
+            </div>
+            <div class="tab-b-text-wrap">
+              <div class="limit-520">
+                <ul>
+                  <li class="text-h5">Hotels</li>
+                  <li class="text-h5">Restaraunts</li>
+                  <li class="text-h5">Hospitals</li>
+                  <li class="text-h5">Nursing homes</li>
+                  <li class="text-h5">Cinemas</li>
+                </ul>
+              </div>
+            </div><img
+              sizes="(max-width: 479px) 100vw, (max-width: 767px) 91vw, (max-width: 991px) 45vw, 21vw"
+              alt="bar"
+              src="/img/alts/bar.avif"
+              loading="lazy"
+              class="tab-b-image"
+            />
+            <div class="tab-b-overlay"></div>
+          </a>
+        </div>
+        <div class="w-tab-content">
+          <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active"></div>
+          <div data-w-tab="Tab 2" class="w-tab-pane"></div>
+          <div data-w-tab="Tab 3" class="w-tab-pane"></div>
+          <div data-w-tab="Tab 4" class="w-tab-pane"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero-product" style="margin-top: -1rem;">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="headline-product">
+        <h1 class="text-h1">Hearing Loop Standards</h1>
+        <div>
+          <div class="home-b-button-wrap">
+            <a
+              href="../resources/standards"
+              class="cta-main accent w-inline-block"
+            >
+              <div class="button-animation-hide">
+                <div class="button-animation-wrap">
+                  <div class="button-content-tile">
+                    <div>Find out more about standards</div>
+                    <div class="button-arrow w-embed">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="button-content-tile">
+                    <div>Find out more about standards</div>
+                    <div class="button-arrow w-embed">
+                      <svg
+                        width="7"
+                        height="10"
+                        viewBox="0 0 7 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="product-content-wrap">
+        <div class="section-divider"></div>
+        <div class="w-layout-grid product-halves">
+          <div class="label">EQUIPMENT PERFORMANCE STANDARDS</div>
+          <div class="w-richtext">
+            <p>
+              A correctly installed system is inherently compliant with IEC
+              60118-4
+            </p>
+            <div class="section-divider"></div>
+            <p style="margin-top:1rem;">
+              A suitable loop driver will always be compliant with IEC 62489-1
+            </p>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+        <div class="w-layout-grid product-halves">
+          <div class="label">ACCESSIBILITY STANDARDS</div>
+          <div class="w-richtext">
+            <p>Fully compliant per ADA Standard 219</p>
+            <div class="section-divider"></div>
+            <p style="margin-top:1rem;">
+              BS 8300 Design of an accessible and inclusive built environment
+            </p>
+            <div class="section-divider"></div>
+            <p style="margin-top:1rem;">
+              <p style="margin-top:1rem;">
+                BS 8300 Design of an accessible and inclusive built environment
+              </p>
+            </p>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+      </div>
+    </div>
+    <div class="spacer-sm"></div>
+    <div class="spacer-sm"></div>
+    <div class="spacer-sm"></div>
+    <div class="spacer-sm"></div>
+    <AltNews technology="Hearing Loops" />
+    <MainNews limit={6} />
+    <section>
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="related-block w-dyn-list">
+          <div role="navigation" aria-label="List" class="w-pagination-wrapper">
+            <a
+              href="/news"
+              aria-label="Next Page"
+              class="w-pagination-next pagination-button-article"
+            >
+              <div class="text-h3 w-inline-block">More News</div>
+            </a>
+            <link rel="prerender" href="blog@33f22ee7_page=2.html" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</Layout>
