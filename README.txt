@@ -30,6 +30,7 @@ add auracast section to comparison doc
 icons - 4 on each ALT on ALTs page
 single icon on applications for each ALT
 4 icons on auracast HOW TO ACCESS section
+6 icons on standards pages
 
 
 
@@ -89,3 +90,6 @@ https://centerforhearingaccess.org/auracast/
 see faq section on last link
 
 auracast is adding, not replacing loops etc
+
+
+typo page 6 of assistive listening comparison pdf - 1 from every 25 seats
