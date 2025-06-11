@@ -1,10 +1,6 @@
 
-Invoice - send tues or wed
 
-change stock images - add t- to loop sign, swap out portable loop imgs with cobbled together assistive listening signs in situ
 
-swap out all hearing loop images with something cobbled together
-add T to that hearing loop sign - blue thing
 
 
 auracast - get new stock
@@ -12,9 +8,7 @@ HOW TO section (dont' forget icons)
 standards
 
 
-Bluetooth section becomes auracast
-emerging techs to be deleted
-
+finalize nav
 
 send range of test articles...
 
