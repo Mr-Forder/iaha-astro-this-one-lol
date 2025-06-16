@@ -14,28 +14,44 @@ send range of test articles...
 
 
 do membership when info comes in
+membership - note iscve membership area
+https://iscve.org.uk/members-directory/
+https://iscve.org.uk/members
+check our doc too
 
 
-resources - links and documents -
+membership -
+membership CTA
+membership main page
+code of practice?
+members directory
 
-add auracast section to comparison doc
+finish auracast
+finish main ALT page (does it need anything more?)
+resources
+links
+technical documents - needs rebranded docs
+add auracast section to comparison doc when site is live and content okayed
+
+populate news sections with articles
+
 
 
 icons - 4 on each ALT on ALTs page
 single icon on applications for each ALT
 4 icons on auracast HOW TO ACCESS section
-6 icons on standards pages
 
 
 
 
 
 
-finish alt section - see notes
 
-finish resources section
 
-rebrand docs - keep comparison guide set aside for now - will be adding to it
+
+
+NON SITE
+-------------------------------------
 
 get test articles sent out + doc for response
 
@@ -47,7 +63,6 @@ IDEAS for selly tweets - infrared systems blah blah, find out more here:
 
 
 
-At the 2025 Future of Hearing Healthcare Conference, Andy Bellavia and Dave Kemp explored the tech and trends reshaping the field, discussing how assistive roles are helping professionals reach more patients. Take a look, from This Week in Hearing: 
 
 leave number off contact
 
