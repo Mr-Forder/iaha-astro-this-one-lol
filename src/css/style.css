@@ -11659,3 +11659,8 @@ figcaption {
 .split-feature-col {
   /* No special styling needed unless you want padding etc. */
 }
+.link-logo {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-bottom: 2px;
+}
