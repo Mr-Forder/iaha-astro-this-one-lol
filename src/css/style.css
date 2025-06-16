@@ -7196,6 +7196,12 @@ figcaption {
   overflow: hidden;
 }
 
+.features-video-home-c2 {
+  border-radius: var(--radius--small);
+  height: 696px;
+  overflow: hidden;
+}
+
 .circle-testimonial-left {
   border: 1px dashed var(--semi-transparent-dark);
   border-radius: var(--radius--round);
