@@ -1,5 +1,6 @@
 ---
 import MainNews from "../../components/MainNews.astro";
+import MemberCta from "../../components/MemberCta.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -18,11 +19,11 @@ import Layout from "../../layouts/Layout.astro";
         </div>
 
         <div class="home-b-button-wrap">
-          <a href="#resources" class="cta-main accent w-inline-block">
+          <a href="#standards" class="cta-main accent w-inline-block">
             <div class="button-animation-hide">
               <div class="button-animation-wrap">
                 <div class="button-content-tile">
-                  <div>See all Resources</div>
+                  <div>See all Links</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
@@ -39,7 +40,7 @@ import Layout from "../../layouts/Layout.astro";
                   </div>
                 </div>
                 <div class="button-content-tile">
-                  <div>See all Resources</div>
+                  <div>See all Links</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
@@ -64,22 +65,107 @@ import Layout from "../../layouts/Layout.astro";
     </div>
   </section>
 
-  <section class="">
-    <div class="w-layout-blockcontainer main-container w-container">
-      <div class="w-layout-grid numbers-halves">
-        <div class="numbers-left"></div>
-        <div class="numbers-right">
-          <div class="heading-story">
-            <h2 class="no-margins">
-              Here are some helpful links to access important standards and
-              learn how you can stay informed and contribute during their
-              development stages:
-            </h2>
+  <div class="w-layout-blockcontainer main-container w-container">
+    <div class="w-layout-grid team-grid">
+      <a
+        href="#standards"
+        id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+        class="feat-card"
+      >
+        <div class="feat-image">
+          <img
+            src="/img/standards-links.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+        <div class="member-info-tile">
+          <div class="text-h5 teal-text">Links to Standards</div>
+          <div class="text-p">
+            Standards ensure quality, compatibility, and accessibility across
+            technologies. Key links to national, European, and international
+            standards bodies.
           </div>
         </div>
-      </div>
+      </a>
+
+      <a
+        href="#proBods"
+        id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+        class="feat-card"
+      >
+        <div class="feat-image">
+          <img
+            src="/img/prolinks.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+        <div class="member-info-tile">
+          <div class="text-h5 teal-text">Links to Professional Bodies</div>
+          <div class="text-p">
+            Connect with national and international organisations working across
+            audiology, hearing health, and accessibility. Updates, resources,
+            and ways to engage.
+          </div>
+        </div>
+      </a>
+      <a
+        href="#advocacy"
+        id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+        class="feat-card"
+      >
+        <div class="feat-image">
+          <img
+            src="/img/advocacylinks.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+        <div class="member-info-tile">
+          <div class="text-h5 teal-text">Links to Advocacy Groups</div>
+          <div class="text-p">
+            Links to organisations that champion the rights, needs, and
+            wellbeing of people with hearing loss and related challenges.
+            Explore their work, support services, and resources.
+          </div>
+        </div>
+      </a>
+      <a
+        href="/contact"
+        id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+        class="feat-card"
+      >
+        <div class="feat-image">
+          <img
+            src="/img/contact.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+        <div class="member-info-tile">
+          <div class="text-h5 teal-text">Get in touch with IAHA</div>
+          <div class="text-p">
+            We're Happy to help with any enquiries regarding Assistive Listening
+            Technologies.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <section class="">
+    <div class="w-layout-blockcontainer main-container w-container">
       <div
-        id="resources"
+        id="standards"
         class="w-layout-grid feature-grid-home-c"
         style="margin-top:8rem;"
       >
@@ -157,7 +243,7 @@ import Layout from "../../layouts/Layout.astro";
           <div class="feature-card-bottom-tile">
             <h2 class="no-margins">British & European Standards</h2>
             <div class="text-body">
-              BSI is the UK’s National Standards Body, representing national
+              BSI is the UK's National Standards Body, representing national
               interests in European and international standards. It works with
               industry, government, and consumers to develop British and global
               standards.
@@ -295,7 +381,7 @@ import Layout from "../../layouts/Layout.astro";
     </div>
   </section>
 
-  <section id="glossary" class="section hero-faq">
+  <section id="proBods" class="section hero-faq">
     <div class="w-layout-blockcontainer main-container w-container">
       <div class="w-layout-grid faq-halves">
         <div class="faq-left">
@@ -440,7 +526,7 @@ import Layout from "../../layouts/Layout.astro";
               </div>
               <div class="expandable-single">
                 <div class="expandable-top">
-                  <div class="text-h5">National Deaf Children’s Society</div>
+                  <div class="text-h5">National Deaf Children's Society</div>
                   <div class="faq-animated-box">
                     <div class="faq-horizontal"></div>
                     <div class="faq-vertical"></div>
@@ -797,5 +883,194 @@ import Layout from "../../layouts/Layout.astro";
       </div>
     </div>
   </section>
+
+  <section id="advocacy" class="section hero-faq">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid faq-halves">
+        <div class="faq-left">
+          <div class="label"></div>
+          <div class="faq-heading">
+            <h1>Advocacy Groups</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="w-layout-grid grid-4x3">
+          <a href="https://www.ageuk.org.uk/" class="grid-item-link">
+            <div class="grid-item">
+              <div class="">
+                <img src="/img/links/ageuk.jpg" loading="lazy" alt="Age UK" />
+              </div>
+            </div>
+          </a>
+          <a href="https://bda.org.uk/" class="grid-item-link">
+            <div class="grid-item">
+              <div class="">
+                <img
+                  src="/img/links/bda.jpg"
+                  loading="lazy"
+                  alt="British Deaf Association"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="https://www.carersuk.org/" class="grid-item-link">
+            <div class="grid-item">
+              <div class="">
+                <img
+                  src="/img/links/carersuk.jpg"
+                  loading="lazy"
+                  alt="Carers UK"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="https://deafnessresourcecentre.org/" class="grid-item-link">
+            <div class="grid-item">
+              <div class="">
+                <img
+                  src="/img/links/drc.jpg"
+                  loading="lazy"
+                  alt="Deafness Resource Centre"
+                />
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.healthyhearing.com/" class="grid-item-link">
+            <div class="grid-item">
+              <div class="">
+                <img
+                  src="/img/links/healthyhearing.jpg"
+                  loading="lazy"
+                  alt="Healthy Hearing"
+                />
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.hearingloss.org/" class="grid-item-link">
+            <div class="grid-item">
+              <div class="">
+                <img
+                  src="/img/links/hlaa.jpg"
+                  loading="lazy"
+                  alt="Hearing Loss Association of America"
+                />
+              </div>
+            </div>
+          </a>
+
+          <a href="https://rnid.org.uk/" class="grid-item-link">
+            <div class="grid-item">
+              <div class="">
+                <img src="/img/links/rnid.jpg" loading="lazy" alt="RNID" />
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.thedeafinstitute.co.uk/" class="grid-item-link">
+            <div class="grid-item">
+              <div class="">
+                <img
+                  src="/img/links/deafinstitute.jpg"
+                  loading="lazy"
+                  alt="The Deaf Institute"
+                />
+              </div>
+            </div>
+          </a>
+
+          <a href="https://hearingreview.com/" class="grid-item-link">
+            <div class="grid-item">
+              <div class="">
+                <img
+                  src="/img/links/hr.jpg"
+                  loading="lazy"
+                  alt="The Hearing Review"
+                />
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.deafplus.org/" class="grid-item-link">
+            <div class="grid-item">
+              <div class="">
+                <img
+                  src="/img/links/deafplus.jpg"
+                  loading="lazy"
+                  alt="DeafPlus"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <MemberCta />
+
   <MainNews limit={3} />
 </Layout>
+
+<style>
+  .grid-4x3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+
+  .grid-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .grid-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+  }
+
+  .grid-item-link:hover .grid-item {
+    transform: translateY(-4px);
+  }
+
+  .thumbnail-wrapper {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+  }
+
+  .thumbnail-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .thumbnail-content {
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 991px) {
+    .grid-4x3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .grid-4x3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .grid-4x3 {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
