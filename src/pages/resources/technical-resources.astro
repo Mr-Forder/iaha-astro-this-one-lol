@@ -1,0 +1,737 @@
+---
+import MainNews from "../../components/MainNews.astro";
+import MemberCta from "../../components/MemberCta.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<style>
+  .responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .responsive-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<Layout>
+  <section class="section hero-careers">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="headline-careers">
+        <div class="careers-top-tile">
+          <div class="spacer-sm"></div>
+          <div class="heading-careers">
+            <div class="headline-blog">
+              <div class="label">Resources</div>
+              <h1 class="text-h1">Technical Resources</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider home-c-numbers"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="w-layout-blockcontainer main-container w-container">
+    <div class="w-layout-grid team-grid">
+      <a
+        href="#guides"
+        id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+        class="feat-card"
+      >
+        <div class="feat-image">
+          <img
+            src="/img/guides-link.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+        <div class="member-info-tile">
+          <div class="text-h5 teal-text">Downloadable Guides</div>
+          <div class="text-p">
+            Standards ensure quality, compatibility, and accessibility across
+            technologies. Key links to national, European, and international
+            standards bodies.
+          </div>
+        </div>
+      </a>
+      <a
+        href="#technical-resources"
+        id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+        class="feat-card"
+      >
+        <div class="feat-image">
+          <img
+            src="/img/technical-link.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+        <div class="member-info-tile">
+          <div class="text-h5 teal-text">Technical Documents</div>
+          <div class="text-p">
+            Links to organisations that champion the rights, needs, and
+            wellbeing of people with hearing loss and related challenges.
+            Explore their work, support services, and resources.
+          </div>
+        </div>
+      </a>
+      <a
+        href="/resources/links"
+        id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+        class="feat-card"
+      >
+        <div class="feat-image">
+          <img
+            src="/img/links-link.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+        <div class="member-info-tile">
+          <div class="text-h5 teal-text">Useful Links</div>
+          <div class="text-p">
+            We're happy to help with any enquiries regarding Assistive Listening
+            Technologies, system selection, installation, or user support.
+          </div>
+        </div>
+      </a>
+
+      <a
+        href="/contact"
+        id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+        class="feat-card"
+      >
+        <div class="feat-image">
+          <img
+            src="/img/contact.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+        <div class="member-info-tile">
+          <div class="text-h5 teal-text">Get in touch with IAHA</div>
+          <div class="text-p">
+            We're happy to help with any enquiries regarding Assistive Listening
+            Technologies, system selection, installation, or user support.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <section class="section" style="margin-bottom: -5rem;">
+    <div id="guides" class="w-layout-blockcontainer main-container w-container">
+      <div class="headline-home-c-features">
+        <div class="label">Resources</div>
+        <div class="heading-home-c-features">
+          <h2 class="no-margins">Downloadable Guides</h2>
+        </div>
+      </div>
+      <div style="margin-top:3rem;">
+        <div class="w-layout-grid feature-grid-home-c responsive-grid">
+          <div class="feature-card-home-c" style="width: 100%; min-width: 0;">
+            <div
+              class="feature-card-image"
+              style="width: 100%; height: 300px; overflow: hidden;"
+            >
+              <img
+                src="/img/guide.jpg"
+                loading="lazy"
+                sizes="100%"
+                alt="The IAHA Comparison Guide to Available Assistive Listening Technologies "
+                class="image-cover"
+                style="width: 100%; height: 100%; object-fit: cover;"
+              />
+            </div>
+            <div class="feature-card-bottom-tile">
+              <h2 class="no-margins" style="font-size: 1.5rem;">
+                Our Comparison Guide to Available Assistive Listening
+                Technologies
+              </h2>
+              <div class="text-body">
+                We've produced a handy downloadable guide that compares and
+                contrasts the many assistive listening technologies that are
+                currently available.
+                <strong
+                  >The IAHA Guide to Available Assistive Listening Technologies
+                  is currently being updated for 2025 and will be available
+                  again soon.</strong
+                >
+              </div>
+              <div class="home-b-button-wrap">
+                <a href="#" class="cta-main accent w-inline-block">
+                  <div class="button-animation-hide">
+                    <div class="button-animation-wrap">
+                      <div class="button-content-tile">
+                        <div>Coming Soon</div>
+                        <div class="button-arrow w-embed">
+                          <svg
+                            width="7"
+                            height="10"
+                            viewBox="0 0 7 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 9L5 5L1 1"
+                              stroke="currentColor"
+                              stroke-width="2"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="button-content-tile">
+                        <div>Coming Soon</div>
+                        <div class="button-arrow w-embed">
+                          <svg
+                            width="7"
+                            height="10"
+                            viewBox="0 0 7 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 9L5 5L1 1"
+                              stroke="currentColor"
+                              stroke-width="2"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-card-home-c" style="width: 100%; min-width: 0;">
+            <div
+              class="feature-card-image"
+              style="width: 100%; height: 300px; overflow: hidden;"
+            >
+              <img
+                src="/img/best-practice-guide.jpg"
+                loading="lazy"
+                sizes="100%"
+                alt="The IAHA Comparison Guide to Available Assistive Listening Technologies "
+                class="image-cover"
+                style="width: 100%; height: 100%; object-fit: cover;"
+              />
+            </div>
+            <div class="feature-card-bottom-tile">
+              <h2 class="no-margins" style="font-size: 1.5rem;">
+                The IAHA Good Practice Guide to Hearing Loop Systems
+              </h2>
+              <div class="text-body">
+                Our comprehensive guide offers clear, practical information for
+                service providers, facility managers, and accessibility
+                professionals. It covers everything from the basics of hearing
+                loss and how hearing loops work, to the types of systems
+                available, guidance on installation, and how to ensure the best
+                user experience.
+              </div>
+              <div class="home-b-button-wrap">
+                <a
+                  href="/documents/Good Practice Guide to Hearing Loop Systems.pdf"
+                  class="cta-main accent w-inline-block"
+                >
+                  <div class="button-animation-hide">
+                    <div class="button-animation-wrap">
+                      <div class="button-content-tile">
+                        <div>Download Guide</div>
+                        <div class="button-arrow w-embed">
+                          <svg
+                            width="7"
+                            height="10"
+                            viewBox="0 0 7 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 9L5 5L1 1"
+                              stroke="currentColor"
+                              stroke-width="2"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="button-content-tile">
+                        <div>Download Guide</div>
+                        <div class="button-arrow w-embed">
+                          <svg
+                            width="7"
+                            height="10"
+                            viewBox="0 0 7 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1 9L5 5L1 1"
+                              stroke="currentColor"
+                              stroke-width="2"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="hearing-loop-technical-resources"
+    class="section home-a-bento-section"
+  >
+    <div
+      class="w-layout-blockcontainer main-container w-container"
+      id="technical-resources"
+    >
+      <div class="headline-home-c-features">
+        <div class="label">Resources</div>
+        <div class="heading-home-c-features">
+          <h2 class="no-margins">Assistive Listening Technical Documents</h2>
+        </div>
+      </div>
+      <div
+        id="standards"
+        class="w-layout-grid feature-grid-home-c"
+        style="margin-top:6rem;"
+      >
+        <div
+          id="w-node-_335d5572-f17e-b978-95fe-23ad4ef73028-e2064dab"
+          class="feature-card-home-c"
+        >
+          <div class="label"></div>
+          <div class="feature-card-bottom-tile">
+            <h2 class="no-margins" style="font-size: 2rem;">
+              IAHA Position on Neck Loops and Cardiac Pacemakers
+            </h2>
+            <div class="text-body">
+              IAHA recognises a concern expressed by some medical professionals
+              of a potential for interference with cardiac pacemakers from the
+              magnetic field that exists in very close proximity to the wiring
+              of a neck loop. The concern is that during exposure to very high
+              magnetic fields, a pacemaker's rhythm could theoretically be
+              affected..
+            </div>
+            <div class="home-b-button-wrap">
+              <a
+                href="../documents/IAHA-Position-on-Neck-Loops-and-Cardiac-Pacemakers.pdf"
+                class="cta-main accent w-inline-block"
+              >
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card-home-c">
+          <div class="label"></div>
+          <div class="feature-card-bottom-tile">
+            <h2 class="no-margins" style="font-size: 2rem;">
+              IAHA Statement on Auracast
+            </h2>
+            <div class="text-body">
+              Auracast Bluetooth is a promising new assistive listening
+              technology. The IFHOH supports its future use but stresses that
+              proven systems like hearing loops and telecoils must remain in
+              place for now, as they offer consistent, reliable access
+              worldwide.
+            </div>
+            <div class="home-b-button-wrap">
+              <a
+                href="../documents/IAHA-Auracast-statement-Final.pdf"
+                class="cta-main accent w-inline-block"
+              >
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="w-node-_335d5572-f17e-b978-95fe-23ad4ef7301a-e2064dab"
+          class="features-video-home-c"
+          style="height:699px"
+        >
+          <img
+            src="/img/tour-guide.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+            alt=""
+            class="image-cover"
+          />
+        </div>
+
+        <div class="feature-card-home-c">
+          <div class="label"></div>
+          <div class="feature-card-bottom-tile">
+            <h2 class="no-margins" style="font-size: 2rem;">
+              The care and feeding of neck loops for assistive hearing
+            </h2>
+            <div class="text-body">
+              Neck loops transmit sound to telecoil-equipped hearing aids, but
+              many fail to deliver adequate magnetic strength. Better
+              consistency in design and testing is needed to ensure reliable
+              use.
+            </div>
+            <div class="home-b-button-wrap">
+              <a
+                href="../documents/The-care-and-feeding-of-neck-loops-for-assistive-hearing.pdf"
+                class="cta-main accent w-inline-block"
+              >
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card-image" style="height: 344px;">
+          <img
+            src="/img/convention-talk.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+            -
+            alt="Technical Resources"
+            class="image-cover"
+          />
+        </div>
+
+        <div
+          id="w-node-_335d5572-f17e-b978-95fe-23ad4ef73026-e2064dab"
+          class="feature-card-image"
+          style="height: 344px;"
+        >
+          <img
+            src="/img/t-sign.jpg"
+            loading="lazy"
+            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 95vw"
+            alt="Assistive Listening Sign"
+            class="image-cover"
+          />
+        </div>
+      </div>
+      <!-- PART 2 -->
+      <div class="w-layout-grid feature-grid-home-c" style="margin-top:1rem;">
+        <div class="feature-card-home-c">
+          <div class="label"></div>
+          <div class="feature-card-bottom-tile">
+            <h2 class="no-margins" style="font-size: 2rem;">
+              The 2022 FIFHOH Budapest Declaration
+            </h2>
+            <div class="text-body">
+              The International Federation of the Hard of Hearing People
+              completed its 2022 World released the 2022 FIFHOH Budapest
+              Declaration, stating that the proven Telecoil should stay in
+              hearing devices, work in parallel to Auracast, and audiologists
+              and hearing instrument specialists need training.
+            </div>
+            <div class="home-b-button-wrap">
+              <a
+                href="../documents/Budapest-Declaration.pdf"
+                class="cta-main accent w-inline-block"
+              >
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="w-node-_335d5572-f17e-b978-95fe-23ad4ef73028-e2064dab"
+          class="feature-card-home-c"
+        >
+          <div class="label"></div>
+          <div class="feature-card-bottom-tile">
+            <h2 class="no-margins" style="font-size: 2rem;">
+              Hearing Loops and Telecoils: When will they become obsolete?
+            </h2>
+            <div class="text-body">
+              The International Hearing Access Committee (IHAC) aims to estimate
+              the time a transition from the existing audio transmission to
+              telecoils via hearing loop (HL) and other assistive listening
+              systems (ALS) to a platform of digital audio streaming direct into
+              hearing aids, will likely take.
+            </div>
+            <div class="home-b-button-wrap">
+              <a
+                href="../documents/IHAC_Hearing-Loops-and-Telecoils-statement-June19.pdf"
+                class="cta-main accent w-inline-block"
+              >
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card-home-c">
+          <div class="label"></div>
+          <div class="feature-card-bottom-tile">
+            <h2 class="no-margins" style="font-size: 2rem;">
+              Telecoils and Hearing Loops: The most available and accessible
+              assistive listening technology
+            </h2>
+            <div class="text-body">
+              Hearing loops and telecoils remain the most effective and
+              accessible assistive listening technology, offering clear,
+              discreet, and easy-to-use support in public spaces. Despite this,
+              awareness is low—only 22% of users are informed about accessories.
+            </div>
+            <div class="home-b-button-wrap">
+              <a
+                href="../documents/Telecoil-availability-in-hearing-aids.pdf"
+                class="cta-main accent w-inline-block"
+              >
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>Download</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <MemberCta />
+
+  <MainNews limit={3} />
+</Layout>

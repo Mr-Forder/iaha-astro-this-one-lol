@@ -3,7 +3,7 @@
 
 
 
-auracast - get new stock
+auracast - 
 HOW TO section (dont' forget icons)
 standards
 
@@ -29,7 +29,6 @@ members directory
 finish auracast
 finish main ALT page (does it need anything more?)
 resources
-links
 technical documents - needs rebranded docs
 add auracast section to comparison doc when site is live and content okayed
 
