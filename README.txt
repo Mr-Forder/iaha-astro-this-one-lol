@@ -28,8 +28,9 @@ members directory
 
 finish auracast
 finish main ALT page (does it need anything more?)
-resources
-technical documents - needs rebranded docs
+
+
+
 add auracast section to comparison doc when site is live and content okayed
 
 populate news sections with articles
