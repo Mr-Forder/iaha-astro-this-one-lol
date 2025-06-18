@@ -10,11 +10,10 @@ import Telecoil from "../../components/Telecoil.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
-<head>
-  <title>
-    Auracast - IAHA: The International Association For Hearing Accessibility
-  </title>
-</head>
+<title>
+  Auracast - IAHA: The International Association For Hearing Accessibility
+</title>
+
 <Layout>
   <section class="section home-b-hero">
     <div class="w-layout-grid home-b-hero-halves">
@@ -292,7 +291,7 @@ import Layout from "../../layouts/Layout.astro";
   <div class="spacer-sm"></div>
   <section class="section home-a-about-section">
     <div class="w-layout-blockcontainer main-container w-container">
-      <div id="scrollto" class="text-h1">How to Access Auracast</div>
+      <div id="access" class="text-h1">How to Access Auracast</div>
       <div class="spacer-sm"></div>
       <div class="spacer-sm"></div>
       <div class="w-layout-grid home-a-grid">
@@ -694,8 +693,12 @@ import Layout from "../../layouts/Layout.astro";
     <div class="spacer-sm"></div>
     <div class="spacer-sm"></div>
     <div class="spacer-sm"></div>
-    <div class="spacer-sm"></div>
+    <div id="news" class="spacer-sm"></div>
     <AltNews technology="Auracast" />
+    <section>
+      <div class="w-layout-blockcontainer main-container w-container">
+    <div class="section-divider home-c-numbers"></div>
+    </div></section>
     <MainNews limit={6} />
     <section>
       <div class="w-layout-blockcontainer main-container w-container">
@@ -706,7 +709,7 @@ import Layout from "../../layouts/Layout.astro";
               aria-label="Next Page"
               class="w-pagination-next pagination-button-article"
             >
-              <div class="text-h3 w-inline-block">More News</div>
+              <div class="text-h4 w-inline-block"><span class="teal-text">More News</span></div>
             </a>
             <link rel="prerender" href="blog@33f22ee7_page=2.html" />
           </div>

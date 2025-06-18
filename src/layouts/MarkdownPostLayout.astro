@@ -5,6 +5,9 @@ import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 ---
 
+<title>
+  {frontmatter.title}
+</title>
 <Layout>
   <meta charset="utf-8" />
 
@@ -75,14 +78,16 @@ const { frontmatter } = Astro.props;
           </div>
         </div>
       </div>
-      <div
-        data-w-id="59e472d5-f5b4-e5fe-f334-ebb24e355dd1"
-        style="width:0%"
-        class="section-divider article-divider-2"
-      >
-      </div>
     </div>
   </section>
+
+  <section class="section body-article">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="spacer-lg"></div>
+      <div class="section-divider home-c-numbers"></div>
+    </div>
+  </section>
+
   <MainNews limit={3} />
 </Layout>
 

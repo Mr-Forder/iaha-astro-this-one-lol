@@ -24,7 +24,7 @@ const allPosts = (await getCollection("posts"))
 
 const totalPages = Math.ceil(allPosts.length / limit);
 
-function truncateText(text: string, wordLimit: number = 30) {
+function truncateText(text: string, wordLimit: number = 120) {
   const words = text.split(" ");
   if (words.length > wordLimit) {
     return words.slice(0, wordLimit).join(" ") + "...";
@@ -247,9 +247,6 @@ function truncateText(text: string, wordLimit: number = 30) {
 
 <section class="">
   <div class="w-layout-blockcontainer main-container w-container">
-    <div class="spacer-sm"></div>
-    <div class="section-divider home-c-numbers"></div>
-    <div class="spacer-lg"></div>
     <div class="related-block w-dyn-list">
       <div role="list" class="w-dyn-items">
         <div role="listitem" class="w-dyn-item">
@@ -277,7 +274,7 @@ function truncateText(text: string, wordLimit: number = 30) {
                     <h3 class="teal-text">{allPosts[0].data.title}</h3>
                     <div class="section-divider home-c-numbers" />
                   </div>
-                  <div class="text-h4 light-accent">
+                  <div class="text-h5 light-accent">
                     {truncateText(allPosts[0].data.description)}
                   </div>
                 </div>
@@ -344,19 +341,23 @@ function truncateText(text: string, wordLimit: number = 30) {
               class="w-pagination-previous pagination-button-article"
               style="display: none;"
             >
-              <div class="text-h3 w-inline-block">Previous</div>
+  <div class="text-h4 w-inline-block"><span class="teal-text">Prev</span></div>
             </button>
             <button
               id="next-btn"
               aria-label="Next Page"
               class="w-pagination-next pagination-button-article"
             >
-              <div class="text-h3 w-inline-block">Next</div>
+  <div class="text-h4 w-inline-block"><span class="teal-text">Next</span></div>
             </button>
           </div>
         </div>
       </div>
     </section>
+
+
+
+
   )
 }
 

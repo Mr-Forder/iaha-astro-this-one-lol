@@ -1,0 +1,107 @@
+---
+import { getCollection } from "astro:content";
+const { technology } = Astro.props;
+
+const allPosts = (await getCollection("posts"))
+  .filter((post) => {
+    const isScheduled = new Date(post.data.pubDate).getTime() > Date.now();
+    const isInfrared = post.data.alt === technology;
+    return !isScheduled && isInfrared;
+  })
+  .sort((a, b) => {
+    return (
+      new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+    );
+  });
+---
+
+<section class="">
+  <div class="w-layout-blockcontainer main-container w-container">
+    <div style="display: flex; flex-wrap: wrap;">
+      <div style="flex: 1 1 300px; padding: 1rem; box-sizing: border-box;">
+        <a
+          id="w-node-d3fc33a7-4793-5f6e-7bc4-31a4856e0ae8-e2064dc4"
+          data-w-id="d3fc33a7-4793-5f6e-7bc4-31a4856e0ae8"
+          href={allPosts[0]?.slug ? `/posts/${allPosts[0].slug}/` : "#"}
+          class="case-card-home-b long w-inline-block"
+        >
+          <div class="case-card-image">
+            <img
+              src={allPosts[0]?.data.image?.url}
+              loading="lazy"
+              sizes="(max-width: 479px) 100vw, (max-width: 767px) 81vw, (max-width: 991px) 85vw, 89vw"
+              alt={allPosts[0]?.data.image?.alt}
+              class="image-cover"
+            />
+          </div>
+          <div class="case-home-b-bottom-tile">
+            <h3 class="no-margins">
+              {allPosts[0]?.data.title}
+            </h3>
+          </div>
+        </a>
+      </div>
+      <div style="flex: 1 1 300px; padding: 1rem; box-sizing: border-box;">
+        <div>
+          <div class="">
+            <div class="limit-640">
+              <h3 class="text-h1">Featured<br> News</h3>
+            </div>
+            <div class="section-divider home-c-numbers"></div>
+
+            <div class="text-h5 light-accent">
+              {allPosts[0]?.data.description}
+            </div>
+
+            <div class="home-b-button-wrap">
+              <a
+                href={allPosts[0]?.slug ? `/posts/${allPosts[0].slug}/` : "#"}
+                class="cta-main accent w-inline-block"
+                style="margin-top:3rem;"
+              >
+                <div class="button-animation-hide">
+                  <div class="button-animation-wrap">
+                    <div class="button-content-tile">
+                      <div>Read More</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="button-content-tile">
+                      <div>Read More</div>
+                      <div class="button-arrow w-embed">
+                        <svg
+                          width="7"
+                          height="10"
+                          viewBox="0 0 7 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 9L5 5L1 1"
+                            stroke="currentColor"
+                            stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

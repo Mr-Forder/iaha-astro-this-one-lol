@@ -1,5 +1,6 @@
 ---
 import AltNews from "../../components/AltNews.astro";
+import AltNewsLess from "../../components/AltNewsLess.astro";
 import AskIcon from "../../components/icons/AskIcon.astro";
 import ListenIcon from "../../components/icons/ListenIcon.astro";
 import LookIcon from "../../components/icons/LookIcon.astro";
@@ -10,12 +11,10 @@ import Telecoil from "../../components/Telecoil.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
-<head>
-  <title>
-    Hearing Loops - IAHA: The International Association For Hearing
-    Accessibility
-  </title>
-</head>
+<title>
+  Hearing Loops - IAHA: The International Association For Hearing Accessibility
+</title>
+
 <Layout>
   <section class="section home-b-hero">
     <div class="w-layout-grid home-b-hero-halves">
@@ -169,7 +168,7 @@ import Layout from "../../layouts/Layout.astro";
             </h5>
 
             <h5>
-              Simply switching the hearing aid over to its ‘T setting’ will give
+              Simply switching the hearing aid over to its T setting will give
               the user access to broadcast audio signals in the looped area.
               Using a T-coil enabled device enables an audio signal to be picked
               up anywhere within a properly looped area, making it easy for
@@ -285,7 +284,7 @@ import Layout from "../../layouts/Layout.astro";
   <div class="spacer-sm"></div>
   <section class="section home-a-about-section">
     <div class="w-layout-blockcontainer main-container w-container">
-      <div id="scrollto" class="text-h1">How to Access a Hearing Loop</div>
+      <div id="access" class="text-h1">How to Access a Hearing Loop</div>
       <div class="spacer-sm"></div>
       <div class="spacer-sm"></div>
       <div class="w-layout-grid home-a-grid">
@@ -684,8 +683,13 @@ import Layout from "../../layouts/Layout.astro";
     <div class="spacer-sm"></div>
     <div class="spacer-sm"></div>
     <div class="spacer-sm"></div>
-    <div class="spacer-sm"></div>
+    <div id="news" class="spacer-sm"></div>
     <AltNews technology="Hearing Loops" />
+    <section>
+      <div class="w-layout-blockcontainer main-container w-container">
+    <div class="section-divider home-c-numbers"></div>
+    </div></section>
+
     <MainNews limit={6} />
     <section>
       <div class="w-layout-blockcontainer main-container w-container">
@@ -696,7 +700,7 @@ import Layout from "../../layouts/Layout.astro";
               aria-label="Next Page"
               class="w-pagination-next pagination-button-article"
             >
-              <div class="text-h3 w-inline-block">More News</div>
+              <div class="text-h4 w-inline-block"><span class="teal-text">More News</span></div>
             </a>
             <link rel="prerender" href="blog@33f22ee7_page=2.html" />
           </div>

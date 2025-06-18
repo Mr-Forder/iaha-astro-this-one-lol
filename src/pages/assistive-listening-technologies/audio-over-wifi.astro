@@ -1,5 +1,6 @@
 ---
 import AltNews from "../../components/AltNews.astro";
+import AltNewsLess from "../../components/AltNewsLess.astro";
 import AskIcon from "../../components/icons/AskIcon.astro";
 import InformIcon from "../../components/icons/InformIcon.astro";
 import ListenIcon from "../../components/icons/ListenIcon.astro";
@@ -14,12 +15,11 @@ import Telecoil from "../../components/Telecoil.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
 
-<head>
-  <title>
-    Audio Over WiFi - IAHA: The International Association For Hearing
-    Accessibility
-  </title>
-</head>
+<title>
+  Audio Over WiFi - IAHA: The International Association For Hearing
+  Accessibility
+</title>
+
 <Layout>
   <section class="section home-b-hero">
     <div class="w-layout-grid home-b-hero-halves">
@@ -206,7 +206,7 @@ import Layout from "../../layouts/Layout.astro";
 
   <section class="section home-a-about-section">
     <div class="w-layout-blockcontainer main-container w-container">
-      <div id="scrollto" class="text-h1">
+      <div id="access" class="text-h1">
         How to Access an Audio Over WiFi System
       </div>
       <div class="spacer-sm"></div>
@@ -669,9 +669,17 @@ import Layout from "../../layouts/Layout.astro";
     </div>
     <div class="spacer-sm"></div>
     <div class="spacer-sm"></div>
-    <div class="spacer-sm"></div>
-    <div class="spacer-sm"></div>
-    <AltNews technology="Audio Over WiFi" />
+    <div id="news" class="spacer-sm"></div>
+
+    <AltNewsLess technology="Audio Over WiFi" />
+
+    <section>
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="spacer-lg"></div>
+    <div class="section-divider home-c-numbers"></div>
+    </div></section>
+
+
     <MainNews limit={6} />
     <section>
       <div class="w-layout-blockcontainer main-container w-container">
@@ -682,7 +690,7 @@ import Layout from "../../layouts/Layout.astro";
               aria-label="Next Page"
               class="w-pagination-next pagination-button-article"
             >
-              <div class="text-h3 w-inline-block">More News</div>
+              <div class="text-h4 w-inline-block"><span class="teal-text">More News</span></div>
             </a>
             <link rel="prerender" href="blog@33f22ee7_page=2.html" />
           </div>

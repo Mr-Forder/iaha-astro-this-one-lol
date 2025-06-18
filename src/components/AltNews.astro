@@ -13,6 +13,14 @@ const allPosts = (await getCollection("posts"))
       new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
     );
   });
+
+  function truncateText(text: string, wordLimit: number = 120) {
+  const words = text.split(" ");
+  if (words.length > wordLimit) {
+    return words.slice(0, wordLimit).join(" ") + "...";
+  }
+  return text;
+}
 ---
 
 <section class="section home-b-cases-section">
@@ -22,14 +30,14 @@ const allPosts = (await getCollection("posts"))
         <h3 class="text-h1">{technology} News</h3>
         <div class="home-b-button-wrap">
           <a
-            href={`/news/${technology.replace(/[\s/]+/g, "-").toLowerCase()}`}
+            href="/news"
             class="cta-main accent w-inline-block"
             style="margin-top:1rem;"
           >
             <div class="button-animation-hide">
               <div class="button-animation-wrap">
                 <div class="button-content-tile">
-                  <div>More News on {technology}</div>
+                  <div>See More News</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
@@ -46,7 +54,7 @@ const allPosts = (await getCollection("posts"))
                   </div>
                 </div>
                 <div class="button-content-tile">
-                  <div>More news on {technology}</div>
+                  <div>See More News</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
@@ -73,7 +81,7 @@ const allPosts = (await getCollection("posts"))
       <a
         id="w-node-d3fc33a7-4793-5f6e-7bc4-31a4856e0ae8-e2064dc4"
         data-w-id="d3fc33a7-4793-5f6e-7bc4-31a4856e0ae8"
-        href={allPosts[0]?.slug ? `/posts/${allPosts[0].slug}/` : "#"}
+        href={allPosts[0]?.slug ? `/posts/${allPosts[0]?.slug}/` : "#"}
         class="case-card-home-b long w-inline-block"
       >
         <div class="case-card-image">
@@ -89,6 +97,10 @@ const allPosts = (await getCollection("posts"))
           <h3 class="no-margins">
             {allPosts[0]?.data.title}
           </h3>
+
+          <div class="text-h6 light-accent">
+            {truncateText(allPosts[0]?.data.description)}
+          </div>
           <div class="cta-main light">
             <div class="button-animation-hide">
               <div class="button-animation-wrap">
@@ -110,7 +122,7 @@ const allPosts = (await getCollection("posts"))
                   </div>
                 </div>
                 <div class="button-content-tile">
-                  <div>Read case study</div>
+                  <div>Find Out More</div>
                   <div class="button-arrow w-embed">
                     <svg
                       width="7"
@@ -139,11 +151,14 @@ const allPosts = (await getCollection("posts"))
             {allPosts[1]?.data.title}
           </h4>
         </div>
+        <div class="text-h6 light-accent" style="font-size:1.1rem;">
+          {truncateText(allPosts[1]?.data.description)}
+        </div>
         <div class="cta-main light">
           <div class="button-animation-hide">
             <div class="button-animation-wrap">
               <div class="button-content-tile">
-                <div>Read case study</div>
+                <div>Find Out More</div>
                 <div class="button-arrow w-embed">
                   <svg
                     width="7"
@@ -160,7 +175,7 @@ const allPosts = (await getCollection("posts"))
                 </div>
               </div>
               <div class="button-content-tile">
-                <div>Read case study</div>
+                <div>Find Out More</div>
                 <div class="button-arrow w-embed">
                   <svg
                     width="7"
@@ -188,11 +203,14 @@ const allPosts = (await getCollection("posts"))
             {allPosts[2]?.data.title}
           </h4>
         </div>
+        <div class="text-h6 light-accent" style="font-size:1.1rem;">
+          {truncateText(allPosts[2]?.data.description)}
+        </div>
         <div class="cta-main light">
           <div class="button-animation-hide">
             <div class="button-animation-wrap">
               <div class="button-content-tile">
-                <div>Read case study</div>
+                <div>Find Out More</div>
                 <div class="button-arrow w-embed">
                   <svg
                     width="7"
@@ -209,7 +227,7 @@ const allPosts = (await getCollection("posts"))
                 </div>
               </div>
               <div class="button-content-tile">
-                <div>Read case study</div>
+                <div>Find Out More</div>
                 <div class="button-arrow w-embed">
                   <svg
                     width="7"
@@ -238,11 +256,14 @@ const allPosts = (await getCollection("posts"))
             {allPosts[3]?.data.title}
           </h4>
         </div>
+        <div class="text-h6 light-accent" style="font-size:1.1rem;">
+          {truncateText(allPosts[3]?.data.description)}
+        </div>
         <div class="cta-main light">
           <div class="button-animation-hide">
             <div class="button-animation-wrap">
               <div class="button-content-tile">
-                <div>Read case study</div>
+                <div>Find Out More</div>
                 <div class="button-arrow w-embed">
                   <svg
                     width="7"
@@ -259,7 +280,7 @@ const allPosts = (await getCollection("posts"))
                 </div>
               </div>
               <div class="button-content-tile">
-                <div>Read case study</div>
+                <div>Find Out More</div>
                 <div class="button-arrow w-embed">
                   <svg
                     width="7"
