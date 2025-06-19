@@ -3,12 +3,13 @@
 
 
 
-auracast - 
+
+finish auracast - 
 HOW TO section (dont' forget icons)
 standards
 
 
-finalize nav
+
 
 send range of test articles...
 
@@ -26,8 +27,7 @@ membership main page
 code of practice?
 members directory
 
-finish auracast
-finish main ALT page (does it need anything more?)
+
 
 
 
