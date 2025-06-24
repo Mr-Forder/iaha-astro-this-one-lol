@@ -5488,7 +5488,6 @@ figcaption {
   border-radius: var(--radius--small);
   max-width: 557px;
   height: 848px;
-  overflow: hidden;
 }
 
 .headline-contact-a {
@@ -11812,25 +11811,6 @@ figcaption {
   color: white;
 }
 
-.tag-sports {
-  background: #ef4444;
-  color: white;
-}
-
-.tag-fashion {
-  background: #f97316;
-  color: white;
-}
-
-.tag-electronics {
-  background: #3b82f6;
-  color: white;
-}
-
-.tag-mobile {
-  background: #059669;
-  color: white;
-}
 .company-info h3 {
   word-break: keep-all;
 }

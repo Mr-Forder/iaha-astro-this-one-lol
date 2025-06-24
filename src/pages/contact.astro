@@ -94,7 +94,7 @@ import Layout from "../layouts/Layout.astro";
             <div class="contact-a-address-tile">
               <div class="text-body semibold">Email</div>
               <a href="mailt:admin@iaha-global.com">
-                <div class="text-body">admin@iaha-global.com</div></a
+                <div class="text-body teal-text">admin@iaha-global.com</div></a
               >
             </div>
           </div>
@@ -110,8 +110,18 @@ import Layout from "../layouts/Layout.astro";
             >
               <input
                 type="hidden"
+                name="redirect"
+                value="https://iaha-global.com/thanks/"
+              />
+              <input
+                type="hidden"
                 name="access_key"
                 value="49f7f987-d3fe-469b-b5e7-19f107eea0bc"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Contact form message from IAHA-Global"
               />
               <div class="w-layout-grid input-halves">
                 <div class="contact-input-wrap">
@@ -175,6 +185,7 @@ import Layout from "../layouts/Layout.astro";
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 557px"
             alt="Contact IAHA"
             class="image-cover"
+            style="border-radius: 1rem;"
           />
         </div>
       </div>

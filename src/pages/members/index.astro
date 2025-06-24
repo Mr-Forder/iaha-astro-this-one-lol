@@ -1,0 +1,169 @@
+---
+import MainNews from "../../components/MainNews.astro";
+import MemberBenefits from "../../components/MemberBenefits.astro";
+import MemberChoice from "../../components/MemberChoice.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<title>
+  Membership - IAHA: The International Association For Hearing Accessibility
+</title>
+
+<Layout>
+  <section class="section hero-careers">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="headline-careers">
+        <div class="careers-top-tile">
+          <div class="spacer-sm"></div>
+          <div class="heading-careers">
+            <div class="headline-blog">
+              <div class="label">Become a member</div>
+              <h2 class="text-h1">IAHA Membership</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider home-c-numbers"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home-a-story-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid story-halves">
+        <div class="story-image-wrap">
+          <video
+            src="/video/about.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="image-cover"
+            style="width: 100%; height: auto;"></video>
+        </div>
+        <div class="headline-story">
+          <div class="heading-story">
+            <h2 class="no-margins">
+              Our membership doesn't just include the manufacturers of assistive
+              listening technologies, but also influential groups and
+              individuals.
+            </h2>
+            <div class="spacer-sm"></div>
+            <div class="section-divider home-c-numbers"></div>
+
+            <h5>
+              Our membership is open to organisations involved in creating and
+              installing assistive listening systems, as well as those
+              supporting the interests of people with hearing loss. It doesn’t
+              just include manufacturers of assistive technologies, but also
+              influential groups and individuals working to improve hearing
+              access across society.
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer-sm"></div>
+
+      <div class="w-layout-blockcontainer main-container w-container">
+        <div class="w-layout-grid team-grid">
+          <a
+            href="#benefits"
+            id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+            class="feat-card"
+          >
+            <div class="feat-image">
+              <img
+                src="/img/guides-link.jpg"
+                loading="lazy"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+                alt=""
+                class="image-cover"
+              />
+            </div>
+            <div class="member-info-tile">
+              <div class="text-h5 teal-text">Membership Benefits</div>
+              <div class="text-p">
+                Find out about the numerous benefits of IAHA membership
+              </div>
+            </div>
+          </a>
+          <a
+            href="/members/members-directory"
+            id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+            class="feat-card"
+          >
+            <div class="feat-image">
+              <img
+                src="/img/technical-link.jpg"
+                loading="lazy"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+                alt=""
+                class="image-cover"
+              />
+            </div>
+            <div class="member-info-tile">
+              <div class="text-h5 teal-text">Members Directory</div>
+              <div class="text-p">
+                See listings of all current full and asssociate IAHA members.
+              </div>
+            </div>
+          </a>
+          <a
+            href="/resources/links"
+            id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+            class="feat-card"
+          >
+            <div class="feat-image">
+              <img
+                src="/img/links-link.jpg"
+                loading="lazy"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+                alt=""
+                class="image-cover"
+              />
+            </div>
+            <div class="member-info-tile">
+              <div class="text-h5 teal-text">Useful Links</div>
+              <div class="text-p">
+                Find key links to international standards, professional bodies,
+                and advocacy organisations advancing hearing accessibility
+                worldwide.
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="#become-a-member"
+            id="w-node-e922f43c-b316-26c2-2d33-7849ab629291-b235a4dc"
+            class="feat-card"
+          >
+            <div class="feat-image">
+              <img
+                src="/img/contact.jpg"
+                loading="lazy"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 96vw"
+                alt=""
+                class="image-cover"
+              />
+            </div>
+            <div class="member-info-tile">
+              <div class="text-h5 teal-text">Become a Member</div>
+              <div class="text-p">
+                Find out more about full and associate IAHA membership, and
+                register here.
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <MemberBenefits />
+
+      <MemberChoice />
+    </div>
+  </section>
+  <div class="spacer-sm"></div>
+
+  <MainNews limit={3} />
+</Layout>

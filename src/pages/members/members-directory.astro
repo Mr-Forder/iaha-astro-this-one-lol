@@ -1,0 +1,419 @@
+---
+import MainNews from "../../components/MainNews.astro";
+import MemberBenefits from "../../components/MemberBenefits.astro";
+import MemberChoice from "../../components/MemberChoice.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<title>
+  Members Directory - IAHA: The International Association For Hearing
+  Accessibility
+</title>
+
+<Layout>
+  <section class="section hero-careers">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="headline-careers">
+        <div class="careers-top-tile">
+          <div class="spacer-sm"></div>
+          <div class="heading-careers">
+            <div class="headline-blog">
+              <div class="label">IAHA Members</div>
+              <h2 class="text-h1">IAHA Members Directory</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider home-c-numbers"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section home-a-story-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid story-halves">
+        <div class="story-image-wrap">
+          <video
+            src="/video/about.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="image-cover"
+            style="width: 100%; height: auto;"></video>
+        </div>
+        <div class="headline-story">
+          <div class="heading-story">
+            <h2 class="no-margins">
+              Our membership doesn't just include the manufacturers of assistive
+              listening technologies, but also influential groups and
+              individuals.
+            </h2>
+            <div class="spacer-sm"></div>
+            <div class="section-divider home-c-numbers"></div>
+
+            <h5>
+              Our membership is open to organisations involved in creating and
+              installing assistive listening systems, as well as those
+              supporting the interests of people with hearing loss. It doesn’t
+              just include manufacturers of assistive technologies, but also
+              influential groups and individuals working to improve hearing
+              access across society.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="members" class="temp-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid faq-halves">
+        <div class="faq-left">
+          <div class="label"></div>
+          <div class="faq-heading">
+            <h2>IAHA Manufacturer Members</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid" id="manufacturerGrid">
+        <!-- Cards will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <section id="associates" class="temp-section">
+    <div class="w-layout-blockcontainer main-container w-container">
+      <div class="w-layout-grid faq-halves">
+        <div class="faq-left">
+          <div class="label"></div>
+          <div class="faq-heading">
+            <h2>IAHA Associate Members</h2>
+          </div>
+        </div>
+      </div>
+      <div class="grid" id="associateGrid">
+        <!-- Cards will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+  <MemberBenefits />
+  <MemberChoice />
+  <MainNews limit={3} />
+</Layout>
+
+<style>
+  .grid-4x3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+
+  .grid-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .grid-item {
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  /* .tags {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tag {
+    border-radius: 10px;
+    color: white;
+    font-size: 0.7rem;
+    margin: 0 5px;
+    padding: 0 8px;
+    font-weight: bold;
+  } */
+
+  .manufacturer {
+    background: #be185d;
+  }
+  .distributor {
+    background: #0d9488;
+  }
+  .training {
+    background: #c09d00;
+  }
+  .distributor {
+    background: #0d9488;
+  }
+
+  .maintenance {
+    background: #c723b1;
+  }
+
+  .grid-item-link:hover .grid-item {
+    transform: translateY(-4px);
+  }
+
+  .thumbnail-wrapper {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+  }
+
+  .thumbnail-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .thumbnail-content {
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 991px) {
+    .grid-4x3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .grid-4x3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .grid-4x3 {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script is:inline>
+  const manufacturers = [
+    {
+      name: "Ampetronic",
+      logo: "/img/members/ampetronic.jpg",
+      url: "https://www.ampetronic.com/",
+      tags: ["manufacturer", "distributor", "training", "maintenance"],
+    },
+    {
+      name: "Univox",
+      logo: "/img/members/univox.jpg",
+      url: "https://univox.eu/",
+      tags: [
+        "manufacturer",
+        "distributor",
+        "training",
+        "designer",
+        "consultant",
+      ],
+    },
+    {
+      name: "Contacta",
+      logo: "/img/members/contacta.jpg",
+      url: "https://www.contacta.co.uk/",
+      tags: [
+        "manufacturer",
+        "distributor",
+        "training",
+        "designer",
+        "consultant",
+        "installer",
+        "maintenance",
+      ],
+    },
+    {
+      name: "Conversor",
+      logo: "/img/members/conversor.jpg",
+      url: "https://conversorproducts.com/",
+      tags: ["manufacturer", "distributor", "designer"],
+    },
+    {
+      name: "C-Tec",
+      logo: "/img/members/ctec.jpg",
+      url: "https://c-tec.com/",
+      tags: ["manufacturer", "distributor", "training"],
+    },
+    {
+      name: "Geemarc",
+      logo: "/img/members/geemarc.jpg",
+      url: "https://geemarc.com/",
+      tags: ["manufacturer"],
+    },
+    {
+      name: "Hearing Products International",
+      logo: "/img/members/hearing-products-international.jpg",
+      url: "https://www.hear4you.com/",
+      tags: ["manufacturer"],
+    },
+
+    {
+      name: "Roth Electrical Sound",
+      logo: "/img/members/roth.jpg",
+      url: "https://www.rothsound.com/",
+      tags: ["manufacturer", "installer", "consultant", "distributor"],
+    },
+    {
+      name: "Sarabec",
+      logo: "/img/members/sarabec.jpg",
+      url: "https://www.sarabec.com/",
+      tags: ["manufacturer"],
+    },
+    {
+      name: "SigNet",
+      logo: "/img/members/signet.jpg",
+      url: "https://signet-ac.com/",
+      tags: ["manufacturer", "distributor", "designer", "training"],
+    },
+    {
+      name: "Williams AV",
+      logo: "/img/members/williams.jpg",
+      url: "https://williamsav.com/",
+      tags: ["manufacturer", "designer", "training"],
+    },
+  ];
+
+  // Placeholder associate members
+  const associates = [
+    {
+      name: "Transistor Sweden",
+      logo: "/img/members/transistor.jpg",
+      url: "https://transistorsweden.com/",
+      tags: [
+        "manufacturer",
+        "designer",
+        "installer",
+        "consultant",
+        "maintenance",
+      ],
+    },
+    {
+      name: "Connevans",
+      logo: "/img/members/connevans.jpg",
+      url: "https://www.connevans.co.uk",
+      tags: ["manufacturer", "designer", "installer"],
+    },
+    {
+      name: "Edworthy Audio Engineering",
+      logo: "/img/members/edworthy.jpg",
+      url: "https://www.edworthyaudio.com/",
+      tags: ["consultant"],
+    },
+    {
+      name: "Institute of Sound, Communication and Visual Engineers",
+      logo: "/img/members/iscve.jpg",
+      url: "https://iscve.org.uk/",
+      tags: ["training"],
+    },
+    {
+      name: "J M Woodgate & Associates",
+      logo: "/img/members/woodgate.jpg",
+      url: "http://woodjohn.uk/",
+      tags: ["consultant"],
+    },
+    {
+      name: "Oticon",
+      logo: "/img/members/oticon.jpg",
+      url: "https://www.oticon.com/",
+      tags: ["designer", "installer", "consultant", "maintenance", "training"],
+    },
+    {
+      name: "Peter Mapp Associates",
+      logo: "/img/members/mapp.jpg",
+      url: "https://www.linkedin.com/in/peter-mapp-1942ba11/",
+      tags: ["designer", "consultant", "training"],
+    },
+    {
+      name: "Qlu Ltd",
+      logo: "/img/members/qlu.jpg",
+      url: "https://www.qlu.fi/en/",
+      tags: ["training", "designer", "installer", "consultant", "maintenance"],
+    },
+  ];
+
+  function createCard(member) {
+    // Add a special class if the name is long
+    const specialClass = member.name.length > 20 ? "small-title" : "";
+    return `
+    <a href="${member.url}">
+      <div class="card">
+        <div class="logo-container">
+          <img src="${member.logo}" alt="${member.name}" class="logo">
+          <div class="company-info">
+            <h3 class="${specialClass}">${member.name}</h3>
+          </div>
+        </div>
+        <div class="tags">
+          ${member.tags.map((tag) => `<span class="tag tag-${tag}">${tag}</span>`).join("")}
+        </div>
+      </div>
+    </a>
+  `;
+  }
+
+  function renderCardsToGrid(members, gridId) {
+    const grid = document.getElementById(gridId);
+    grid.innerHTML = members.map(createCard).join("");
+
+    // Add stagger animation
+    const cards = grid.querySelectorAll(".card");
+    cards.forEach((card, index) => {
+      card.style.opacity = "0";
+      card.style.transform = "translateY(30px)";
+      setTimeout(() => {
+        card.style.transition =
+          "all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+        card.style.opacity = "1";
+        card.style.transform = "translateY(0)";
+      }, index * 100);
+    });
+  }
+
+  // Initialize
+  document.addEventListener("DOMContentLoaded", () => {
+    renderCardsToGrid(manufacturers, "manufacturerGrid");
+    renderCardsToGrid(associates, "associateGrid");
+
+    // Add tag click interactions
+    document.addEventListener("click", (e) => {
+      if (e.target.classList.contains("tag")) {
+        e.target.style.transform = "scale(0.95)";
+        setTimeout(() => {
+          e.target.style.transform = "";
+        }, 150);
+      }
+    });
+  });
+
+  // Add some dynamic effects
+  document.addEventListener("mousemove", (e) => {
+    const cards = document.querySelectorAll(".card");
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    cards.forEach((card) => {
+      const rect = card.getBoundingClientRect();
+      const cardX = rect.left + rect.width / 2;
+      const cardY = rect.top + rect.height / 2;
+
+      const deltaX = mouseX - cardX;
+      const deltaY = mouseY - cardY;
+      const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+
+      if (distance < 200) {
+        const intensity = (200 - distance) / 200;
+        const rotateX = (deltaY / 200) * intensity * 5;
+        const rotateY = (deltaX / 200) * intensity * -5;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(${intensity * 10}px)`;
+      } else {
+        card.style.transform = "";
+      }
+    });
+  });
+</script>
