@@ -2186,6 +2186,9 @@ textarea.w-select {
 .light-accent {
   color: #838383;
 }
+.dark-accent {
+  color: #292929;
+}
 
 :root {
   --light: white;
@@ -5826,6 +5829,17 @@ figcaption {
 .feature-grid-side {
   grid-column-gap: 32px;
   grid-row-gap: 32px;
+}
+
+.feature-grid-side2 {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+
+.code-card {
+  background: rgb(247, 246, 246);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .feature-card-side {

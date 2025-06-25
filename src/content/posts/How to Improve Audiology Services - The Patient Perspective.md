@@ -1,6 +1,6 @@
 ---
 title: How to Improve Audiology Services- The Patient Perspective
-description: '"It is important for audiologists to reconsider the potential barriers causing such low numbers of hearing aid uptake and use. Numerous factors have been ascribed as reasons for this underutilization, from access and affordability 6, continued difficulty understanding speech in a group or noisy situation even when wearing hearing aids 5, to the well-known factor of stigma associated with hearing aids. 7,8 Merely owning hearing aids does not necessarily result in their use."'
+description: '"It is important for audiologists to reconsider the potential barriers causing such low numbers of hearing aid uptake and use. Numerous factors have been ascribed as reasons for this underutilization, from access and affordability, continued difficulty understanding speech in a group or noisy situation even when wearing hearing aids, to the well-known factor of stigma associated with hearing aids. Merely owning hearing aids does not necessarily result in their use."'
 alt: "Assistive Listening"
 image:
   url: "/img/post-images/How-to-Improve-Audiology-Services--The-Patient-Perspective.jpg"
