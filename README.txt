@@ -4,32 +4,6 @@
 
 
 
-finish auracast - 
-HOW TO section (dont' forget icons)
-standards
-
-
-
-
-send range of test articles...
-
-
-do membership when info comes in
-membership - note iscve membership area
-https://iscve.org.uk/members-directory/
-https://iscve.org.uk/members
-check our doc too
-
-
-membership -
-membership CTA
-membership main page
-code of practice?
-members directory
-
-
-
-
 
 add auracast section to comparison doc when site is live and content okayed
 

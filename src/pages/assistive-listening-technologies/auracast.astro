@@ -304,7 +304,7 @@ import Layout from "../../layouts/Layout.astro";
           </div>
 
           <div class="text-h6">
-            Look for assistive listening signs. <a
+            Look for assistive listening, specifically Auracast, signage. <a
               href="/assistive-listening-technologies#signage"
               class="teal-text">(Find out more about signeage here)</a
             >
@@ -313,26 +313,26 @@ import Layout from "../../layouts/Layout.astro";
         <div class="home-a-feature-card second-card">
           <div class="card-header">
             <div class="home-a-feature-icon">
-              <AskIcon />
+              <img src="/img/icons/how/connect.svg" alt="connect" />
             </div>
-            <div class="text-h4">Ask</div>
+            <div class="text-h4">Connect</div>
           </div>
           <div class="text-h6">
-            Although adequate signage must communicate a loop system is
-            available, this isn't always the case.
+            Open your device’s Bluetooth settings or Auracast assistant app to
+            find and select the available Auracast audio broadcast.
           </div>
         </div>
         <div class="home-a-feature-card third-card">
           <div class="card-header">
             <div class="home-a-feature-icon">
-              <SwitchIcon />
+              <img src="/img/icons/how/select.svg" alt="select" />
             </div>
-            <div class="text-h4">Switch</div>
+            <div class="text-h4">Select</div>
           </div>
 
           <div class="text-h6">
-            Switch to the ‘T’ or ‘MT’ setting on your hearing aid(s), cochlear
-            implant or bone conduction device.
+            Select the broadcast you want to hear from the available Auracast
+            streams shown on your device.
           </div>
         </div>
         <div class="home-a-feature-card fourth-card">
@@ -342,7 +342,10 @@ import Layout from "../../layouts/Layout.astro";
             </div>
             <div class="text-h4">Listen</div>
           </div>
-          <div class="text-h6">Listen to clear, latency free audio.</div>
+          <div class="text-h6">
+            Listen to clear, low-latency audio delivered directly to your
+            device.
+          </div>
         </div>
       </div>
     </div>
@@ -659,12 +662,20 @@ import Layout from "../../layouts/Layout.astro";
           <div class="label">EQUIPMENT PERFORMANCE STANDARDS</div>
           <div class="w-richtext">
             <p>
-              A correctly installed system is inherently compliant with IEC
-              60118-4
+              A correctly configured system is inherently compliant with
+              Bluetooth Core Specification 5.2+ (LE Audio) and the Public
+              Broadcast Profile (PBP)
             </p>
             <div class="section-divider"></div>
             <p style="margin-top:1rem;">
-              A suitable loop driver will always be compliant with IEC 62489-1
+              Operates in the 2.4 GHz band in accordance with ETSI EN 300 328
+              V2.2.2 and equivalent international standards for radio
+              performance, where certified
+            </p>
+            <div class="section-divider"></div>
+            <p style="margin-top:1rem;">
+              All radio equipment operates in compliance with ETSI EN 300 328
+              V2.2.2 (EU harmonised standard)
             </p>
           </div>
         </div>
@@ -673,15 +684,20 @@ import Layout from "../../layouts/Layout.astro";
         <div class="w-layout-grid product-halves">
           <div class="label">ACCESSIBILITY STANDARDS</div>
           <div class="w-richtext">
-            <p>Fully compliant per ADA Standard 219</p>
+            <p>
+              Supports inclusive audio access aligned with ADA Standard 219,
+              pending formal recognition of LE Audio-based systems
+            </p>
             <div class="section-divider"></div>
             <p style="margin-top:1rem;">
-              BS 8300 Design of an accessible and inclusive built environment
+              Supports the intent of BS 8300 – Design of an accessible and
+              inclusive built environment
             </p>
             <div class="section-divider"></div>
             <p style="margin-top:1rem;">
               <p style="margin-top:1rem;">
-                BS 8300 Design of an accessible and inclusive built environment
+                Supports inclusive design principles consistent with the goals
+                of IEC 63080 but is not formally addressed by that standard.
               </p>
             </p>
           </div>
@@ -697,8 +713,9 @@ import Layout from "../../layouts/Layout.astro";
     <AltNews technology="Auracast" />
     <section>
       <div class="w-layout-blockcontainer main-container w-container">
-    <div class="section-divider home-c-numbers"></div>
-    </div></section>
+        <div class="section-divider home-c-numbers"></div>
+      </div>
+    </section>
     <MainNews limit={6} />
     <section>
       <div class="w-layout-blockcontainer main-container w-container">
@@ -709,7 +726,9 @@ import Layout from "../../layouts/Layout.astro";
               aria-label="Next Page"
               class="w-pagination-next pagination-button-article"
             >
-              <div class="text-h4 w-inline-block"><span class="teal-text">More News</span></div>
+              <div class="text-h4 w-inline-block">
+                <span class="teal-text">More News</span>
+              </div>
             </a>
             <link rel="prerender" href="blog@33f22ee7_page=2.html" />
           </div>
