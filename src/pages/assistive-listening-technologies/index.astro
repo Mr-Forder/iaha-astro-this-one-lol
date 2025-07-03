@@ -1,4 +1,6 @@
 ---
+import FooterSpacing from "../../components/FooterSpacing.astro";
+import MainNews from "../../components/MainNews.astro";
 import MemberCta from "../../components/MemberCta.astro";
 import Signage from "../../components/Signage.astro";
 import SmallApplications from "../../components/SmallApplications.astro";
@@ -1418,6 +1420,7 @@ import Layout from "../../layouts/Layout.astro";
   </section>
   <div class="spacer-sm"></div>
   <MemberCta />
-  <div class="spacer-sm"></div>
-  <div class="spacer-sm"></div>
+
+  <FooterSpacing />
+  <MainNews limit={3} />
 </Layout>

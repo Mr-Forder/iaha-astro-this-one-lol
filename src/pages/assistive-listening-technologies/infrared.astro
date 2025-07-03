@@ -645,11 +645,11 @@ import Layout from "../../layouts/Layout.astro";
     <div class="spacer-sm"></div>
     <div id="news" class="spacer-sm"></div>
     <AltNews technology="Hearing Loops" />
-        <section>
+    <section>
       <div class="w-layout-blockcontainer main-container w-container">
-
-    <div class="section-divider home-c-numbers"></div>
-    </div></section>
+        <div class="section-divider home-c-numbers"></div>
+      </div>
+    </section>
     <MainNews limit={6} />
     <section>
       <div class="w-layout-blockcontainer main-container w-container">
@@ -660,13 +660,14 @@ import Layout from "../../layouts/Layout.astro";
               aria-label="Next Page"
               class="w-pagination-next pagination-button-article"
             >
-              <div class="text-h4 w-inline-block"><span class="teal-text">More News</span></div>
+              <div class="text-h4 w-inline-block">
+                <span class="teal-text">More News</span>
+              </div>
             </a>
             <link rel="prerender" href="blog@33f22ee7_page=2.html" />
           </div>
         </div>
       </div>
     </section>
-  </section>
   </section>
 </Layout>
