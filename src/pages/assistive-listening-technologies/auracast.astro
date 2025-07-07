@@ -53,20 +53,23 @@ import Layout from "../../layouts/Layout.astro";
             <div class="text-h4">How it works</div>
             <p class="text-big">
               Audio from a source, such as a microphone, TV, or public address
-              system, is transmitted wirelessly via an Auracast-enabled
-              Bluetooth transmitter. This transmitter broadcasts the sound as a
-              digital signal that multiple compatible devices can receive
-              simultaneously. The broadcast is picked up directly by hearing
-              aids, cochlear implants, earbuds, or headphones without the need
-              for pairing.
+              system, is transmitted wirelessly via an Auracast transmitter.
+              This transmitter broadcasts the sound as a digital signal that
+              multiple compatible devices can receive simultaneously. The
+              broadcast is picked up directly by hearing aids, cochlear
+              implants, earbuds, or headphones without the need for pairing, but
+              currently an assistant device, such as a Smart Phone, is needed to
+              select the required audio stream. Alternatively receivers with a
+              stream (program) section facility built in are available.
             </p>
 
             <p class="text-big">
               Once received, each device decodes the signal and delivers clear,
-              synchronised, low-latency audio straight to the listener. This
-              enables seamless shared listening in public spaces or private
-              settings, with each user experiencing consistent sound quality and
-              the ability to adjust volume independently on their own device.
+              synchronised, low-latency audio straight to the listener. The
+              exact latency will vary depending upon the transmitter and
+              receiver (HA/HI/ earbud etc) but is typically with the range
+              30-70ms.This enables shared listening in public spaces or private
+              settings.
             </p>
 
             <div class="home-b-button-wrap">
@@ -154,10 +157,9 @@ import Layout from "../../layouts/Layout.astro";
             <div class="section-divider home-c-numbers"></div>
 
             <h2 id="part-2" class="no-margins">
-              Devices with Auracast-compatible Bluetooth receive broadcast audio
-              directly<span class="light-accent">
-                without needing to pair or use extra equipment.
-              </span>
+              Auracast compatible devices can receive the audio broadcast
+              directly, but need an ‘assistant’ (often in the form of a smart
+              phone) to select the audio stream to be listened to.
             </h2>
             <div class="spacer-sm"></div>
             <div class="section-divider home-c-numbers"></div>
@@ -167,15 +169,15 @@ import Layout from "../../layouts/Layout.astro";
               the Bluetooth Special Interest Group (SIG). Unlike traditional
               Bluetooth, which connects one device to a single receiver,
               Auracast lets one source, like a phone, TV, or speaker, stream
-              audio simultaneously to many Bluetooth headphones, earbuds, or
-              hearing devices.
+              audio simultaneously to many Auracsat compatible headphones,
+              earbuds, or hearing devices.
             </h5>
 
             <h5>
               Auracast supports both public and encrypted private broadcasts.
               Multiple streams can operate simultaneously in the same space
-              without interference, ensuring reliable audio access in venues
-              like airports, theaters, and conference rooms.
+              without interference, ensuring audio access in venues like
+              airports and conference rooms.
             </h5>
           </div>
         </div>
@@ -218,9 +220,10 @@ import Layout from "../../layouts/Layout.astro";
           <h5>
             This one-to-many broadcast removes the need for individual device
             pairing and physical connections, allowing each listener to control
-            their own volume and sound preferences. With an extended
-            transmission range of up to 300 feet, users can move freely within
-            their environment without interruption.
+            their own volume. With a typical transmission range of up to 50m,
+            depending, on the transmitter power, local conditions and aerial
+            placement, users can potentially move freely within their
+            environment without broadcast interruption
           </h5>
         </div>
       </div>
@@ -246,7 +249,7 @@ import Layout from "../../layouts/Layout.astro";
             <div class="section-divider home-c-numbers"></div>
 
             <h5>
-              Instead, both technologies will work together to provide the best
+              Instead, both technologies can work together to provide the best
               listening experience.<br /> It will take time for venues, device makers,
               and users to adopt the necessary technology, and it’s important to
               ensure people who depend on telecoil hearing aids or don’t use smartphones
@@ -288,7 +291,7 @@ import Layout from "../../layouts/Layout.astro";
       </div>
     </div>
   </section>
-  <div class="spacer-sm"></div>
+  <!-- <div class="spacer-sm"></div>
   <section class="section home-a-about-section">
     <div class="w-layout-blockcontainer main-container w-container">
       <div id="access" class="text-h1">How to Access Auracast</div>
@@ -349,7 +352,7 @@ import Layout from "../../layouts/Layout.astro";
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="section about-b-numbers-section">
     <div class="w-layout-blockcontainer main-container w-container">
@@ -359,31 +362,24 @@ import Layout from "../../layouts/Layout.astro";
 
           <div class="w-layout-grid number-features-grid">
             <div class="home-number-feature advantage">
-              <div class="text-h4">Universally Accessible</div>
-              <div class="text-small">
-                Auracast will be accessible with or without a smartphone,
-                offering a simpler way to connect to audio once widely adopted.
-              </div>
-            </div>
-            <div class="home-number-feature advantage">
               <div class="text-h4">Personalized Experience</div>
               <div class="text-small">
                 Users can personalize their listening by adjusting volume and
-                sound settings to their preferences.
+                sound settings to their preferences using an appropriate App.
               </div>
             </div>
             <div class="home-number-feature advantage">
               <div class="text-h4">Flexible</div>
               <div class="text-small">
-                Auracast works across environments, from private home
-                entertainment to public venues like airports and museums.
+                Auracast can work across environments, from private home
+                entertainment to public venues.
               </div>
             </div>
             <div class="home-number-feature advantage">
               <div class="text-h4">Reduced Battery Consumption</div>
               <div class="text-small">
                 Auracast uses less power than traditional Bluetooth, reducing
-                battery drain on hearing aids
+                battery drain on hearing aids.
               </div>
             </div>
             <div class="home-number-feature advantage">
@@ -400,9 +396,12 @@ import Layout from "../../layouts/Layout.astro";
               </div>
             </div>
             <div class="home-number-feature advantage">
-              <div class="text-h4">Extended Range</div>
+              <div class="text-h4">
+                Improved range over traditional Bluetooth
+              </div>
               <div class="text-small">
-                Supports listening up to around 300 feet indoors.
+                Supports listening up to typically 30 - 50m depending on
+                transmitter power and local conditions.
               </div>
             </div>
           </div>
@@ -415,15 +414,44 @@ import Layout from "../../layouts/Layout.astro";
               <div class="text-h4">Smartphone Dependency</div>
               <div class="text-small">
                 Accessing Auracast broadcasts often requires a smartphone, which
-                may limit use for individuals who are less familiar with digital
-                devices.
+                may limit use for individuals who are less familiar with ‘tech’
+                devices. In many applications, such as in schools and other
+                establishments, smart phones are not permitted.
               </div>
             </div>
             <div class="home-number-feature limitation">
               <div class="text-h4">Not a full replacement</div>
               <div class="text-small">
-                Auracast must coexist with existing systems like hearing loops
-                for broad accessibility.
+                Auracast must coexist with existing systems such as hearing
+                loops for broad accessibility.
+              </div>
+            </div>
+            <div class="home-number-feature limitation">
+              <div class="text-h4">Device Availability</div>
+              <div class="text-small">
+                At present few devices are compatible with or are based on
+                Auracast technology. It is expected to take around 7 to 10 years
+                before sufficient Auracast compatible hearing devices (HA/CI)
+                are available and so able to potentially displace Hearing Loops
+                or other types of Assistive Listening technologies.
+              </div>
+            </div>
+            <div class="home-number-feature limitation">
+              <div class="text-h4">Potential Latency Issues</div>
+              <div class="text-small">
+                While Auracast aims for low latency, real-world performance will
+                vary depending on device compatibility and implementation. The
+                generally recognised maximum permissible end-to-end latency
+                (transmitter. receiver and input source) is 40ms. In some
+                situations, such as where a talker needs to hear the broadcast
+                audio signal, a very much shorter latency than this is required.
+              </div>
+            </div>
+            <div class="home-number-feature limitation">
+              <div class="text-h4">Battery Consumption</div>
+              <div class="text-small">
+                Although Auracast is built for low power use, some devices may
+                still see increased battery consumption with prolonged usage.
               </div>
             </div>
             <div class="home-number-feature limitation">
@@ -434,17 +462,32 @@ import Layout from "../../layouts/Layout.astro";
               </div>
             </div>
             <div class="home-number-feature limitation">
-              <div class="text-h4">Potential Latency Issues</div>
+              <div class="text-h4">Multiple transmitters</div>
               <div class="text-small">
-                While Auracast aims for low latency, real-world performance may
-                vary depending on device compatibility and implementation.
+                The use of multiple transmitters and seamless handover of audio
+                streams in large spaces such as airports and shopping malls has
+                yet to be developed.
               </div>
             </div>
             <div class="home-number-feature limitation">
-              <div class="text-h4">Battery Consumption</div>
+              <div class="text-h4">Help Points, Counter Systems & Privacy</div>
               <div class="text-small">
-                Although Auracast is built for low power use, some devices may
-                still see increased battery consumption with prolonged usage.
+                Techniques and equipment to cater for broadcast privacy at
+                customer help points, counter systems such as at banks or health
+                care situations have yet to be developed.
+              </div>
+            </div>
+            <div class="home-number-feature limitation">
+              <div class="text-h4">Privacy of Transmissions</div>
+              <div class="text-small">
+                it is important that only the intended or local audio stream can
+                be heard. However, Auracast transmissions can readily travel
+                through typical wall and floor consructions. Privacy provision
+                implies the need for a smart phone or other assistant device to
+                find, select and obtain the permitted stream. Whilst encryption
+                is possible, the public interface with this still requires
+                clarification. The use of QR codes for example is not permitted
+                within many establishments and sites.
               </div>
             </div>
           </div>
