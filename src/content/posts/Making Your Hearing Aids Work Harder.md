@@ -1,6 +1,6 @@
 ---
 title: Making Your Hearing Aids Work Harder
-description: '"Many consumers don’t know to ask for it. That’s unfortunate, because without a telecoil, even a top-of-the-line hearing aid can provide only a subpar listening experience in comparison. “It augments what that hearing aid can do—that the hearing aid simply cannot do any other way,” Whyman says."'
+description: '"Many consumers don’t know to ask for it. That’s unfortunate, because without a telecoil, even a top-of-the-line hearing aid can provide only a subpar listening experience in comparison. “It augments what that hearing aid can do—that the hearing aid simply cannot do any other way..."'
 alt: "Assistive Listening"
 image:
   url: "/img/post-images/make-your-hearign-aids-work-harder.jpg"
